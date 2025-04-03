@@ -302,16 +302,16 @@ const Home = () => {
                 {currentTestimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className="bg-[#157FBB] p-6 rounded-lg shadow-md border border-gray-800 transition-all duration-500 transform hover:scale-105 hover:shadow-lg text-gray-300"
+                    className="bg-silver p-6 rounded-lg shadow-md border border-gray-300 transition-all duration-500 transform hover:scale-105 hover:shadow-lg text-[#157FBB]"
                   >
                     <div className="flex items-center gap-4 mb-4">
-                      <div className="flex items-center text-zwolinski-burgundy">
+                      <div className="flex items-center text-[#157FBB]">
                         <MapPin className="h-5 w-5" />
                         <span className="ml-1 text-sm">
                           {testimonial.location}
                         </span>
                       </div>
-                      <div className="flex items-center text-zwolinski-burgundy">
+                      <div className="flex items-center text-[#157FBB]">
                         <Hammer className="h-5 w-5" />
                         <span className="ml-1 text-sm">
                           {testimonial.projectType}
@@ -332,7 +332,7 @@ const Home = () => {
                           </p>
                           <button
                             onClick={() => toggleReview(index)}
-                            className="text-zwolinski-burgundy hover:text-opacity-80 text-sm mb-2"
+                            className="text-[#157FBB] hover:text-opacity-80 text-sm mb-2"
                           >
                             {expandedReviews.includes(index)
                               ? "Read Less"
@@ -345,7 +345,7 @@ const Home = () => {
                         </p>
                       )}
                       {testimonial.name && (
-                        <p className="font-semibold text-zwolinski-navy">
+                        <p className="font-semibold text-[#157FBB]">
                           {testimonial.name}
                         </p>
                       )}
@@ -360,13 +360,13 @@ const Home = () => {
               onClick={prevPage}
               className="absolute left-0 top-1/2 -translate-y-1/2 -left-12 bg-white p-2 rounded-full shadow-md hover:bg-gray-50 focus:outline-none"
             >
-              <ChevronLeft className="h-6 w-6 text-zwolinski-burgundy" />
+              <ChevronLeft className="h-6 w-6 text-[#157FBB]" />
             </button>
             <button
               onClick={nextPage}
               className="absolute right-0 top-1/2 -translate-y-1/2 -right-12 bg-white p-2 rounded-full shadow-md hover:bg-gray-50 focus:outline-none"
             >
-              <ChevronRight className="h-6 w-6 text-zwolinski-burgundy" />
+              <ChevronRight className="h-6 w-6 text-[#157FBB]" />
             </button>
 
             {/* Page Indicators */}
@@ -377,7 +377,7 @@ const Home = () => {
                   onClick={() => setCurrentPage(i)}
                   className={`h-2 w-2 rounded-full transition-all duration-300 ${
                     i === currentPage
-                      ? "bg-zwolinski-burgundy w-4"
+                      ? "bg-[#157FBB] w-4"
                       : "bg-gray-300"
                   }`}
                 />
