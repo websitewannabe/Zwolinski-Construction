@@ -398,7 +398,7 @@ const Home = () => {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-gray-800 text-silver rounded-md hover:bg-gray-700 transition-colors font-semibold border border-gray-600"
+            className="inline-flex items-center px-8 py-4 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors font-semibold border border-gray-600"
           >
             Contact Us Now
             <ArrowRight className="ml-2 h-5 w-5" />
