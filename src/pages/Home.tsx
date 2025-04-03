@@ -266,7 +266,7 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+            <div className="bg-black p-6 rounded-lg border border-gray-700">
               <h3 className="text-2xl font-bold mb-3 text-silver">
                 Direct Oversight
               </h3>
@@ -276,7 +276,7 @@ const Home = () => {
                 throughout the entire process.
               </p>
             </div>
-            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+            <div className="bg-black p-6 rounded-lg border border-gray-700">
               <h3 className="text-2xl font-bold mb-3 text-silver">
                 Consistent Quality
               </h3>
