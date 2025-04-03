@@ -206,15 +206,16 @@ const Home = () => {
             ].map((service) => (
               <div
                 key={service.title}
-                className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
+                className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full flex flex-col"
               >
-                <img
-                  src={service.image}
-                  alt={service.title}
-                  className="h-48 w-full object-cover"
-                />
-
-                <div className="p-6 border-t-4 border-gray-700 bg-zwolinski-primary text-gray-300">
+                <div className="h-56 relative">
+                  <img
+                    src={service.image}
+                    alt={service.title}
+                    className="w-full h-full object-cover"
+                  />
+                </div>
+                <div className="p-6 border-t-4 border-gray-700 bg-gray-900 text-gray-300 flex-1">
                   <h3 className="text-2xl font-bold mb-3 text-silver">
                     {service.title}
                   </h3>
