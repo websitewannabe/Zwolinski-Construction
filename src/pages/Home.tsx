@@ -155,9 +155,9 @@ const Home = () => {
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
-          <div className="text-white bg-black/30 backdrop-blur-md p-8 rounded-lg max-w-2xl">
+          <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
             <h1 className="text-5xl font-bold mb-4">
-              <span className="text-zwolinski-burgundy">Building Dreams,</span>
+              <span className="text-silver">Building Dreams,</span>
               <br />
               Delivering Excellence
             </h1>
@@ -168,7 +168,7 @@ const Home = () => {
             </p>
             <a
               href="/contact"
-              className="inline-flex items-center px-6 py-3 bg-zwolinski-burgundy text-white rounded-md hover:bg-opacity-90 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-gray-800 text-silver rounded-md hover:bg-gray-700 transition-colors border border-gray-600"
             >
               Get a Free Quote
               <ArrowRight className="ml-2 h-5 w-5" />
@@ -212,14 +212,14 @@ const Home = () => {
                   className="h-48 bg-cover bg-center"
                   style={{ backgroundImage: `url(${service.image})` }}
                 />
-                <div className="p-6 border-t-4 border-zwolinski-burgundy">
-                  <h3 className="text-2xl font-bold mb-3 text-zwolinski-navy">
+                <div className="p-6 border-t-4 border-gray-700 bg-black text-gray-300">
+                  <h3 className="text-2xl font-bold mb-3 text-silver">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <Link
                     to={`/services#${service.title.toLowerCase()}`}
-                    className="inline-flex items-center px-4 py-2 bg-zwolinski-burgundy text-white rounded hover:bg-opacity-90 transition-colors"
+                    className="inline-flex items-center px-4 py-2 bg-gray-800 text-silver rounded hover:bg-gray-700 transition-colors border border-gray-600"
                   >
                     View Projects <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
@@ -231,7 +231,7 @@ const Home = () => {
       </section>
 
       {/* HomeAdvisor Reviews Banner */}
-      <section className="bg-zwolinski-burgundy py-12">
+      <section className="bg-black py-12 border-y border-gray-800">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-4xl font-bold text-white mb-4">
             Top-Rated on HomeAdvisor
@@ -381,9 +381,9 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-zwolinski-burgundy text-white py-16">
+      <section className="bg-black text-gray-300 py-16 border-t border-gray-800">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-silver">
             Ready to Start Your Project?
           </h2>
           <p className="text-xl mb-8">
@@ -391,7 +391,7 @@ const Home = () => {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-zwolinski-navy text-white rounded-md hover:bg-opacity-90 transition-colors font-semibold"
+            className="inline-flex items-center px-8 py-4 bg-gray-800 text-silver rounded-md hover:bg-gray-700 transition-colors font-semibold border border-gray-600"
           >
             Contact Us Now
             <ArrowRight className="ml-2 h-5 w-5" />
