@@ -4,8 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        'zwolinski-burgundy': '#8B0D24',
-        'zwolinski-navy': '#00205B',
+        'zwolinski-primary': '#000000',
+        'zwolinski-secondary': '#C0C0C0',
+        'zwolinski-accent': '#808080',
       },
     },
   },

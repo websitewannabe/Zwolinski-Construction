@@ -22,7 +22,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/"
-                  className="text-gray-300 hover:text-zwolinski-burgundy transition-colors"
+                  className="text-gray-300 hover:text-zwolinski-secondary transition-colors"
                 >
                   Home
                 </Link>
@@ -30,7 +30,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/about"
-                  className="text-gray-300 hover:text-zwolinski-burgundy transition-colors"
+                  className="text-gray-300 hover:text-zwolinski-secondary transition-colors"
                 >
                   About
                 </Link>
@@ -38,7 +38,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/services"
-                  className="text-gray-300 hover:text-zwolinski-burgundy transition-colors"
+                  className="text-gray-300 hover:text-zwolinski-secondary transition-colors"
                 >
                   Services
                 </Link>
@@ -46,7 +46,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/gallery"
-                  className="text-gray-300 hover:text-zwolinski-burgundy transition-colors"
+                  className="text-gray-300 hover:text-zwolinski-secondary transition-colors"
                 >
                   Gallery
                 </Link>
@@ -54,7 +54,7 @@ const Footer = () => {
               <li>
                 <Link
                   to="/contact"
-                  className="text-gray-300 hover:text-zwolinski-burgundy transition-colors"
+                  className="text-gray-300 hover:text-zwolinski-secondary transition-colors"
                 >
                   Contact
                 </Link>
@@ -67,14 +67,14 @@ const Footer = () => {
             <div className="space-y-2">
               <a
                 href="tel:+12155551234"
-                className="flex items-center space-x-2 text-gray-300 hover:text-zwolinski-burgundy"
+                className="flex items-center space-x-2 text-gray-300 hover:text-zwolinski-secondary"
               >
                 <Phone className="h-4 w-4" />
                 <span>(267) 471-6120</span>
               </a>
               <a
                 href="mailto:info@zwolinskiconstruction.com"
-                className="flex items-center space-x-2 text-gray-300 hover:text-zwolinski-burgundy"
+                className="flex items-center space-x-2 text-gray-300 hover:text-zwolinski-secondary"
               >
                 <Mail className="h-4 w-4" />
                 <span>arnoldzwolinski@verizon.net</span>
@@ -91,7 +91,7 @@ const Footer = () => {
             <div className="flex space-x-4">
               <a
                 href="https://www.facebook.com/people/Zwolinski-Quality-Construction-Co/61559520404180/"
-                className="text-gray-300 hover:text-zwolinski-burgundy"
+                className="text-gray-300 hover:text-zwolinski-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -99,7 +99,7 @@ const Footer = () => {
               </a>
               <a
                 href="https://www.tiktok.com/@zwolinskiquality"
-                className="text-gray-300 hover:text-zwolinski-burgundy"
+                className="text-gray-300 hover:text-zwolinski-secondary"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -113,7 +113,7 @@ const Footer = () => {
               </a>
               <a
                 href="#"
-                className="text-gray-300 hover:text-zwolinski-burgundy"
+                className="text-gray-300 hover:text-zwolinski-secondary"
               >
                 <Instagram className="h-6 w-6" />
               </a>
@@ -125,14 +125,14 @@ const Footer = () => {
           <div className="mb-4">
             <Link
               to="/privacy"
-              className="text-gray-300 hover:text-zwolinski-burgundy mx-2"
+              className="text-gray-300 hover:text-zwolinski-secondary mx-2"
             >
               Privacy Policy
             </Link>
             <span className="mx-2">|</span>
             <Link
               to="/accessibility"
-              className="text-gray-300 hover:text-zwolinski-burgundy mx-2"
+              className="text-gray-300 hover:text-zwolinski-secondary mx-2"
             >
               Accessibility
             </Link>

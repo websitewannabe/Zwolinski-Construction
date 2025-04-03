@@ -40,7 +40,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className="flex items-center space-x-1 hover:text-zwolinski-burgundy transition-colors"
+                className="flex items-center space-x-1 hover:text-zwolinski-secondary transition-colors"
               >
                 <item.icon className="h-4 w-4" />
                 <span>{item.name}</span>
@@ -48,7 +48,7 @@ const Navbar = () => {
             ))}
             <a
               href="tel:+12674716120"
-              className="flex items-center space-x-2 bg-zwolinski-burgundy text-white px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors"
+              className="flex items-center space-x-2 bg-zwolinski-primary text-zwolinski-secondary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors"
             >
               <Phone className="h-4 w-4" />
               <span>(267) 471-6120</span>
