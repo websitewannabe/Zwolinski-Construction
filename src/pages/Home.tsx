@@ -178,7 +178,7 @@ const Home = () => {
       </section>
 
       {/* Services Preview */}
-      <section className="py-16 bg-black">
+      <section className="py-16 bg-gray-200">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-4xl font-bold text-white mb-4 text-center">
             Our Services
@@ -253,7 +253,7 @@ const Home = () => {
       </section>
 
       {/* In-House Work */}
-      <section className="py-16 bg-black text-gray-300">
+      <section className="py-16 bg-gray-200 text-gray-800">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4 text-silver">
@@ -388,7 +388,7 @@ const Home = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-black text-gray-300 py-16 border-t border-gray-800">
+      <section className="bg-gray-200 text-gray-800 py-16 border-t border-gray-300">
         <div className="max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4 text-silver">
             Ready to Start Your Project?
