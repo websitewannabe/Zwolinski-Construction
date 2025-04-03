@@ -115,7 +115,7 @@ const Gallery = () => {
                               setFilteredSections(updatedSections);
                             }
                           }}
-                          className="bg-gray-800 text-white px-6 py-2 rounded-md hover:bg-gray-700 transition-colors border border-gray-600"
+                          className="bg-[#157FBB] text-white px-6 py-2 rounded-md hover:bg-[#4BA5CF] transition-colors border border-gray-600"
                         >
                           Show More
                         </button>
