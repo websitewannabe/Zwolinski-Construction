@@ -130,17 +130,17 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-zwolinski-burgundy text-white py-16">
+      <section className="bg-[#C0C0C0] py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-white">
             Ready to Start Your Project?
           </h2>
-          <p className="text-xl mb-8">
+          <p className="text-xl mb-8 text-gray-800">
             Contact us today for a free consultation and estimate.
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-zwolinski-navy text-white rounded-md hover:bg-opacity-90 transition-colors font-semibold"
+            className="inline-flex items-center px-8 py-4 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors font-semibold border border-gray-600"
           >
             Contact Us Now
             <ArrowRight className="ml-2 h-5 w-5" />
@@ -148,9 +148,9 @@ const About = () => {
         </div>
       </section>
 
-      <section className="bg-white py-16">
+      <section className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-zwolinski-navy">
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">
             Our Reviews
           </h2>
           <div className="flex gap-8 justify-center items-stretch">
@@ -158,7 +158,7 @@ const About = () => {
               href="https://www.google.com/search?q=zwolinski+quality+construction&oq=zwolinski+qu&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyEAgBEC4YrwEYxwEYgAQYjgUyBggCEEUYOTIKCAMQABiABBiiBDIKCAQQABiABBiiBDIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPNIBCDI3NTNqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8#lrd=0x89c6a05cc01b6e05:0x4f72758643065789,1,,,,"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 max-w-md bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-8 border-2 border-zwolinski-burgundy flex flex-col items-center justify-center text-center"
+              className="flex-1 max-w-md bg-gradient-to-br from-gray-900 to-black rounded-lg shadow-xl hover:shadow-2xl transition-shadow p-8 border border-gray-600 flex flex-col items-center justify-center text-center"
             >
               <img
                 src="/images/google-logo.png"
@@ -180,14 +180,14 @@ const About = () => {
               href="https://www.homeadvisor.com/rated.ZWOLINSKIQuality.8386546.html"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex-1 max-w-md bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow p-8 border-2 border-zwolinski-burgundy flex flex-col items-center justify-center text-center"
+              className="flex-1 max-w-md bg-gradient-to-br from-gray-900 to-black rounded-lg shadow-xl hover:shadow-2xl transition-shadow p-8 border border-gray-600 flex flex-col items-center justify-center text-center"
             >
               <img
                 src="/images/homeadvisor-logo.png"
                 alt="HomeAdvisor Reviews"
                 className="w-24 h-24 mb-4"
               />
-              <h3 className="text-2xl font-bold text-zwolinski-navy mb-2">
+              <h3 className="text-2xl font-bold text-white mb-2">
                 HomeAdvisor Reviews
               </h3>
               <p className="text-gray-600 mb-4">
