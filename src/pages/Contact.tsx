@@ -20,7 +20,7 @@ const Contact = () => {
             </p>
             <a
               href="#contact-form"
-              className="inline-flex items-center px-8 py-4 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors font-semibold border border-gray-600"
+              className="inline-flex items-center px-8 py-4 bg-[#157FBB] text-white rounded-md hover:bg-[#4BA5CF] transition-colors font-semibold border border-gray-600"
             >
               Get Started Today
               <ArrowRight className="ml-2 h-5 w-5" />
