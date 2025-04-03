@@ -215,8 +215,8 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 border-t-4 border-gray-700 bg-gray-900 text-gray-300 flex-1">
-                  <h3 className="text-2xl font-bold mb-3 text-silver">
+                <div className="p-6 border-t-4 border-gray-700 bg-[#63C5EF] text-gray-900 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-black">
                     {service.title}
                   </h3>
                   <p className="text-gray-600 mb-4">{service.description}</p>
