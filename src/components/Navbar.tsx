@@ -23,7 +23,7 @@ const Navbar = () => {
   ];
 
   return (
-    <nav className="text-black">
+    <nav className="bg-black text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
@@ -40,7 +40,7 @@ const Navbar = () => {
               <Link
                 key={item.name}
                 to={item.path}
-                className="flex items-center space-x-1 hover:text-zwolinski-secondary transition-colors"
+                className="flex items-center space-x-1 hover:text-silver transition-colors"
               >
                 <item.icon className="h-4 w-4" />
                 <span>{item.name}</span>
@@ -48,7 +48,7 @@ const Navbar = () => {
             ))}
             <a
               href="tel:+12674716120"
-              className="flex items-center space-x-2 bg-zwolinski-primary text-zwolinski-secondary px-4 py-2 rounded-md hover:bg-opacity-90 transition-colors"
+              className="flex items-center space-x-2 bg-gray-800 text-silver px-4 py-2 rounded-md hover:bg-gray-700 transition-colors border border-gray-600"
             >
               <Phone className="h-4 w-4" />
               <span>(267) 471-6120</span>
@@ -59,7 +59,7 @@ const Navbar = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="p-2 rounded-md hover:bg-zwolinski-burgundy"
+              className="p-2 rounded-md text-gray-300 hover:bg-gray-800 border border-gray-700"
             >
               {isOpen ? (
                 <X className="h-6 w-6" />
@@ -73,12 +73,12 @@ const Navbar = () => {
         {/* Mobile Navigation Menu */}
         {isOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+            <div className="px-2 pt-2 pb-3 space-y-1 bg-black border-t border-gray-800">
               {navItems.map((item) => (
                 <Link
                   key={item.name}
                   to={item.path}
-                  className="flex items-center space-x-2 px-3 py-2 rounded-md hover:bg-zwolinski-burgundy"
+                  className="flex items-center space-x-2 px-3 py-2 rounded-md text-gray-300 hover:bg-gray-800 hover:text-silver"
                   onClick={() => setIsOpen(false)}
                 >
                   <item.icon className="h-4 w-4" />
@@ -87,7 +87,7 @@ const Navbar = () => {
               ))}
               <a
                 href="tel:+12674716120"
-                className="flex items-center space-x-2 bg-zwolinski-burgundy text-white px-3 py-2 rounded-md hover:bg-opacity-90 transition-colors"
+                className="flex items-center space-x-2 bg-gray-800 text-silver px-3 py-2 rounded-md hover:bg-gray-700 transition-colors border border-gray-600"
               >
                 <Phone className="h-4 w-4" />
                 <span>(267) 471-6120</span>
