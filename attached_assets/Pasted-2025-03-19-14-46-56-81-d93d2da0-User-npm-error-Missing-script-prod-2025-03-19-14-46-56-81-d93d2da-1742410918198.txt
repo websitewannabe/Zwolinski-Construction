@@ -1,0 +1,107 @@
+2025-03-19 14:46:56.81
+d93d2da0
+User
+npm error Missing script: "prod"
+2025-03-19 14:46:56.81
+d93d2da0
+User
+npm error
+2025-03-19 14:46:56.81
+d93d2da0
+User
+npm error To see a list of scripts, run:
+2025-03-19 14:46:56.81
+d93d2da0
+User
+npm error npm run
+2025-03-19 14:46:56.82
+d93d2da0
+User
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2025-03-19T18_46_56_763Z-debug-0.log
+2025-03-19 14:46:56.82
+d93d2da0
+System
+command finished with error [sh -c npm run prod]: exit status 1
+2025-03-19 14:47:06.42
+d93d2da0
+User
+npm error Missing script: "prod"
+2025-03-19 14:47:06.42
+d93d2da0
+User
+npm error
+2025-03-19 14:47:06.42
+d93d2da0
+User
+npm error To see a list of scripts, run:
+2025-03-19 14:47:06.42
+d93d2da0
+User
+npm error npm run
+2025-03-19 14:47:06.42
+d93d2da0
+User
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2025-03-19T18_47_06_368Z-debug-0.log
+2025-03-19 14:47:06.42
+d93d2da0
+System
+command finished with error [sh -c npm run prod]: exit status 1
+2025-03-19 14:47:15.55
+d93d2da0
+User
+npm error Missing script: "prod"
+2025-03-19 14:47:15.55
+d93d2da0
+User
+npm error
+2025-03-19 14:47:15.55
+d93d2da0
+User
+npm error To see a list of scripts, run:
+2025-03-19 14:47:15.55
+d93d2da0
+User
+npm error npm run
+2025-03-19 14:47:15.55
+d93d2da0
+User
+npm error A complete log of this run can be found in: /home/runner/.npm/_logs/2025-03-19T18_47_15_496Z-debug-0.log
+2025-03-19 14:47:15.55
+d93d2da0
+System
+command finished with error [sh -c npm run prod]: exit status 1
+2025-03-19 14:47:16.48
+d93d2da0
+System
+crash loop detected
+2025-03-19 14:56:56.54
+b882d769
+System
+starting up user application
+2025-03-19 14:56:56.69
+b882d769
+System
+forwarding local port 5173 to external port 80
+2025-03-19 14:56:58.00
+b882d769
+User
+> zwolinski-construction@0.0.0 preview
+2025-03-19 14:56:58.00
+b882d769
+User
+> vite preview
+2025-03-19 14:56:58.51
+b882d769
+User
+➜ Local: http://localhost:4173/
+2025-03-19 14:56:58.51
+b882d769
+User
+➜ Network: use --host to expose
+2025-03-19 14:57:56.69
+b882d769
+System
+a port configuration was specified but the required port was never opened
+
+Wrap
+

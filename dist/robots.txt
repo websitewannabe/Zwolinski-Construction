@@ -1,0 +1,20 @@
+
+User-agent: *
+Allow: /
+Disallow: /reviews
+
+User-agent: Googlebot
+Allow: /
+Disallow: /reviews
+
+User-agent: Bingbot
+Allow: /
+Disallow: /reviews
+
+User-agent: DuckDuckBot
+Allow: /
+Disallow: /reviews
+
+User-agent: Slurp
+Allow: /
+Disallow: /reviews
