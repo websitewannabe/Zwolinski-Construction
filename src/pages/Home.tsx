@@ -180,7 +180,7 @@ const Home = () => {
       {/* Services Preview */}
       <section className="py-16 bg-[#C0C0C0]">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-white mb-4 text-center">
+          <h2 className="text-4xl font-bold text-black mb-4 text-center">
             Our Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -376,9 +376,7 @@ const Home = () => {
                   key={i}
                   onClick={() => setCurrentPage(i)}
                   className={`h-2 w-2 rounded-full transition-all duration-300 ${
-                    i === currentPage
-                      ? "bg-[#157FBB] w-4"
-                      : "bg-gray-300"
+                    i === currentPage ? "bg-[#157FBB] w-4" : "bg-gray-300"
                   }`}
                 />
               ))}
