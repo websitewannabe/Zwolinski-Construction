@@ -83,12 +83,12 @@ const Contact = () => {
             </div>
 
             {/* Google Form */}
-            <div className="bg-zwolinski-navy bg-opacity-5 p-8 rounded-lg">
+            <div className="bg-zwolinski-navy bg-opacity-5 p-8 rounded-lg ">
               <h2 className="text-3xl font-bold mb-8 text-zwolinski-navy">
                 Send Us a Message
               </h2>
               <div className="w-full h-[600px]">
-                {/* Replace the src URL below with your Google Form embed URL */}
+                {/* Replace the src URL below with your Google Form embed URL  */}
                 <iframe
                   src="https://forms.gle/kb6gKFHfhN4Pfn8PA"
                   width="100%"
