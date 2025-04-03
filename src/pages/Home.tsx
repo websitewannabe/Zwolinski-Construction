@@ -266,21 +266,21 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-black p-6 rounded-lg border border-gray-700">
-              <h3 className="text-2xl font-bold mb-3 text-silver">
+            <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600">
+              <h3 className="text-2xl font-bold mb-3 text-white">
                 Direct Oversight
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-300">
                 With our in-house team handling every aspect of your project, we
                 maintain complete quality control and direct supervision
                 throughout the entire process.
               </p>
             </div>
-            <div className="bg-black p-6 rounded-lg border border-gray-700">
-              <h3 className="text-2xl font-bold mb-3 text-silver">
+            <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600">
+              <h3 className="text-2xl font-bold mb-3 text-white">
                 Consistent Quality
               </h3>
-              <p className="text-gray-400">
+              <p className="text-gray-300">
                 Our dedicated team members are trained to our exacting
                 standards, ensuring the same high level of craftsmanship across
                 all projects.
