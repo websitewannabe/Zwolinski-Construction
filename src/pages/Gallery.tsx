@@ -45,8 +45,8 @@ const Gallery = () => {
               onClick={() => setSelectedSection(null)}
               className={`px-4 py-2 rounded-md transition-colors ${
                 !selectedSection 
-                  ? 'bg-gray-800 text-white border border-gray-600' 
-                  : 'bg-black text-white hover:bg-gray-700 border border-gray-600'
+                  ? 'bg-[#63C5EF] text-white border border-gray-600' 
+                  : 'bg-black text-white hover:bg-[#63C5EF] border border-gray-600'
               }`}
             >
               All Projects
@@ -57,8 +57,8 @@ const Gallery = () => {
                 onClick={() => setSelectedSection(section.id)}
                 className={`px-4 py-2 rounded-md transition-colors ${
                   selectedSection === section.id
-                    ? 'bg-gray-800 text-white border border-gray-600'
-                    : 'bg-black text-white hover:bg-gray-700 border border-gray-600'
+                    ? 'bg-[#63C5EF] text-white border border-gray-600'
+                    : 'bg-black text-white hover:bg-[#63C5EF] border border-gray-600'
                 }`}
               >
                 {section.title}
