@@ -50,7 +50,7 @@ const About = () => {
             </p>
             <a
               href="/contact"
-              className="inline-flex items-center px-6 py-3 bg-zwolinski-burgundy text-white rounded-md hover:bg-opacity-90 transition-colors"
+              className="inline-flex items-center px-6 py-3 bg-[#157FBB] text-white rounded-md hover:bg-[#1369A0] transition-colors"
             >
               Get Started Today
               <ArrowRight className="ml-2 h-5 w-5" />
