@@ -38,7 +38,7 @@ const Contact = () => {
                 Get In Touch
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4 bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-all border border-gray-700">
+                <div className="flex items-start space-x-4 bg-[#157FBB] p-4 rounded-lg hover:bg-[#4BA5CF] transition-all border border-gray-600">
                   <Phone className="h-6 w-6 text-white mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-white">
@@ -63,7 +63,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4 bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-all border border-gray-700">
+                <div className="flex items-start space-x-4 bg-[#157FBB] p-4 rounded-lg hover:bg-[#4BA5CF] transition-all border border-gray-600">
                   <Mail className="h-6 w-6 text-white mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-white">
@@ -73,7 +73,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4 bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-all border border-gray-700">
+                <div className="flex items-start space-x-4 bg-[#157FBB] p-4 rounded-lg hover:bg-[#4BA5CF] transition-all border border-gray-600">
                   <MapPin className="h-6 w-6 text-white mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-white">
@@ -85,7 +85,7 @@ const Contact = () => {
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4 bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-all border border-gray-700">
+                <div className="flex items-start space-x-4 bg-[#157FBB] p-4 rounded-lg hover:bg-[#4BA5CF] transition-all border border-gray-600">
                   <Clock className="h-6 w-6 text-white mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-white">
