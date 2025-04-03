@@ -222,7 +222,7 @@ const Home = () => {
                   <p className="text-gray-600 mb-4">{service.description}</p>
                   <Link
                     to={`/services#${service.title.toLowerCase()}`}
-                    className="inline-flex items-center px-4 py-2 bg-gray-800 text-silver rounded hover:bg-gray-700 transition-colors border border-gray-600"
+                    className="inline-flex items-center px-4 py-2 bg-[#157FBB] text-silver rounded hover:bg-[#1369A0] transition-colors border border-gray-600"
                   >
                     View Projects <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
