@@ -1,18 +1,20 @@
-import React, { useState, useEffect } from 'react';
-import { ArrowRight } from 'lucide-react';
-import { galleryData } from '../types/gallery';
+import React, { useState, useEffect } from "react";
+import { ArrowRight } from "lucide-react";
+import { galleryData } from "../types/gallery";
 
 const Gallery = () => {
   const [selectedSection, setSelectedSection] = useState<string | null>(null);
   const [filteredSections, setFilteredSections] = useState(
-    galleryData.map(section => ({ ...section, showAll: false }))
+    galleryData.map((section) => ({ ...section, showAll: false })),
   );
 
   useEffect(() => {
-    const filtered = selectedSection 
-      ? galleryData.filter(section => section.id === selectedSection)
+    const filtered = selectedSection
+      ? galleryData.filter((section) => section.id === selectedSection)
       : galleryData;
-    setFilteredSections(filtered.map(section => ({ ...section, showAll: false })));
+    setFilteredSections(
+      filtered.map((section) => ({ ...section, showAll: false })),
+    );
   }, [selectedSection]);
 
   return (
@@ -29,7 +31,8 @@ const Gallery = () => {
               Project <span className="text-silver">Gallery</span>
             </h1>
             <p className="text-xl mb-8 max-w-2xl">
-              Browse through our collection of completed projects and see the quality of our work firsthand.
+              Browse through our collection of completed projects and see the
+              quality of our work firsthand.
             </p>
           </div>
         </div>
@@ -42,9 +45,9 @@ const Gallery = () => {
             <button
               onClick={() => setSelectedSection(null)}
               className={`px-4 py-2 rounded-md transition-colors ${
-                !selectedSection 
-                  ? 'bg-[#63C5EF] text-white border border-gray-600' 
-                  : 'bg-black text-white hover:bg-[#63C5EF] border border-gray-600'
+                !selectedSection
+                  ? "bg-[#63C5EF] text-white border border-gray-600"
+                  : "bg-black text-white hover:bg-[#63C5EF] border border-gray-600"
               }`}
             >
               All Projects
@@ -55,8 +58,8 @@ const Gallery = () => {
                 onClick={() => setSelectedSection(section.id)}
                 className={`px-4 py-2 rounded-md transition-colors ${
                   selectedSection === section.id
-                    ? 'bg-[#63C5EF] text-white border border-gray-600'
-                    : 'bg-[#63C5EF] text-white hover:bg-[#4BA5CF] border border-gray-600'
+                    ? "bg-[#157FBB] text-white border border-gray-600"
+                    : "bg-[#157FBB] text-white hover:bg-[#4BA5CF] border border-gray-600"
                 }`}
               >
                 {section.title}
@@ -71,45 +74,51 @@ const Gallery = () => {
         <div className="max-w-7xl mx-auto px-4">
           {filteredSections.map((section) => (
             <div key={section.id} className="mb-16">
-              <h2 className="text-3xl font-bold mb-4 text-white">{section.title}</h2>
+              <h2 className="text-3xl font-bold mb-4 text-white">
+                {section.title}
+              </h2>
               {section.description && (
                 <p className="text-gray-600 mb-8">{section.description}</p>
               )}
               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 {section.images.length > 0 ? (
                   <>
-                    {section.images.slice(0, section.showAll ? undefined : 3).map((image, imageIndex) => (
-                      <div
-                        key={imageIndex}
-                        className="relative group overflow-hidden rounded-lg h-[300px]"
-                      >
-                        <img
-                          src={image.url}
-                          alt={image.description || image.title}
-                          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
-                        />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
-                          <h3 className="text-white text-xl font-semibold mb-2">
-                            {image.title}
-                          </h3>
-                          {image.description && (
-                            <p className="text-white text-sm">
-                              {image.description}
-                            </p>
-                          )}
+                    {section.images
+                      .slice(0, section.showAll ? undefined : 3)
+                      .map((image, imageIndex) => (
+                        <div
+                          key={imageIndex}
+                          className="relative group overflow-hidden rounded-lg h-[300px]"
+                        >
+                          <img
+                            src={image.url}
+                            alt={image.description || image.title}
+                            className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
+                          />
+                          <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
+                            <h3 className="text-white text-xl font-semibold mb-2">
+                              {image.title}
+                            </h3>
+                            {image.description && (
+                              <p className="text-white text-sm">
+                                {image.description}
+                              </p>
+                            )}
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      ))}
                     {section.images.length > 3 && !section.showAll && (
                       <div className="col-span-full text-center mt-4">
                         <button
                           onClick={() => {
                             const updatedSections = [...filteredSections];
-                            const sectionIndex = updatedSections.findIndex(s => s.id === section.id);
+                            const sectionIndex = updatedSections.findIndex(
+                              (s) => s.id === section.id,
+                            );
                             if (sectionIndex !== -1) {
                               updatedSections[sectionIndex] = {
                                 ...updatedSections[sectionIndex],
-                                showAll: true
+                                showAll: true,
                               };
                               setFilteredSections(updatedSections);
                             }
