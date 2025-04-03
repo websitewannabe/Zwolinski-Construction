@@ -39,7 +39,7 @@ const Contact = () => {
               </h2>
               <div className="space-y-6">
                 <div className="flex items-start space-x-4 bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-all border border-gray-700">
-                  <Phone className="h-6 w-6 text-silver mt-1" />
+                  <Phone className="h-6 w-6 text-white mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-white">
                       Phone
@@ -49,14 +49,14 @@ const Contact = () => {
                         href="tel:+12674716120"
                         className="flex items-center space-x-2 text-gray-400 hover:text-silver"
                       >
-                        <Phone className="h-5 w-5" />
+                        <Phone className="h-5 w-5 text-white" />
                         <span>(267) 471-6120</span>
                       </a>
                       <a
                         href="sms:+12674716120"
                         className="flex items-center space-x-2 text-gray-700 hover:text-zwolinski-burgundy"
                       >
-                        <MessageSquare className="h-5 w-5" />
+                        <MessageSquare className="h-5 w-5 text-white" />
                         <span>Text Us</span>
                       </a>
                     </div>
@@ -64,7 +64,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4 bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-all border border-gray-700">
-                  <Mail className="h-6 w-6 text-silver mt-1" />
+                  <Mail className="h-6 w-6 text-white mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-white">
                       Email
@@ -74,7 +74,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4 bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-all border border-gray-700">
-                  <MapPin className="h-6 w-6 text-silver mt-1" />
+                  <MapPin className="h-6 w-6 text-white mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-white">
                       Location
@@ -86,7 +86,7 @@ const Contact = () => {
                 </div>
 
                 <div className="flex items-start space-x-4 bg-gray-900 p-4 rounded-lg hover:bg-gray-800 transition-all border border-gray-700">
-                  <Clock className="h-6 w-6 text-silver mt-1" />
+                  <Clock className="h-6 w-6 text-white mt-1" />
                   <div>
                     <h3 className="font-semibold text-lg text-white">
                       Business Hours
