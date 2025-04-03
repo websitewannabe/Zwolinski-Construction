@@ -180,7 +180,7 @@ const Home = () => {
       {/* Services Preview */}
       <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4 text-center">
             Our Services
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -293,7 +293,7 @@ const Home = () => {
       {/* Testimonials */}
       <section className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl font-bold text-white mb-4">
+          <h2 className="text-4xl font-bold text-white mb-4 text-center">
             What Our Clients Say
           </h2>
           <div className="relative">
