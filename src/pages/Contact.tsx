@@ -54,7 +54,7 @@ const Contact = () => {
                       </a>
                       <a
                         href="sms:+12674716120"
-                        className="flex items-center space-x-2 text-gray-700 hover:text-zwolinski-burgundy"
+                        className="flex items-center space-x-2 text-gray-400 hover:text-silver"
                       >
                         <MessageSquare className="h-5 w-5 text-white" />
                         <span>Text Us</span>
