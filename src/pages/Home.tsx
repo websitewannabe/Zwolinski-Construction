@@ -206,7 +206,7 @@ const Home = () => {
             ].map((service) => (
               <div
                 key={service.title}
-                className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full flex flex-col"
+                className="bg-[#63C5EF] rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full flex flex-col"
               >
                 <div className="h-56 relative">
                   <img
