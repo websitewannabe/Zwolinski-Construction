@@ -253,10 +253,10 @@ const Home = () => {
       </section>
 
       {/* In-House Work */}
-      <section className="py-16 bg-zwolinski-navy text-white">
+      <section className="py-16 bg-black text-gray-300">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4">
+            <h2 className="text-4xl font-bold mb-4 text-silver">
               100% In-House Craftsmanship
             </h2>
             <p className="text-xl max-w-3xl mx-auto">
@@ -266,17 +266,17 @@ const Home = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-white/10 backdrop-blur p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-3">Direct Oversight</h3>
-              <p>
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <h3 className="text-2xl font-bold mb-3 text-silver">Direct Oversight</h3>
+              <p className="text-gray-400">
                 With our in-house team handling every aspect of your project, we
                 maintain complete quality control and direct supervision
                 throughout the entire process.
               </p>
             </div>
-            <div className="bg-white/10 backdrop-blur p-6 rounded-lg">
-              <h3 className="text-2xl font-bold mb-3">Consistent Quality</h3>
-              <p>
+            <div className="bg-gray-900 p-6 rounded-lg border border-gray-800">
+              <h3 className="text-2xl font-bold mb-3 text-silver">Consistent Quality</h3>
+              <p className="text-gray-400">
                 Our dedicated team members are trained to our exacting
                 standards, ensuring the same high level of craftsmanship across
                 all projects.
