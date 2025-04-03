@@ -302,7 +302,7 @@ const Home = () => {
                 {currentTestimonials.map((testimonial, index) => (
                   <div
                     key={index}
-                    className="bg-gray-900 p-6 rounded-lg shadow-md border border-gray-800 transition-all duration-500 transform hover:scale-105 hover:shadow-lg text-gray-300"
+                    className="bg-[#157FBB] p-6 rounded-lg shadow-md border border-gray-800 transition-all duration-500 transform hover:scale-105 hover:shadow-lg text-gray-300"
                   >
                     <div className="flex items-center gap-4 mb-4">
                       <div className="flex items-center text-zwolinski-burgundy">
