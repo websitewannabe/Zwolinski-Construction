@@ -90,7 +90,7 @@ const Contact = () => {
               <div className="w-full h-[600px]">
                 {/* Replace the src URL below with your Google Form embed URL */}
                 <iframe
-                  src="YOUR_GOOGLE_FORM_EMBED_URL"
+                  src="https://forms.gle/kb6gKFHfhN4Pfn8PA"
                   width="100%"
                   height="100%"
                   frameBorder="0"
