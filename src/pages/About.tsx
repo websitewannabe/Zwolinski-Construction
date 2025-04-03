@@ -118,7 +118,7 @@ const About = () => {
                 key={index}
                 className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600"
               >
-                <value.icon className="h-12 w-12 mx-auto mb-4 text-zwolinski-burgundy" />
+                <value.icon className="h-12 w-12 mx-auto mb-4 text-white" />
                 <h3 className="text-xl font-semibold mb-2 text-white">
                   {value.title}
                 </h3>
