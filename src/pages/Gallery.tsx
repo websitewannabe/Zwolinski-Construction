@@ -9,11 +9,10 @@ const Gallery = () => {
   );
 
   useEffect(() => {
-    setFilteredSections(
-      selectedSection
-        ? galleryData.filter(section => section.id === selectedSection).map(section => ({ ...section, showAll: false }))
-        : galleryData.map(section => ({ ...section, showAll: false }))
-    );
+    const filtered = selectedSection 
+      ? galleryData.filter(section => section.id === selectedSection)
+      : galleryData;
+    setFilteredSections(filtered.map(section => ({ ...section, showAll: false })));
   }, [selectedSection]);
 
   return (
