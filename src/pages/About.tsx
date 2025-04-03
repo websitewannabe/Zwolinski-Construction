@@ -60,7 +60,7 @@ const About = () => {
       </section>
 
       {/* Main Content */}
-      <section className="py-16">
+      <section className="py-16 bg-[#C0C0C0]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
@@ -107,22 +107,22 @@ const About = () => {
       </section>
 
       {/* Our Values */}
-      <section className="bg-gray-50 py-16">
+      <section className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-zwolinski-navy">
+          <h2 className="text-3xl font-bold text-center mb-12 text-white">
             Our Values
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {values.map((value, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-lg shadow-md border-t-4 border-zwolinski-burgundy"
+                className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600"
               >
                 <value.icon className="h-12 w-12 mx-auto mb-4 text-zwolinski-burgundy" />
-                <h3 className="text-xl font-semibold mb-2 text-zwolinski-navy">
+                <h3 className="text-xl font-semibold mb-2 text-white">
                   {value.title}
                 </h3>
-                <p className="text-gray-600">{value.description}</p>
+                <p className="text-gray-300">{value.description}</p>
               </div>
             ))}
           </div>
