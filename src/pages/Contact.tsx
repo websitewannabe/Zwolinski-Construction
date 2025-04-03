@@ -4,11 +4,13 @@ import { Phone, Mail, MapPin, Clock, MessageSquare } from "lucide-react";
 const Contact = () => {
   return (
     <div>
-      <section className="relative h-[600px] bg-cover bg-center" style={{
+      <section
+        className="relative h-[600px] bg-cover bg-center"
+        style={{
           backgroundImage: 'url("/images/projects/servicesHero.jpg")',
-        }}>
-        <div className="relative max-w-7xl mx-auto px-4 h-full flex items 
--center">
+        }}
+      >
+        <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
             <h1 className="text-5xl font-bold mb-4">
               Contact <span className="text-silver">Us</span>
@@ -16,6 +18,13 @@ const Contact = () => {
             <p className="text-xl mb-8 max-w-2xl">
               Let's discuss your project and bring your vision to life.
             </p>
+            <a
+              href="#contact-form"
+              className="inline-flex items-center px-8 py-4 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors font-semibold border border-gray-600"
+            >
+              Get Started Today
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </div>
         </div>
       </section>
