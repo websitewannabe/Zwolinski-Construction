@@ -208,10 +208,12 @@ const Home = () => {
                 key={service.title}
                 className="bg-gray-900 rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105"
               >
-                <div
-                  className="h-48 bg-cover bg-center"
-                  style={{ backgroundImage: `url(${service.image})` }}
+                <img
+                  src={service.image}
+                  alt={service.title}
+                  className="h-48 w-full object-cover"
                 />
+
                 <div className="p-6 border-t-4 border-gray-700 bg-zwolinski-primary text-gray-300">
                   <h3 className="text-2xl font-bold mb-3 text-silver">
                     {service.title}
