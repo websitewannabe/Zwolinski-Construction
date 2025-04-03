@@ -206,7 +206,7 @@ const Home = () => {
             ].map((service) => (
               <div
                 key={service.title}
-                className="bg-[#63C5EF] rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full flex flex-col"
+                className="bg-black rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full flex flex-col"
               >
                 <div className="h-56 relative">
                   <img
@@ -215,14 +215,14 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 border-t-4 border-gray-700 bg-[#63C5EF] text-gray-900 flex-1">
-                  <h3 className="text-2xl font-bold mb-3 text-black">
+                <div className="p-6 border-t-4 border-gray-700 bg-black text-gray-300 flex-1">
+                  <h3 className="text-2xl font-bold mb-3 text-white">
                     {service.title}
                   </h3>
-                  <p className="text-gray-600 mb-4">{service.description}</p>
+                  <p className="text-gray-400 mb-4">{service.description}</p>
                   <Link
                     to={`/services#${service.title.toLowerCase()}`}
-                    className="inline-flex items-center px-4 py-2 bg-[#157FBB] text-silver rounded hover:bg-[#1369A0] transition-colors border border-gray-600"
+                    className="inline-flex items-center px-4 py-2 bg-silver text-black rounded hover:bg-gray-300 transition-colors border border-gray-600"
                   >
                     View Projects <ArrowRight className="ml-2 h-4 w-4" />
                   </Link>
