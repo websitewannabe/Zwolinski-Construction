@@ -19,24 +19,34 @@ const Gallery = () => {
 
   return (
     <div>
-      <section className="py-12">
-        <div className="max-w-7xl mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4 text-zwolinski-navy">
-            Our Project <span className="text-zwolinski-burgundy">Gallery</span>
-          </h1>
+      <section
+        className="relative h-[600px] bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/images/projects/servicesHero.jpg")',
+        }}
+      >
+        <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
+          <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
+            <h1 className="text-5xl font-bold mb-4">
+              Project <span className="text-silver">Gallery</span>
+            </h1>
+            <p className="text-xl mb-8 max-w-2xl">
+              Browse through our collection of completed projects and see the quality of our work firsthand.
+            </p>
+          </div>
         </div>
       </section>
 
       {/* Category Navigation */}
-      <section className="py-8 bg-gray-50">
+      <section className="py-8 bg-[#C0C0C0]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-wrap gap-4 justify-center">
             <button
               onClick={() => setSelectedSection(null)}
               className={`px-4 py-2 rounded-md transition-colors ${
                 !selectedSection 
-                  ? 'bg-zwolinski-burgundy text-white' 
-                  : 'bg-white text-zwolinski-navy hover:bg-gray-100'
+                  ? 'bg-gray-800 text-white border border-gray-600' 
+                  : 'bg-black text-white hover:bg-gray-700 border border-gray-600'
               }`}
             >
               All Projects
@@ -47,8 +57,8 @@ const Gallery = () => {
                 onClick={() => setSelectedSection(section.id)}
                 className={`px-4 py-2 rounded-md transition-colors ${
                   selectedSection === section.id
-                    ? 'bg-zwolinski-burgundy text-white'
-                    : 'bg-white text-zwolinski-navy hover:bg-gray-100'
+                    ? 'bg-gray-800 text-white border border-gray-600'
+                    : 'bg-black text-white hover:bg-gray-700 border border-gray-600'
                 }`}
               >
                 {section.title}
@@ -59,11 +69,11 @@ const Gallery = () => {
       </section>
 
       {/* Gallery Grid */}
-      <section className="py-16">
+      <section className="py-16 bg-black">
         <div className="max-w-7xl mx-auto px-4">
           {filteredSections.map((section) => (
             <div key={section.id} className="mb-16">
-              <h2 className="text-3xl font-bold mb-4 text-zwolinski-navy">{section.title}</h2>
+              <h2 className="text-3xl font-bold mb-4 text-white">{section.title}</h2>
               {section.description && (
                 <p className="text-gray-600 mb-8">{section.description}</p>
               )}
@@ -106,7 +116,7 @@ const Gallery = () => {
                               setFilteredSections(updatedSections);
                             }
                           }}
-                          className="bg-zwolinski-burgundy text-white px-6 py-2 rounded-md hover:bg-opacity-90 transition-colors"
+                          className="bg-gray-800 text-white px-6 py-2 rounded-md hover:bg-gray-700 transition-colors border border-gray-600"
                         >
                           Show More
                         </button>
@@ -125,9 +135,9 @@ const Gallery = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-zwolinski-burgundy text-white py-16">
+      <section className="bg-[#C0C0C0] text-gray-800 py-16 border-t border-gray-300">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4">
+          <h2 className="text-3xl font-bold mb-4 text-silver">
             Ready to Start Your Project?
           </h2>
           <p className="text-xl mb-8">
@@ -135,7 +145,7 @@ const Gallery = () => {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-zwolinski-navy text-white rounded-md hover:bg-opacity-90 transition-colors font-semibold"
+            className="inline-flex items-center px-8 py-4 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors font-semibold border border-gray-600"
           >
             Contact Us Now
             <ArrowRight className="ml-2 h-5 w-5" />
