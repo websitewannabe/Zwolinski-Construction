@@ -212,7 +212,7 @@ const Home = () => {
                   className="h-48 bg-cover bg-center"
                   style={{ backgroundImage: `url(${service.image})` }}
                 />
-                <div className="p-6 border-t-4 border-gray-700 bg-black text-gray-300">
+                <div className="p-6 border-t-4 border-gray-700 bg-zwolinski-primary text-gray-300">
                   <h3 className="text-2xl font-bold mb-3 text-silver">
                     {service.title}
                   </h3>
