@@ -1,5 +1,6 @@
+
 import React, { useState, useEffect } from "react";
-import { ArrowRight } from "lucide-react";
+import { ArrowRight, Droplet, Warehouse, PaintBucket } from "lucide-react";
 import { galleryData } from "../types/gallery";
 
 const Gallery = () => {
@@ -10,14 +11,21 @@ const Gallery = () => {
     galleryData.map((section) => ({ ...section, showAll: false })),
   );
 
+  // Icon mapping
+  const sectionIcons = {
+    "basements": Warehouse,
+    "bathrooms": Droplet,
+    "kitchens": PaintBucket,
+  };
+
   useEffect(() => {
-    // Normalize the section name to match the ID format
     const sectionId = selectedSection?.toLowerCase();
     const filtered = sectionId
       ? galleryData.filter((section) => section.id.includes(sectionId))
       : galleryData;
     setFilteredSections(
-      filtered.map((section) => ({ ...section, showAll: false })),
+      filtered.map((section) => ({ ...section, showAll: false }))
+        .sort((a, b) => a.title.localeCompare(b.title))
     );
   }, [selectedSection]);
 
@@ -56,19 +64,26 @@ const Gallery = () => {
             >
               All Projects
             </button>
-            {galleryData.map((section) => (
-              <button
-                key={section.id}
-                onClick={() => setSelectedSection(section.id)}
-                className={`px-4 py-2 rounded-md transition-colors ${
-                  selectedSection === section.id
-                    ? "bg-[#157FBB] text-white border border-gray-600"
-                    : "bg-[#157FBB] text-white hover:bg-[#4BA5CF] border border-gray-600"
-                }`}
-              >
-                {section.title}
-              </button>
-            ))}
+            {galleryData
+              .sort((a, b) => a.title.localeCompare(b.title))
+              .map((section) => (
+                <button
+                  key={section.id}
+                  onClick={() => setSelectedSection(section.id)}
+                  className={`px-4 py-2 rounded-md transition-colors flex items-center gap-2 ${
+                    selectedSection === section.id
+                      ? "bg-[#157FBB] text-white border border-gray-600"
+                      : "bg-[#157FBB] text-white hover:bg-[#4BA5CF] border border-gray-600"
+                  }`}
+                >
+                  {sectionIcons[section.id as keyof typeof sectionIcons] && 
+                    React.createElement(sectionIcons[section.id as keyof typeof sectionIcons], { 
+                      className: "h-4 w-4" 
+                    })
+                  }
+                  {section.title}
+                </button>
+              ))}
           </div>
         </div>
       </section>
@@ -78,9 +93,16 @@ const Gallery = () => {
         <div className="max-w-7xl mx-auto px-4">
           {filteredSections.map((section) => (
             <div key={section.id} className="mb-16">
-              <h2 className="text-3xl font-bold mb-4 text-white">
-                {section.title}
-              </h2>
+              <div className="flex items-center gap-3 mb-4">
+                {sectionIcons[section.id as keyof typeof sectionIcons] && 
+                  React.createElement(sectionIcons[section.id as keyof typeof sectionIcons], { 
+                    className: "h-8 w-8 text-white" 
+                  })
+                }
+                <h2 className="text-3xl font-bold text-white">
+                  {section.title}
+                </h2>
+              </div>
               {section.description && (
                 <p className="text-gray-600 mb-8">{section.description}</p>
               )}
@@ -156,7 +178,7 @@ const Gallery = () => {
           </p>
           <a
             href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-gray-800 text-white rounded-md hover:bg-gray-700 transition-colors font-semibold border border-gray-600"
+            className="inline-flex items-center px-8 py-4 bg-[#157FBB] text-white rounded-md hover:bg-[#4BA5CF] transition-colors font-semibold border border-gray-600"
           >
             Contact Us Now
             <ArrowRight className="ml-2 h-5 w-5" />
