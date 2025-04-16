@@ -112,17 +112,8 @@ const Contact = () => {
                 Send Us a Message
               </h2>
               <div className="w-full h-[600px]">
-                {/* Replace the src URL below with your Google Form embed URL  */}
-                <iframe
-                  src="https://forms.gle/kb6gKFHfhN4Pfn8PA"
-                  width="100%"
-                  height="100%"
-                  frameBorder="0"
-                  marginHeight={0}
-                  marginWidth={0}
-                >
-                  Loading…
-                </iframe>
+                <div data-tf-live="01JRZCVM2ZNPCFBPDMDATD2PCJ"></div>
+                <script src="//embed.typeform.com/next/embed.js"></script>
               </div>
             </div>
           </div>
