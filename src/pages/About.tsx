@@ -32,7 +32,7 @@ const About = () => {
     <div>
       {/* Hero Section */}
       <section
-        className="relative h-[600px] bg-cover bg-center"
+        className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
           backgroundImage: 'url("/images/gallery/kitchens/IMG_0577.JPG")',
         }}
