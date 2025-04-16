@@ -13,17 +13,11 @@ const Footer = () => {
               <span className="block text-sm">Quality Construction</span>
             </h3>
             <p className="text-gray-400">
-              Zwolinski Construction specializes in high-quality **bathroom**,
-              **basement**, and **kitchen remodels** throughout **Bucks
-              County**. With a reputation for exceptional craftsmanship and
-              personalized service, we help homeowners transform their spaces
-              into functional, beautiful living areas tailored to their unique
-              needs. Whether you're updating your kitchen for better flow,
-              reimagining your basement as a modern entertainment space, or
-              creating a spa-like bathroom retreat, our team brings expert
-              guidance and attention to detail to every project. Trust Zwolinski
-              Construction for seamless remodeling solutions in Bucks County
-              that elevate your home’s comfort and value.
+              Zwolinski Construction delivers expert bathroom, basement, and
+              kitchen remodels throughout Bucks County, combining quality
+              craftsmanship with personalized design. From modern kitchens to
+              functional basements and spa-inspired bathrooms, we help
+              homeowners bring their renovation visions to life.
             </p>
           </div>
           <div>
