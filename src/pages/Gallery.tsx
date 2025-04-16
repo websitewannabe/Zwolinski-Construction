@@ -3,7 +3,9 @@ import { ArrowRight } from "lucide-react";
 import { galleryData } from "../types/gallery";
 
 const Gallery = () => {
-  const [selectedSection, setSelectedSection] = useState<string | null>(null);
+  const searchParams = new URLSearchParams(window.location.search);
+  const initialSection = searchParams.get('section');
+  const [selectedSection, setSelectedSection] = useState<string | null>(initialSection);
   const [filteredSections, setFilteredSections] = useState(
     galleryData.map((section) => ({ ...section, showAll: false })),
   );

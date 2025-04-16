@@ -128,7 +128,7 @@ const Services = () => {
                   ))}
                 </ul>
                 <Link
-                  to={`/gallery#${service.title.toLowerCase()}`}
+                  to={`/gallery?section=${service.title.toLowerCase()}`}
                   className="inline-flex items-center px-4 py-2 mt-4 bg-[#157FBB] text-white rounded hover:bg-[#4BA5CF] transition-colors border border-gray-600"
                 >
                   View Gallery <ArrowRight className="ml-2 h-4 w-4" />
