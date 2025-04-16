@@ -1,25 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import {
-  Home,
-  Building2,
-  Hammer,
-  PaintBucket,
-  Wrench,
   Lightbulb,
-  DoorOpen as Door,
-  AppWindow as Window,
-  Warehouse,
-  Waves,
-  Grid,
-  Droplet,
+  Bath,
+  Utensils,
   ArrowRight,
 } from "lucide-react";
 
 const Services = () => {
   const services = [
     {
-      icon: Warehouse,
+      icon: Lightbulb,
       title: "Basement Remodeling",
       description:
         "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
@@ -32,7 +23,7 @@ const Services = () => {
       ],
     },
     {
-      icon: Droplet,
+      icon: Bath,
       title: "Bathroom Remodeling",
       description:
         "Transform your bathroom into a luxurious spa-like retreat with our expert remodeling services.",
@@ -45,7 +36,7 @@ const Services = () => {
       ],
     },
     {
-      icon: PaintBucket,
+      icon: Utensils,
       title: "Kitchen Remodeling",
       description:
         "Create your dream kitchen with custom cabinets, modern appliances, and elegant finishes.",
