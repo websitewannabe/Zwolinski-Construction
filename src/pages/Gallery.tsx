@@ -11,8 +11,10 @@ const Gallery = () => {
   );
 
   useEffect(() => {
-    const filtered = selectedSection
-      ? galleryData.filter((section) => section.id === selectedSection)
+    // Normalize the section name to match the ID format
+    const sectionId = selectedSection?.toLowerCase();
+    const filtered = sectionId
+      ? galleryData.filter((section) => section.id.includes(sectionId))
       : galleryData;
     setFilteredSections(
       filtered.map((section) => ({ ...section, showAll: false })),
