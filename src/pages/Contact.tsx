@@ -125,15 +125,11 @@ const Contact = () => {
                 Send Us a Message
               </h2>
               <div className="w-full h-[600px]">
-                <div 
-                  data-tf-widget="01JRZCVM2ZNPCFBPDMDATD2PCJ"
-                  data-tf-opacity="100"
-                  data-tf-iframe-props="title=Contact Form"
-                  data-tf-transitive-search-params
-                  data-tf-medium="snippet"
-                  style={{width: '100%', height: '100%'}}
-                ></div>
-                <script src="//embed.typeform.com/next/embed.js" async></script>
+                <iframe 
+                  src="https://form.typeform.com/to/01JRZCVM2ZNPCFBPDMDATD2PCJ"
+                  style={{width: '100%', height: '100%', border: '0'}}
+                  allow="camera; microphone; autoplay; encrypted-media;"
+                ></iframe>
               </div>
             </div>
           </div>
