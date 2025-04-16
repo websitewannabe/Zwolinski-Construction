@@ -38,67 +38,67 @@ const Contact = () => {
                 Get In Touch
               </h2>
               <div className="space-y-6">
-                <div className="flex items-start space-x-4 bg-[#157FBB] p-4 rounded-lg hover:bg-[#4BA5CF] transition-all border border-gray-600">
-                  <Phone className="h-6 w-6 text-black mt-1" />
+                <div className="flex items-start space-x-4 bg-white p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-300">
+                  <Phone className="h-6 w-6 text-[#157FBB] mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg text-black">
+                    <h3 className="font-semibold text-lg text-gray-900">
                       Call Us
                     </h3>
                     <a
                       href="tel:+12674716120"
-                      className="flex items-center space-x-2 text-black hover:text-gray-700"
+                      className="flex items-center space-x-2 text-gray-600 hover:text-gray-700"
                     >
-                      <Phone className="h-5 w-5 text-black" />
-                      <span className="text-black">(267) 471-6120</span>
+                      <Phone className="h-5 w-5 text-[#157FBB]" />
+                      <span className="text-gray-600">(267) 471-6120</span>
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4 bg-[#157FBB] p-4 rounded-lg hover:bg-[#4BA5CF] transition-all border border-gray-600">
-                  <MessageSquare className="h-6 w-6 text-black mt-1" />
+                <div className="flex items-start space-x-4 bg-white p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-300">
+                  <MessageSquare className="h-6 w-6 text-[#157FBB] mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg text-black">
+                    <h3 className="font-semibold text-lg text-gray-900">
                       Text Us
                     </h3>
                     <a
                       href="sms:+12674716120"
-                      className="flex items-center space-x-2 text-black hover:text-gray-700"
+                      className="flex items-center space-x-2 text-gray-600 hover:text-gray-700"
                     >
-                      <MessageSquare className="h-5 w-5 text-black" />
-                      <span className="text-black">(267) 471-6120</span>
+                      <MessageSquare className="h-5 w-5 text-[#157FBB]" />
+                      <span className="text-gray-600">(267) 471-6120</span>
                     </a>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4 bg-[#157FBB] p-4 rounded-lg hover:bg-[#4BA5CF] transition-all border border-gray-600">
-                  <Mail className="h-6 w-6 text-black mt-1" />
+                <div className="flex items-start space-x-4 bg-white p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-300">
+                  <Mail className="h-6 w-6 text-[#157FBB] mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg text-black">
+                    <h3 className="font-semibold text-lg text-gray-900">
                       Email
                     </h3>
-                    <p className="text-black">arnoldzwolinski@verizon.net</p>
+                    <p className="text-gray-600">arnoldzwolinski@verizon.net</p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4 bg-[#157FBB] p-4 rounded-lg hover:bg-[#4BA5CF] transition-all border border-gray-600">
-                  <MapPin className="h-6 w-6 text-black mt-1" />
+                <div className="flex items-start space-x-4 bg-white p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-300">
+                  <MapPin className="h-6 w-6 text-[#157FBB] mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg text-black">
+                    <h3 className="font-semibold text-lg text-gray-900">
                       Location
                     </h3>
-                    <p className="text-black">
+                    <p className="text-gray-600">
                       166 E Walnut St, Perkasie, PA 18944
                     </p>
                   </div>
                 </div>
 
-                <div className="flex items-start space-x-4 bg-[#157FBB] p-4 rounded-lg hover:bg-[#4BA5CF] transition-all border border-gray-600">
-                  <Clock className="h-6 w-6 text-black mt-1" />
+                <div className="flex items-start space-x-4 bg-white p-4 rounded-lg hover:bg-gray-50 transition-all border border-gray-300">
+                  <Clock className="h-6 w-6 text-[#157FBB] mt-1" />
                   <div>
-                    <h3 className="font-semibold text-lg text-black">
+                    <h3 className="font-semibold text-lg text-gray-900">
                       Business Hours
                     </h3>
-                    <p className="text-black">
+                    <p className="text-gray-600">
                       Monday-Sunday: 9:00AM - 6:00PM
                     </p>
                   </div>
