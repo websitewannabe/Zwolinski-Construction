@@ -34,7 +34,7 @@ const About = () => {
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/images/gallery/kitchens/IMG_0577.JPG")',
+          backgroundImage: 'url("/images/gallery/kitchens/IMG_6051.jpg")',
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
@@ -132,7 +132,7 @@ const About = () => {
       {/* CTA Section */}
       <section className="bg-[#C0C0C0] py-16">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-white">
+          <h2 className="text-3xl font-bold mb-4 text-black">
             Ready to Start Your Project?
           </h2>
           <p className="text-xl mb-8 text-gray-800">

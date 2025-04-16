@@ -1,21 +1,22 @@
-
 import React, { useState, useEffect } from "react";
 import { ArrowRight, Lightbulb, Utensils, Bath } from "lucide-react";
 import { galleryData } from "../types/gallery";
 
 const Gallery = () => {
   const searchParams = new URLSearchParams(window.location.search);
-  const initialSection = searchParams.get('section');
-  const [selectedSection, setSelectedSection] = useState<string | null>(initialSection);
+  const initialSection = searchParams.get("section");
+  const [selectedSection, setSelectedSection] = useState<string | null>(
+    initialSection,
+  );
   const [filteredSections, setFilteredSections] = useState(
     galleryData.map((section) => ({ ...section, showAll: false })),
   );
 
   // Icon mapping
   const sectionIcons = {
-    "basements": Lightbulb,
-    "bathrooms": Bath,
-    "kitchens": Utensils,
+    basements: Lightbulb,
+    bathrooms: Bath,
+    kitchens: Utensils,
   };
 
   useEffect(() => {
@@ -24,8 +25,9 @@ const Gallery = () => {
       ? galleryData.filter((section) => section.id.includes(sectionId))
       : galleryData;
     setFilteredSections(
-      filtered.map((section) => ({ ...section, showAll: false }))
-        .sort((a, b) => a.title.localeCompare(b.title))
+      filtered
+        .map((section) => ({ ...section, showAll: false }))
+        .sort((a, b) => a.title.localeCompare(b.title)),
     );
   }, [selectedSection]);
 
@@ -34,7 +36,8 @@ const Gallery = () => {
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/images/projects/servicesHero.jpg")',
+          backgroundImage:
+            'url("/images/gallery/basements/F94A25B9-0195-4595-8564-591A1E132812.jpg")',
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
@@ -76,11 +79,13 @@ const Gallery = () => {
                       : "bg-[#157FBB] text-white hover:bg-[#4BA5CF] border border-gray-600"
                   }`}
                 >
-                  {sectionIcons[section.id as keyof typeof sectionIcons] && 
-                    React.createElement(sectionIcons[section.id as keyof typeof sectionIcons], { 
-                      className: "h-4 w-4" 
-                    })
-                  }
+                  {sectionIcons[section.id as keyof typeof sectionIcons] &&
+                    React.createElement(
+                      sectionIcons[section.id as keyof typeof sectionIcons],
+                      {
+                        className: "h-4 w-4",
+                      },
+                    )}
                   {section.title}
                 </button>
               ))}
@@ -94,11 +99,13 @@ const Gallery = () => {
           {filteredSections.map((section) => (
             <div key={section.id} className="mb-16">
               <div className="flex items-center gap-3 mb-4">
-                {sectionIcons[section.id as keyof typeof sectionIcons] && 
-                  React.createElement(sectionIcons[section.id as keyof typeof sectionIcons], { 
-                    className: "h-8 w-8 text-white" 
-                  })
-                }
+                {sectionIcons[section.id as keyof typeof sectionIcons] &&
+                  React.createElement(
+                    sectionIcons[section.id as keyof typeof sectionIcons],
+                    {
+                      className: "h-8 w-8 text-white",
+                    },
+                  )}
                 <h2 className="text-3xl font-bold text-white">
                   {section.title}
                 </h2>

@@ -14,7 +14,7 @@ const Contact = () => {
       <section
         className="relative h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/images/projects/servicesHero.jpg")',
+          backgroundImage: 'url("/images/gallery/bathrooms/newBathroom3.jpg")',
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
