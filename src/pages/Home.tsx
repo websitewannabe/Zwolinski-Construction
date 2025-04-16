@@ -186,6 +186,12 @@ const Home = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
+                title: "Basements",
+                description:
+                  "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
+                image: "/images/gallery/basements/IMG_0231.JPG",
+              },
+              {
                 title: "Bathrooms",
                 description:
                   "Transform your bathroom into a luxurious spa-like retreat with our expert remodeling services.",
@@ -196,12 +202,6 @@ const Home = () => {
                 description:
                   "Create your dream kitchen with custom cabinets, modern appliances, and elegant finishes.",
                 image: "/images/gallery/kitchens/IMG_0113.JPG",
-              },
-              {
-                title: "Basements",
-                description:
-                  "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
-                image: "/images/gallery/basements/IMG_0231.JPG",
               },
             ].map((service) => (
               <div
