@@ -129,7 +129,7 @@ const Services = () => {
                 </ul>
                 <div className="mt-auto pt-8">
                   <Link
-                    to={`/gallery?section=${service.title.split(' ')[0].toLowerCase()}`}
+                    to={`/gallery?section=${service.title.split(" ")[0].toLowerCase()}`}
                     className="inline-flex items-center px-4 py-2 bg-[#157FBB] text-white rounded hover:bg-[#4BA5CF] transition-colors border border-gray-600"
                   >
                     View Gallery <ArrowRight className="ml-2 h-4 w-4" />
@@ -147,24 +147,24 @@ const Services = () => {
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Fast Project Completion</h2>
             <p className="text-xl max-w-3xl mx-auto text-gray-300">
-              At Zwolinski Quality Construction, we understand that time is valuable. 
-              Our experienced team works efficiently to complete your projects quickly 
-              without compromising on quality.
+              At Zwolinski Quality Construction, we understand that time is
+              valuable. Our experienced team works efficiently to complete your
+              projects quickly without compromising on quality.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 text-center">
               <h3 className="text-2xl font-bold mb-3">Efficient Planning</h3>
               <p className="text-gray-300">
-                Detailed project planning and preparation ensures smooth execution
-                and minimal delays.
+                Detailed project planning and preparation ensures smooth
+                execution and minimal delays.
               </p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 text-center">
               <h3 className="text-2xl font-bold mb-3">Skilled Team</h3>
               <p className="text-gray-300">
-                Our experienced professionals work together seamlessly to complete
-                projects on schedule.
+                Our experienced professionals work together seamlessly to
+                complete projects on schedule.
               </p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 text-center">
@@ -181,7 +181,7 @@ const Services = () => {
       {/* Service Areas */}
       <section className="bg-[#C0C0C0] py-16">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl font-bold text-center mb-12 text-white">
+          <h2 className="text-3xl font-bold text-center mb-12 text-black">
             Service Areas
           </h2>
           <div className="max-w-4xl mx-auto">
