@@ -113,7 +113,7 @@ const Contact = () => {
               </h2>
               <div className="w-full h-[600px]">
                 <iframe 
-                  src="https://form.typeform.com/to/01JRZCVM2ZNPCFBPDMDATD2PCJ?typeform-medium=embed-snippet"
+                  src="https://bv6w3pwoi5y.typeform.com/to/lMePPdwo"
                   style={{ width: '100%', height: '100%', border: '0' }}
                   allow="camera; microphone; autoplay; encrypted-media;"
                 />
