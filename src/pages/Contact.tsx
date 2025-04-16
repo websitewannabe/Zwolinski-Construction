@@ -1,5 +1,12 @@
 import React, { useEffect } from "react";
-import { Phone, Mail, MapPin, Clock, MessageSquare, ArrowRight } from "lucide-react";
+import {
+  Phone,
+  Mail,
+  MapPin,
+  Clock,
+  MessageSquare,
+  ArrowRight,
+} from "lucide-react";
 
 const Contact = () => {
   return (
@@ -48,7 +55,6 @@ const Contact = () => {
                       href="tel:+12674716120"
                       className="flex items-center space-x-2 text-gray-600 hover:text-gray-700"
                     >
-                      <Phone className="h-5 w-5 text-[#157FBB]" />
                       <span className="text-gray-600">(267) 471-6120</span>
                     </a>
                   </div>
@@ -64,7 +70,6 @@ const Contact = () => {
                       href="sms:+12674716120"
                       className="flex items-center space-x-2 text-gray-600 hover:text-gray-700"
                     >
-                      <MessageSquare className="h-5 w-5 text-[#157FBB]" />
                       <span className="text-gray-600">(267) 471-6120</span>
                     </a>
                   </div>
@@ -112,9 +117,9 @@ const Contact = () => {
                 Send Us a Message
               </h2>
               <div className="w-full h-[600px]">
-                <iframe 
+                <iframe
                   src="https://bv6w3pwoi5y.typeform.com/to/lMePPdwo"
-                  style={{ width: '100%', height: '100%', border: '0' }}
+                  style={{ width: "100%", height: "100%", border: "0" }}
                   allow="camera; microphone; autoplay; encrypted-media;"
                 />
               </div>
