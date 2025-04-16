@@ -19,6 +19,19 @@ const Services = () => {
   const services = [
     {
       icon: Home,
+      title: "Basement Remodeling",
+      description:
+        "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
+      features: [
+        "Space Planning",
+        "Waterproofing",
+        "Flooring Installation",
+        "Lighting Design",
+        "Custom Built-ins",
+      ],
+    },
+    {
+      icon: Home,
       title: "Bathroom Remodeling",
       description:
         "Transform your bathroom into a luxurious spa-like retreat with our expert remodeling services.",
@@ -41,19 +54,6 @@ const Services = () => {
         "Appliance Integration",
         "Custom Storage Solutions",
         "Lighting Design",
-      ],
-    },
-    {
-      icon: Home,
-      title: "Basement Remodeling",
-      description:
-        "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
-      features: [
-        "Space Planning",
-        "Waterproofing",
-        "Flooring Installation",
-        "Lighting Design",
-        "Custom Built-ins",
       ],
     },
   ];
