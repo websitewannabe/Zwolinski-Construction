@@ -112,7 +112,7 @@ const Services = () => {
             {services.map((service, index) => (
               <div
                 key={index}
-                className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600"
+                className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 flex flex-col h-full"
               >
                 <service.icon className="h-12 w-12 text-white mb-4" />
                 <h3 className="text-xl font-semibold mb-4 text-white">
@@ -127,7 +127,7 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <div className="mt-auto pt-4">
+                <div className="mt-auto pt-8">
                   <Link
                     to={`/gallery?section=${service.title.split(' ')[0].toLowerCase()}`}
                     className="inline-flex items-center px-4 py-2 bg-[#157FBB] text-white rounded hover:bg-[#4BA5CF] transition-colors border border-gray-600"
