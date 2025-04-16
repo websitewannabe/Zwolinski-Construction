@@ -6,6 +6,8 @@ import {
   Hammer,
   ChevronLeft,
   ChevronRight,
+  Users,
+  Shield,
 } from "lucide-react";
 
 const Home = () => {
@@ -267,9 +269,10 @@ const Home = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600">
-              <h3 className="text-2xl font-bold mb-3 text-white">
-                Direct Oversight
-              </h3>
+              <div className="flex items-center gap-3 mb-3">
+                <Users className="h-8 w-8 text-white" />
+                <h3 className="text-2xl font-bold text-white">Direct Oversight</h3>
+              </div>
               <p className="text-gray-300">
                 With our in-house team handling every aspect of your project, we
                 maintain complete quality control and direct supervision
@@ -277,9 +280,10 @@ const Home = () => {
               </p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600">
-              <h3 className="text-2xl font-bold mb-3 text-white">
-                Consistent Quality
-              </h3>
+              <div className="flex items-center gap-3 mb-3">
+                <Shield className="h-8 w-8 text-white" />
+                <h3 className="text-2xl font-bold text-white">Consistent Quality</h3>
+              </div>
               <p className="text-gray-300">
                 Our dedicated team members are trained to our exacting
                 standards, ensuring the same high level of craftsmanship across
