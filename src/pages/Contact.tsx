@@ -40,7 +40,7 @@ const Contact = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {/* Contact Information */}
-            <div>
+            <div className="order-2 md:order-1">
               <h2 className="text-3xl font-bold mb-8 text-zwolinski-navy">
                 Get In Touch
               </h2>
@@ -112,7 +112,7 @@ const Contact = () => {
             </div>
 
             {/* Google Form */}
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-700">
+            <div className="bg-gray-900 p-8 rounded-lg border border-gray-700 order-1 md:order-2">
               <h2 className="text-3xl font-bold mb-8 text-white">
                 Send Us a Message
               </h2>
