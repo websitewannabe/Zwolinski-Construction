@@ -38,7 +38,7 @@ const About = () => {
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
-          <div className="text-white bg-black/30 backdrop-blur-md p-8 rounded-lg max-w-2xl">
+          <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
             <h1 className="text-5xl font-bold mb-4">
               About <span className="text-zwolinski-burgundy">Zwolinski</span>{" "}
               <br />
