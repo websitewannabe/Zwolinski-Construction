@@ -1,7 +1,20 @@
 import React from "react";
 import { Phone, Mail, MapPin, Clock, MessageSquare, ArrowRight } from "lucide-react";
 
+
+import { useEffect } from "react";
+
 const Contact = () => {
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "//embed.typeform.com/next/embed.js";
+    script.async = true;
+    document.body.appendChild(script);
+    
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
   return (
     <div>
       <section
@@ -112,8 +125,15 @@ const Contact = () => {
                 Send Us a Message
               </h2>
               <div className="w-full h-[600px]">
-                <div data-tf-live="01JRZCVM2ZNPCFBPDMDATD2PCJ"></div>
-                <script src="//embed.typeform.com/next/embed.js"></script>
+                <div 
+                  data-tf-widget="01JRZCVM2ZNPCFBPDMDATD2PCJ"
+                  data-tf-opacity="100"
+                  data-tf-iframe-props="title=Contact Form"
+                  data-tf-transitive-search-params
+                  data-tf-medium="snippet"
+                  style={{width: '100%', height: '100%'}}
+                ></div>
+                <script src="//embed.typeform.com/next/embed.js" async></script>
               </div>
             </div>
           </div>
