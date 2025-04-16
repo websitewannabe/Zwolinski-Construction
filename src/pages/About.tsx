@@ -130,8 +130,10 @@ const About = () => {
       </section>
 
       {/* CTA Section */}
-      <section className="bg-[#C0C0C0] py-16">
-        <div className="max-w-7xl mx-auto px-4 text-center">
+      <section className="relative py-16">
+        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/projects/constructionHero.jpg')" }} />
+        <div className="absolute inset-0 bg-[#C0C0C0]/90" />
+        <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4 text-black">
             Ready to Start Your Project?
           </h2>
