@@ -18,7 +18,7 @@ import {
 const Services = () => {
   const services = [
     {
-      icon: Home,
+      icon: Warehouse,
       title: "Basement Remodeling",
       description:
         "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
@@ -31,7 +31,7 @@ const Services = () => {
       ],
     },
     {
-      icon: Home,
+      icon: Droplet,
       title: "Bathroom Remodeling",
       description:
         "Transform your bathroom into a luxurious spa-like retreat with our expert remodeling services.",
@@ -44,7 +44,7 @@ const Services = () => {
       ],
     },
     {
-      icon: Home,
+      icon: PaintBucket,
       title: "Kitchen Remodeling",
       description:
         "Create your dream kitchen with custom cabinets, modern appliances, and elegant finishes.",
