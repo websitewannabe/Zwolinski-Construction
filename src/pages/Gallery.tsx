@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect } from "react";
-import { ArrowRight, Lightbulb, Cabinet, Bath } from "lucide-react";
+import { ArrowRight, Lightbulb, Utensils, Bath } from "lucide-react";
 import { galleryData } from "../types/gallery";
 
 const Gallery = () => {
@@ -15,7 +15,7 @@ const Gallery = () => {
   const sectionIcons = {
     "basements": Lightbulb,
     "bathrooms": Bath,
-    "kitchens": Cabinet,
+    "kitchens": Utensils,
   };
 
   useEffect(() => {
