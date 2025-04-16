@@ -127,12 +127,14 @@ const Services = () => {
                     </li>
                   ))}
                 </ul>
-                <Link
-                  to={`/gallery?section=${service.title.split(' ')[0].toLowerCase()}`}
-                  className="inline-flex items-center px-4 py-2 mt-4 bg-[#157FBB] text-white rounded hover:bg-[#4BA5CF] transition-colors border border-gray-600"
-                >
-                  View Gallery <ArrowRight className="ml-2 h-4 w-4" />
-                </Link>
+                <div className="mt-auto pt-4">
+                  <Link
+                    to={`/gallery?section=${service.title.split(' ')[0].toLowerCase()}`}
+                    className="inline-flex items-center px-4 py-2 bg-[#157FBB] text-white rounded hover:bg-[#4BA5CF] transition-colors border border-gray-600"
+                  >
+                    View Gallery <ArrowRight className="ml-2 h-4 w-4" />
+                  </Link>
+                </div>
               </div>
             ))}
           </div>
