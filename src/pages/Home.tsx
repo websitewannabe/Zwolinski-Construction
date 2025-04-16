@@ -271,7 +271,9 @@ const Home = () => {
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600">
               <div className="flex items-center gap-3 mb-3">
                 <Users className="h-8 w-8 text-white" />
-                <h3 className="text-2xl font-bold text-white">Direct Oversight</h3>
+                <h3 className="text-2xl font-bold text-white">
+                  Direct Oversight
+                </h3>
               </div>
               <p className="text-gray-300">
                 With our in-house team handling every aspect of your project, we
@@ -282,7 +284,9 @@ const Home = () => {
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600">
               <div className="flex items-center gap-3 mb-3">
                 <Shield className="h-8 w-8 text-white" />
-                <h3 className="text-2xl font-bold text-white">Consistent Quality</h3>
+                <h3 className="text-2xl font-bold text-white">
+                  Consistent Quality
+                </h3>
               </div>
               <p className="text-gray-300">
                 Our dedicated team members are trained to our exacting
@@ -391,20 +395,25 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="relative py-16 border-t border-gray-300">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/projects/constructionHero.jpg')" }} />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/images/projects/constructionHero.jpg')",
+          }}
+        />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4 text-silver">
-            Ready to Start Your Project?
+            Ready to meet the team?
           </h2>
           <p className="text-xl mb-8">
-            Contact us today for a free consultation and estimate.
+            Learn more about Zwolinski Quality Construction.
           </p>
           <a
-            href="/contact"
+            href="/about"
             className="inline-flex items-center px-8 py-4 bg-[#157FBB] text-white rounded-md hover:bg-[#4BA5CF] transition-colors font-semibold border border-gray-600"
           >
-            Contact Us Now
+            About Us
             <ArrowRight className="ml-2 h-5 w-5" />
           </a>
         </div>

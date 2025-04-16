@@ -129,27 +129,6 @@ const About = () => {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="relative py-16">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/projects/constructionHero.jpg')" }} />
-        <div className="absolute inset-0 bg-[#C0C0C0]/90" />
-        <div className="relative max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl font-bold mb-4 text-black">
-            Ready to Start Your Project?
-          </h2>
-          <p className="text-xl mb-8 text-gray-800">
-            Contact us today for a free consultation and estimate.
-          </p>
-          <a
-            href="/contact"
-            className="inline-flex items-center px-8 py-4 bg-[#157FBB] text-white rounded-md hover:bg-[#4BA5CF] transition-colors font-semibold border border-gray-600"
-          >
-            Contact Us Now
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </a>
-        </div>
-      </section>
-
       <section className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-white">
@@ -200,6 +179,31 @@ const About = () => {
               </span>
             </a>
           </div>
+        </div>
+      </section>
+      {/* CTA Section */}
+      <section className="relative py-16">
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/images/projects/constructionHero.jpg')",
+          }}
+        />
+        <div className="absolute inset-0 bg-[#C0C0C0]/90" />
+        <div className="relative max-w-7xl mx-auto px-4 text-center">
+          <h2 className="text-3xl font-bold mb-4 text-black">
+            Curious About What We Offer?
+          </h2>
+          <p className="text-xl mb-8 text-gray-800">
+            Check out our services.
+          </p>
+          <a
+            href="/services"
+            className="inline-flex items-center px-8 py-4 bg-[#157FBB] text-white rounded-md hover:bg-[#4BA5CF] transition-colors font-semibold border border-gray-600"
+          >
+            Services
+            <ArrowRight className="ml-2 h-5 w-5" />
+          </a>
         </div>
       </section>
     </div>
