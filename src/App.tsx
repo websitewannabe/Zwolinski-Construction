@@ -11,6 +11,7 @@ import Gallery from './pages/Gallery';
 import Contact from './pages/Contact';
 import Reviews from "./pages/Reviews";
 import Accessibility from "./pages/Accessibility";
+import Privacy from "./pages/Privacy";
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen flex flex-col">
@@ -54,6 +55,11 @@ const router = createBrowserRouter([
   {
     path: "/accessibility",
     element: <Layout><Accessibility /></Layout>,
+    errorElement: <Error />,
+  },
+  {
+    path: "/privacy",
+    element: <Layout><Privacy /></Layout>,
     errorElement: <Error />,
   },
 ]);
