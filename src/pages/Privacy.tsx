@@ -18,7 +18,7 @@ const Privacy = () => {
       <h1 className="text-4xl font-bold mb-8 text-zwolinski-navy">Privacy Policy</h1>
       <div 
         id="policy" 
-        style={{ width: "640px", height: "480px" }}
+        className="w-full min-h-[480px]"
         data-policy-key="YTA5UFJuZGlaWEJNVDIxeFVVRTlQUT09"
       >
         Please wait while the policy is loaded. If it does not load, please{" "}
@@ -26,6 +26,7 @@ const Privacy = () => {
           rel="nofollow"
           href="https://app.termageddon.com/api/policy/YTA5UFJuZGlaWEJNVDIxeFVVRTlQUT09?"
           target="_blank"
+          className="text-zwolinski-burgundy hover:underline"
           aria-label="View Policy"
         >
           click here to view the policy
