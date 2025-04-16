@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Phone, Mail, MapPin, Clock, MessageSquare, ArrowRight } from "lucide-react";
-import { Widget } from '@typeform/embed-react';
 
 const Contact = () => {
   return (
@@ -113,10 +112,10 @@ const Contact = () => {
                 Send Us a Message
               </h2>
               <div className="w-full h-[600px]">
-                <Widget 
-                  id="01JRZCVM2ZNPCFBPDMDATD2PCJ"
-                  style={{ width: '100%', height: '100%' }}
-                  className="my-form"
+                <iframe 
+                  src="https://form.typeform.com/to/01JRZCVM2ZNPCFBPDMDATD2PCJ?typeform-medium=embed-snippet"
+                  style={{ width: '100%', height: '100%', border: '0' }}
+                  allow="camera; microphone; autoplay; encrypted-media;"
                 />
               </div>
             </div>
