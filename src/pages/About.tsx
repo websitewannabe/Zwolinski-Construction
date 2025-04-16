@@ -153,7 +153,7 @@ const About = () => {
           <h2 className="text-3xl font-bold text-center mb-12 text-white">
             Our Reviews
           </h2>
-          <div className="flex gap-8 justify-center items-stretch">
+          <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
             <a
               href="https://www.google.com/search?q=zwolinski+quality+construction&oq=zwolinski+qu&gs_lcrp=EgZjaHJvbWUqCggAEAAY4wIYgAQyCggAEAAY4wIYgAQyEAgBEC4YrwEYxwEYgAQYjgUyBggCEEUYOTIKCAMQABiABBiiBDIKCAQQABiABBiiBDIGCAUQRRg9MgYIBhBFGDwyBggHEEUYPNIBCDI3NTNqMGo5qAIAsAIB&sourceid=chrome&ie=UTF-8#lrd=0x89c6a05cc01b6e05:0x4f72758643065789,1,,,,"
               target="_blank"
