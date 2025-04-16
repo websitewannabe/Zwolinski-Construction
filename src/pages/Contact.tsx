@@ -1,20 +1,8 @@
 import React from "react";
 import { Phone, Mail, MapPin, Clock, MessageSquare, ArrowRight } from "lucide-react";
-
-
-import { useEffect } from "react";
+import { Widget } from '@typeform/embed-react';
 
 const Contact = () => {
-  useEffect(() => {
-    const script = document.createElement('script');
-    script.src = "//embed.typeform.com/next/embed.js";
-    script.async = true;
-    document.body.appendChild(script);
-    
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
   return (
     <div>
       <section
@@ -125,11 +113,11 @@ const Contact = () => {
                 Send Us a Message
               </h2>
               <div className="w-full h-[600px]">
-                <iframe 
-                  src="https://form.typeform.com/to/01JRZCVM2ZNPCFBPDMDATD2PCJ"
-                  style={{width: '100%', height: '100%', border: '0'}}
-                  allow="camera; microphone; autoplay; encrypted-media;"
-                ></iframe>
+                <Widget 
+                  id="01JRZCVM2ZNPCFBPDMDATD2PCJ"
+                  style={{ width: '100%', height: '100%' }}
+                  className="my-form"
+                />
               </div>
             </div>
           </div>
