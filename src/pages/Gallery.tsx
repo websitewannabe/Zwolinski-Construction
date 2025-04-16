@@ -37,7 +37,7 @@ const Gallery = () => {
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
           backgroundImage:
-            'url("/images/gallery/basements/F94A25B9-0195-4595-8564-591A1E132812.jpg")',
+            'url("public/images/gallery/bathrooms/IMG_1245.jpg")',
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
@@ -176,7 +176,12 @@ const Gallery = () => {
 
       {/* CTA Section */}
       <section className="relative py-16 border-t border-gray-300">
-        <div className="absolute inset-0 bg-cover bg-center" style={{ backgroundImage: "url('/images/projects/constructionHero.jpg')" }} />
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/images/projects/constructionHero.jpg')",
+          }}
+        />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4 text-silver">
