@@ -14,57 +14,6 @@ import {
   Utensils,
 } from "lucide-react";
 
-<Helmet>
-  <script type="application/ld+json">
-    <title>Home | Zwolinski Construction</title>
-    <meta
-      name="description"
-      content="Expert remodeling services in Bucks, Montgomery, and Lehigh Counties."
-    />
-    <link rel="canonical" href="https://zwolinskiconstr.com/" />
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "WebPage",
-      "name": "Zwolinski Quality Construction - Home",
-      "url": "https://zwolinskiconstr.com",
-      "description": "Zwolinski Quality Construction provides expert remodeling and construction services in Bucks, Montgomery, and Lehigh Counties.",
-      "mainEntity": {
-        "@type": "LocalBusiness",
-        "name": "Zwolinski Quality Construction",
-        "image": "https://zwolinskiconstr.com/images/zwol25.png",
-        "url": "https://zwolinskiconstr.com",
-        "telephone": "+1-267-471-6120",
-        "email": "arnoldzwolinski@verizon.net",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "166 E Walnut St",
-          "addressLocality": "Perkasie",
-          "addressRegion": "PA",
-          "postalCode": "18944",
-          "addressCountry": "US"
-        },
-        "openingHours": "Mo-Fr 09:00-17:00",
-        "areaServed": [
-          {
-            "@type": "Place",
-            "name": "Bucks County"
-          },
-          {
-            "@type": "Place",
-            "name": "Montgomery County"
-          },
-          {
-            "@type": "Place",
-            "name": "Lehigh County"
-          }
-        ]
-      }
-    }
-    `}
-  </script>
-</Helmet>;
-
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [expandedReviews, setExpandedReviews] = useState<number[]>([]);
@@ -215,6 +164,45 @@ const Home = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Home | Zwolinski Construction</title>
+        <meta
+          name="description"
+          content="Expert remodeling services in Bucks, Montgomery, and Lehigh Counties."
+        />
+        <link rel="canonical" href="https://zwolinskiconstr.com/" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            "name": "Zwolinski Quality Construction - Home",
+            "url": "https://zwolinskiconstr.com",
+            "description": "Zwolinski Quality Construction provides expert remodeling and construction services in Bucks, Montgomery, and Lehigh Counties.",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "Zwolinski Quality Construction",
+              "image": "https://zwolinskiconstr.com/images/zwol25.png",
+              "url": "https://zwolinskiconstr.com",
+              "telephone": "+1-267-471-6120",
+              "email": "arnoldzwolinski@verizon.net",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "166 E Walnut St",
+                "addressLocality": "Perkasie",
+                "addressRegion": "PA",
+                "postalCode": "18944",
+                "addressCountry": "US"
+              },
+              "openingHours": "Mo-Fr 09:00-17:00",
+              "areaServed": [
+                { "@type": "Place", "name": "Bucks County" },
+                { "@type": "Place", "name": "Montgomery County" },
+                { "@type": "Place", "name": "Lehigh County" }
+              ]
+            }
+          }
+        `}</script>
+      </Helmet>
       {/* Hero Section */}
       <section
         className="relative h-[400px] md:h-[700px] bg-cover bg-center"

@@ -3,35 +3,6 @@ import { ArrowRight, Lightbulb, Utensils, Bath } from "lucide-react";
 import { galleryData } from "../types/gallery";
 import { Helmet } from "react-helmet-async";
 
-<Helmet>
-  <script type="application/ld+json">
-    {`
-    {
-      "@context": "https://schema.org",
-      "@type": "CollectionPage",
-      "name": "Project Gallery",
-      "url": "https://zwolinskiconstr.com/gallery",
-      "description": "Explore completed remodeling projects by Zwolinski Quality Construction including kitchens, bathrooms, basements, and more.",
-      "mainEntity": {
-        "@type": "LocalBusiness",
-        "name": "Zwolinski Quality Construction",
-        "image": "https://zwolinskiconstr.com/images/zwol25.png",
-        "url": "https://zwolinskiconstr.com",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "166 E Walnut St",
-          "addressLocality": "Perkasie",
-          "addressRegion": "PA",
-          "postalCode": "18944",
-          "addressCountry": "US"
-        },
-        "telephone": "+1-267-471-6120"
-      }
-    }
-    `}
-  </script>
-</Helmet>;
-
 const Gallery = () => {
   const searchParams = new URLSearchParams(window.location.search);
   const initialSection = searchParams.get("section");
@@ -63,6 +34,38 @@ const Gallery = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Gallery | Zwolinski Quality Construction</title>
+        <meta
+          name="description"
+          content="Explore our project gallery showcasing finished remodeling work including kitchens, bathrooms, basements, and more by Zwolinski Quality Construction."
+        />
+        <link rel="canonical" href="https://zwolinskiconstr.com/gallery" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Project Gallery",
+            "url": "https://zwolinskiconstr.com/gallery",
+            "description": "Explore completed remodeling projects by Zwolinski Quality Construction including kitchens, bathrooms, basements, and more.",
+            "mainEntity": {
+              "@type": "LocalBusiness",
+              "name": "Zwolinski Quality Construction",
+              "image": "https://zwolinskiconstr.com/images/zwol25.png",
+              "url": "https://zwolinskiconstr.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "166 E Walnut St",
+                "addressLocality": "Perkasie",
+                "addressRegion": "PA",
+                "postalCode": "18944",
+                "addressCountry": "US"
+              },
+              "telephone": "+1-267-471-6120"
+            }
+          }
+        `}</script>
+      </Helmet>
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
