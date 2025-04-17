@@ -62,12 +62,22 @@ const About = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section
-        className="relative h-[400px] md:h-[600px] bg-cover bg-center"
-        style={{
-          backgroundImage: 'url("/images/gallery/kitchens/IMG_6051.jpg")',
-        }}
-      >
+      <section className="relative h-[400px] md:h-[600px] bg-cover bg-center bg-gray-200">
+        <picture>
+          <source
+            srcSet="/images/gallery/kitchens/IMG_6051.webp"
+            type="image/webp"
+          />
+          <img
+            src="/images/gallery/kitchens/IMG_6051.optimized.jpg"
+            alt="Zwolinski Quality Construction Hero"
+            className="absolute inset-0 w-full h-full object-cover"
+            width="1920"
+            height="1080"
+            loading="lazy"
+            decoding="async"
+          />
+        </picture>
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">About Us</h1>
