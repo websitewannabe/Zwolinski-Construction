@@ -72,6 +72,10 @@ const Services = () => {
           name="description"
           content="Explore professional remodeling services by Zwolinski Quality Construction including basement, kitchen, and bathroom remodeling across Bucks, Montgomery, and Lehigh Counties."
         />
+        <meta
+          name="keywords"
+          content="basement remodeling, bathroom remodeling, kitchen remodeling, home renovation, home improvement, contractor, remodeling contractor, Zwolinski Construction, Perkasie remodeling, Bucks County construction, Montgomery County remodeling, Lehigh County contractor"
+        />
         <link rel="canonical" href="https://zwolinskiconstr.com/services" />
         <script type="application/ld+json">{`
           {
