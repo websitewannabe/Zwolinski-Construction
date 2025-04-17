@@ -37,7 +37,7 @@ const Gallery = () => {
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
           backgroundImage:
-            'url("public/images/gallery/bathrooms/IMG_1245.jpg")',
+            'url("public/images/gallery/bathrooms/newBathroom7.jpg")',
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
@@ -50,12 +50,12 @@ const Gallery = () => {
               quality of our work firsthand.
             </p>
             <a
-                href="/contact"
-                className="inline-flex items-center px-6 py-3 bg-[#157FBB] text-white rounded-md hover:bg-[#1369A0] transition-colors border border-gray-600"
-              >
-                Get Started Today
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
+              href="/contact"
+              className="inline-flex items-center px-6 py-3 bg-[#157FBB] text-white rounded-md hover:bg-[#1369A0] transition-colors border border-gray-600"
+            >
+              Get Started Today
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </a>
           </div>
         </div>
       </section>
