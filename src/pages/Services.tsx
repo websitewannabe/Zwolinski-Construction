@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Lightbulb, Bath, Utensils, ArrowRight } from "lucide-react";
 
-import { ClipboardCheck, Users, MessageSquare } from "lucide-react";
+import { ClipboardCheck, Users, MessageSquare, MapPin } from "lucide-react";
 
 const Services = () => {
   const services = [
@@ -182,6 +182,7 @@ const Services = () => {
                   key={index}
                   className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 text-center"
                 >
+                  <MapPin className="h-8 w-8 text-[#157FBB] mx-auto mb-4" />
                   <h3 className="text-xl font-semibold text-white mb-2">
                     {area.county}
                   </h3>
