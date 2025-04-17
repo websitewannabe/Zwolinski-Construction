@@ -16,6 +16,12 @@ import {
 
 <Helmet>
   <script type="application/ld+json">
+    <title>Home | Zwolinski Construction</title>
+    <meta
+      name="description"
+      content="Expert remodeling services in Bucks, Montgomery, and Lehigh Counties."
+    />
+    <link rel="canonical" href="https://zwolinskiconstr.com/" />
     {`
     {
       "@context": "https://schema.org",
