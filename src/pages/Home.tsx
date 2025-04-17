@@ -205,19 +205,19 @@ const Home = () => {
                 title: "Basements",
                 description:
                   "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
-                image: "/images/gallery/basements/IMG_0231.JPG",
+                image: "/images/gallery/bathrooms/IMG_0231_400x300.jpg",
               },
               {
                 title: "Bathrooms",
                 description:
                   "Transform your bathroom into a luxurious spa-like retreat with our expert remodeling services.",
-                image: "/images/gallery/bathrooms/IMG_6024.jpg",
+                image: "/images/gallery/bathrooms/IMG_6024_400x300.jpg",
               },
               {
                 title: "Kitchens",
                 description:
                   "Create your dream kitchen with custom cabinets, modern appliances, and elegant finishes.",
-                image: "/images/gallery/kitchens/IMG_0113.JPG",
+                image: "/images/gallery/kitchens/IMG_0113_400x300.jpg",
               },
             ].map((service) => (
               <Link
