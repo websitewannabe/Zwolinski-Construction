@@ -220,7 +220,7 @@ const Home = () => {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <div className="p-6 border-t-4 border-gray-700 bg-black text-gray-300 flex-1">
+                <div className="p-6 border-t-4 border-gray-700 bg-black text-gray-300 flex flex-col h-full">
                   {service.title === "Basements" && <Lightbulb className="h-8 w-8 text-white mb-3" />}
                   {service.title === "Bathrooms" && <Bath className="h-8 w-8 text-white mb-3" />}
                   {service.title === "Kitchens" && <Utensils className="h-8 w-8 text-white mb-3" />}
@@ -228,12 +228,14 @@ const Home = () => {
                     {service.title}
                   </h3>
                   <p className="text-gray-400 mb-4">{service.description}</p>
-                  <Link
-                    to={`/services#${service.title.toLowerCase()}`}
-                    className="inline-flex items-center px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300 transition-colors border border-gray-600"
-                  >
-                    View Projects <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  <div className="mt-auto">
+                    <Link
+                      to={`/services#${service.title.toLowerCase()}`}
+                      className="inline-flex items-center px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300 transition-colors border border-gray-600"
+                    >
+                      View Projects <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </div>
                 </div>
               </div>
             ))}
