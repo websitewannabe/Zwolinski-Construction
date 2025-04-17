@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Lightbulb, Bath, Utensils, ArrowRight } from "lucide-react";
 
+import { ClipboardCheck, Users, MessageSquare } from "lucide-react";
+
 const Services = () => {
   const services = [
     {
@@ -140,6 +142,7 @@ const Services = () => {
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 text-center">
+              <ClipboardCheck className="h-12 w-12 text-[#157FBB] mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-3">Efficient Planning</h3>
               <p className="text-gray-300">
                 Detailed project planning and preparation ensures smooth
@@ -147,6 +150,7 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 text-center">
+              <Users className="h-12 w-12 text-[#157FBB] mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-3">Skilled Team</h3>
               <p className="text-gray-300">
                 Our experienced professionals work together seamlessly to
@@ -154,6 +158,7 @@ const Services = () => {
               </p>
             </div>
             <div className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 text-center">
+              <MessageSquare className="h-12 w-12 text-[#157FBB] mx-auto mb-4" />
               <h3 className="text-2xl font-bold mb-3">Clear Communication</h3>
               <p className="text-gray-300">
                 Regular updates and transparent communication keep your project
