@@ -22,15 +22,17 @@ const Home = () => {
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
     );
   };
-  const [testimonialsPerPage, setTestimonialsPerPage] = useState(window.innerWidth < 768 ? 1 : 3);
+  const [testimonialsPerPage, setTestimonialsPerPage] = useState(
+    window.innerWidth < 768 ? 1 : 3,
+  );
 
   useEffect(() => {
     const handleResize = () => {
       setTestimonialsPerPage(window.innerWidth < 768 ? 1 : 3);
     };
 
-    window.addEventListener('resize', handleResize);
-    return () => window.removeEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
   }, []);
 
   const testimonials = [
@@ -231,9 +233,15 @@ const Home = () => {
                   />
                 </div>
                 <div className="p-6 border-t-4 border-gray-700 bg-black text-gray-300 flex flex-col h-full">
-                  {service.title === "Basements" && <Lightbulb className="h-8 w-8 text-white mb-3" />}
-                  {service.title === "Bathrooms" && <Bath className="h-8 w-8 text-white mb-3" />}
-                  {service.title === "Kitchens" && <Utensils className="h-8 w-8 text-white mb-3" />}
+                  {service.title === "Basements" && (
+                    <Lightbulb className="h-8 w-8 text-white mb-3" />
+                  )}
+                  {service.title === "Bathrooms" && (
+                    <Bath className="h-8 w-8 text-white mb-3" />
+                  )}
+                  {service.title === "Kitchens" && (
+                    <Utensils className="h-8 w-8 text-white mb-3" />
+                  )}
                   <h3 className="text-2xl font-bold mb-3 text-white">
                     {service.title}
                   </h3>
@@ -321,7 +329,9 @@ const Home = () => {
           </h2>
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className={`col-span-full grid grid-cols-1 ${testimonialsPerPage === 3 ? 'md:grid-cols-3' : ''} gap-8 transition-all duration-500 ease-out transform`}>
+              <div
+                className={`col-span-full grid grid-cols-1 ${testimonialsPerPage === 3 ? "md:grid-cols-3" : ""} gap-8 transition-all duration-500 ease-out transform`}
+              >
                 {currentTestimonials.map((testimonial, index) => (
                   <div
                     key={index}
