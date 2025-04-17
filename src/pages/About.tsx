@@ -34,14 +34,12 @@ const About = () => {
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/images/gallery/kitchens/IMG_6051.jpg")',
+          backgroundImage: 'url("/images/gallery/kitchens/IMG_6051-min.jpg")',
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">
-              About Us
-            </h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">About Us</h1>
             <p className="text-lg md:text-xl mb-8 max-w-2xl">
               Building trust through quality craftsmanship and exceptional
               service.
