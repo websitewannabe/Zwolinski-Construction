@@ -74,7 +74,12 @@ const Contact = () => {
                     <h3 className="font-semibold text-lg text-gray-900">
                       Email
                     </h3>
-                    <a href="mailto:arnoldzwolinski@verizon.net" className="text-gray-600 hover:text-gray-700">arnoldzwolinski@verizon.net</a>
+                    <a
+                      href="mailto:arnoldzwolinski@verizon.net"
+                      className="text-gray-600 hover:text-gray-700"
+                    >
+                      arnoldzwolinski@verizon.net
+                    </a>
                   </div>
                 </div>
 
@@ -84,7 +89,7 @@ const Contact = () => {
                     <h3 className="font-semibold text-lg text-gray-900">
                       Location
                     </h3>
-                    <a 
+                    <a
                       href="https://www.google.com/maps/place/Zwolinski+Quality+Construction/@40.3507719,-75.2785989,17z/data=!3m1!4b1!4m6!3m5!1s0x89c6a05cc01b6e05:0x4f72758643065789!8m2!3d40.3507719!4d-75.276024!16s%2Fg%2F11clvrzxh5"
                       target="_blank"
                       rel="noopener noreferrer"
@@ -102,7 +107,8 @@ const Contact = () => {
                       Business Hours
                     </h3>
                     <p className="text-gray-600">
-                      Monday-Sunday: 9:00AM - 6:00PM
+                      Monday-Friday: 9:00AM - 5:00PM Saturday-Sunday:
+                      Appointment Only
                     </p>
                   </div>
                 </div>
