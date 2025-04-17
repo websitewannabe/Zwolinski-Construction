@@ -142,6 +142,8 @@ const Footer = () => {
             <a
               href="/sitemap.xml"
               className="text-gray-400 hover:text-silver mx-2"
+              target="_blank"
+              rel="noopener noreferrer"
             >
               Sitemap
             </a>
