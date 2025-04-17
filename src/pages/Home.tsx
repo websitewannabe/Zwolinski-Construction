@@ -163,7 +163,7 @@ const Home = () => {
     <div>
       {/* Hero Section */}
       <section
-        className="relative h-[300px] md:h-[600px] bg-cover bg-center"
+        className="relative h-[400px] md:h-[700px] bg-cover bg-center"
         style={{
           backgroundImage: "url('/images/projects/constructionHero.jpg')",
         }}
