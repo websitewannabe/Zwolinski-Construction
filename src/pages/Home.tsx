@@ -167,7 +167,7 @@ const Home = () => {
       <section
         className="relative h-[400px] md:h-[700px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/projects/constructionHero.jpg')",
+          backgroundImage: "url('/images/projects/constructionHero-min.jpg')",
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
