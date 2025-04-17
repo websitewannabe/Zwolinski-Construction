@@ -25,13 +25,6 @@ const Contact = () => {
             <p className="text-xl mb-8 max-w-2xl">
               Let's discuss your project and bring your vision to life.
             </p>
-            <a
-              href="#contact-form"
-              className="inline-flex items-center px-8 py-4 bg-[#157FBB] text-white rounded-md hover:bg-[#4BA5CF] transition-colors font-semibold border border-gray-600"
-            >
-              Get Started Today
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
           </div>
         </div>
       </section>
