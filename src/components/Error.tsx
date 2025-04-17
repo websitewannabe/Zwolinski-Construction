@@ -1,6 +1,6 @@
-import React from 'react';
-import { Link, useRouteError, isRouteErrorResponse } from 'react-router-dom';
-import { Home } from 'lucide-react';
+import React from "react";
+import { Link, useRouteError, isRouteErrorResponse } from "react-router-dom";
+import { Home } from "lucide-react";
 
 const Error = () => {
   const error = useRouteError();
@@ -12,12 +12,10 @@ const Error = () => {
         {/* Assuming AlertTriangle is imported correctly */}
         {/* <AlertTriangle className="mx-auto h-24 w-24 text-zwolinski-secondary mb-6" /> */}
         <h1 className="text-9xl font-bold text-zwolinski-secondary mb-4">
-          {is404 ? '404' : '500'}
+          {is404 ? "404" : "500"}
         </h1>
-        <h2 className="text-3xl font-semibold text-white mb-4">
-          {is404 
-            ? 'Page Not Found' 
-            : 'Something went wrong'}
+        <h2 className=" text-3xl font-semibold text-white mb-4">
+          {is404 ? "Page Not Found" : "Something went wrong"}
         </h2>
         <p className="text-zwolinski-accent mb-8 text-lg">
           {is404
