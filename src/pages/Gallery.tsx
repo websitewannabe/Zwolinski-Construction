@@ -36,8 +36,7 @@ const Gallery = () => {
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage:
-            'url("public/images/gallery/bathrooms/newBathroom7.jpg")',
+          backgroundImage: 'url("images/gallery/bathrooms/newBathroom7.jpg")',
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
