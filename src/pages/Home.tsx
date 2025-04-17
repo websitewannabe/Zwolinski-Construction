@@ -13,8 +13,6 @@ import {
   Utensils,
 } from "lucide-react";
 
-import { Helmet } from "react-helmet-async";
-
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(0);
   const [expandedReviews, setExpandedReviews] = useState<number[]>([]);
@@ -163,32 +161,13 @@ const Home = () => {
 
   return (
     <div>
-      <Helmet>
-        <link
-          rel="preload"
-          href="/images/projects/constructionHero.webp"
-          as="image"
-          type="image/webp"
-        />
-      </Helmet>
       {/* Hero Section */}
-      <section className="relative h-[400px] md:h-[700px] bg-gradient-to-b from 
--gray-800 to-black">
-        <picture className="absolute inset-0">
-          <source
-            srcSet="/images/projects/constructionHero.webp"
-            type="image/webp"
-          />
-          <img
-            src="/images/projects/constructionHero.optimized.jpg"
-            alt="Construction Hero"
-            className="w-full h-full object-cover"
-            width="1600"
-            height="900"
-            loading="eager"
-            decoding="async"
-          />
-        </picture>
+      <section
+        className="relative h-[400px] md:h-[700px] bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/images/projects/constructionHero.jpg')",
+        }}
+      >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
             <h1 className="text-5xl font-bold mb-4">
