@@ -218,9 +218,10 @@ const Home = () => {
                 image: "/images/gallery/kitchens/IMG_0113.JPG",
               },
             ].map((service) => (
-              <div
+              <Link
                 key={service.title}
-                className="bg-black rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full flex flex-col"
+                to={`/services#${service.title.toLowerCase()}`}
+                className="bg-black rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full flex flex-col group"
               >
                 <div className="h-56 relative">
                   <img
@@ -238,15 +239,12 @@ const Home = () => {
                   </h3>
                   <p className="text-gray-400 mb-4">{service.description}</p>
                   <div className="mt-auto">
-                    <Link
-                      to={`/services#${service.title.toLowerCase()}`}
-                      className="inline-flex items-center px-4 py-2 bg-gray-200 text-black rounded hover:bg-gray-300 transition-colors border border-gray-600"
-                    >
+                    <span className="inline-flex items-center px-4 py-2 bg-gray-200 text-black rounded group-hover:bg-gray-300 transition-colors border border-gray-600">
                       View Projects <ArrowRight className="ml-2 h-4 w-4" />
-                    </Link>
+                    </span>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
