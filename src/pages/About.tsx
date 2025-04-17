@@ -31,6 +31,32 @@ const About = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>About Us | Zwolinski Quality Construction</title>
+        <meta
+          name="description"
+          content="Learn more about Zwolinski Quality Construction, our values, and our commitment to quality craftsmanship across Bucks, Montgomery, and Lehigh Counties."
+        />
+        <link rel="canonical" href="https://zwolinskiconstr.com/about" />
+        <script type="application/ld+json">{`
+          {
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Zwolinski Quality Construction",
+            "url": "https://zwolinskiconstr.com/about",
+            "logo": "https://zwolinskiconstr.com/images/zwol25.png",
+            "description": "Zwolinski Quality Construction offers expert remodeling services including kitchens, bathrooms, basements, and more.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Doylestown",
+              "addressRegion": "PA",
+              "addressCountry": "US"
+            },
+            "telephone": "+1-123-456-7890"
+          }
+        `}</script>
+      </Helmet>
+
       {/* Hero Section */}
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
@@ -55,6 +81,7 @@ const About = () => {
           </div>
         </div>
       </section>
+
       {/* Main Content */}
       <section className="py-16 bg-[#C0C0C0]">
         <div className="max-w-7xl mx-auto px-4">
@@ -101,6 +128,7 @@ const About = () => {
           </div>
         </div>
       </section>
+
       {/* Our Values */}
       <section className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4">
@@ -123,6 +151,7 @@ const About = () => {
           </div>
         </div>
       </section>
+
       <section className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-white">
@@ -198,30 +227,6 @@ const About = () => {
           </a>
         </div>
       </section>
-      <script type="application/ld+json">
-        <title>About Us | Zwolinski Quality Construction</title>
-        <meta
-          name="description"
-          content="Learn more about Zwolinski Quality Construction, our values, and our commitment to quality craftsmanship across Bucks, Montgomery, and Lehigh Counties."
-        />
-        <link rel="canonical" href="https://zwolinskiconstr.com/about" />
-        {`{
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Zwolinski Quality Construction",
-            "url": "https://zwolinskiconstr.com/about",
-            "logo": "https://zwolinskiconstr.com/images/zwol25.png",
-            "description": "Zwolinski Quality Construction offers expert remodeling services including kitchens, bathrooms, basements, and more.",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Doylestown",
-              "addressRegion": "PA",
-              "addressCountry": "US"
-            },
-            "telephone": "+1-123-456-7890"
-          }`}
-      </script>
-      ;
     </div>
   );
 };
