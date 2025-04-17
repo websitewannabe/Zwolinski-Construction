@@ -61,7 +61,7 @@ const Gallery = () => {
       </section>
 
       {/* Category Navigation */}
-      <section className="py-8 bg-[#C0C0C0] mt-8">
+      <section className="py-8 bg-[#C0C0C0]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex flex-wrap gap-4 justify-center">
             <button
