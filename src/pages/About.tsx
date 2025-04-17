@@ -2,33 +2,33 @@ import React from "react";
 import { Award, Users, Clock, Shield, ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 
-<Helmet>
-  <script type="application/ld+json">
-    <title>About Us | Zwolinski Quality Construction</title>
-    <meta
-      name="description"
-      content="Learn more about Zwolinski Quality Construction, our values, and our commitment to quality craftsmanship across Bucks, Montgomery, and Lehigh Counties."
-    />
-    <link rel="canonical" href="https://zwolinskiconstr.com/about" />
-    {`{
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Zwolinski Quality Construction",
-      "url": "https://zwolinskiconstr.com/about",
-      "logo": "https://zwolinskiconstr.com/images/zwol25.png",
-      "description": "Zwolinski Quality Construction offers expert remodeling services including kitchens, bathrooms, basements, and more.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Doylestown",
-        "addressRegion": "PA",
-        "addressCountry": "US"
-      },
-      "telephone": "+1-123-456-7890"
-    }`}
-  </script>
-</Helmet>;
-
 const About = () => {
+  <Helmet>
+    <script type="application/ld+json">
+      <title>About Us | Zwolinski Quality Construction</title>
+      <meta
+        name="description"
+        content="Learn more about Zwolinski Quality Construction, our values, and our commitment to quality craftsmanship across Bucks, Montgomery, and Lehigh Counties."
+      />
+      <link rel="canonical" href="https://zwolinskiconstr.com/about" />
+      {`{
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Zwolinski Quality Construction",
+        "url": "https://zwolinskiconstr.com/about",
+        "logo": "https://zwolinskiconstr.com/images/zwol25.png",
+        "description": "Zwolinski Quality Construction offers expert remodeling services including kitchens, bathrooms, basements, and more.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Doylestown",
+          "addressRegion": "PA",
+          "addressCountry": "US"
+        },
+        "telephone": "+1-123-456-7890"
+      }`}
+    </script>
+  </Helmet>;
+
   const values = [
     {
       icon: Award,
