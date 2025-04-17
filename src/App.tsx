@@ -1,5 +1,6 @@
 import React from "react";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { HelmetProvider } from 'react-helmet-async'; // Added import
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
@@ -96,7 +97,11 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} />;
+  return (
+    <HelmetProvider> {/* Added HelmetProvider */}
+      <RouterProvider router={router} />
+    </HelmetProvider> {/* Closed HelmetProvider */}
+  );
 }
 
 export default App;
