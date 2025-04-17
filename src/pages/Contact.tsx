@@ -107,8 +107,8 @@ const Contact = () => {
                       Business Hours
                     </h3>
                     <p className="text-gray-600">
-                      Monday-Friday: 9:00AM - 5:00PM Saturday-Sunday:
-                      Appointment Only
+                      Monday-Friday: 9:00AM - 5:00PM<br />
+                      Saturday-Sunday: Appointment Only
                     </p>
                   </div>
                 </div>
