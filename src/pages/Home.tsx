@@ -13,7 +13,7 @@ import {
   Utensils,
 } from "lucide-react";
 
-import { Helmet } from 'react-helmet';
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(0);
