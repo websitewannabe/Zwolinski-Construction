@@ -211,7 +211,7 @@ const Home = () => {
       <section
         className="relative h-[400px] md:h-[700px] bg-cover bg-center"
         style={{
-          backgroundImage: "url('/images/projects/constructionHero.optimized.jpg')",
+          backgroundImage: "url('/images/projects/constructionHero.jpg')",
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
@@ -467,7 +467,7 @@ const Home = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/projects/constructionHero.optimized.jpg')",
+            backgroundImage: "url('/images/projects/constructionHero.jpg')",
           }}
         />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
