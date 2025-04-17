@@ -65,7 +65,7 @@ const About = () => {
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/images/gallery/kitchens/IMG_6051.jpg")',
+          backgroundImage: 'url("/images/gallery/kitchens/IMG_6051.optimized.jpg")',
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
