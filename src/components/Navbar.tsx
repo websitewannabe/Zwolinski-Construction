@@ -30,7 +30,7 @@ const Navbar = () => {
             <img
               src="/images/projects/newLogo.png"
               alt="Zwolinski Quality Construction"
-              className="h-16"
+              className="h-12 md:h-16"
             />
           </Link>
 
