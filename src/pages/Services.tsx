@@ -1,8 +1,51 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Lightbulb, Bath, Utensils, ArrowRight } from "lucide-react";
-
+import { Helmet } from "react-helmet-async";
 import { ClipboardCheck, Users, MessageSquare, MapPin } from "lucide-react";
+
+<Helmet>
+  <script type="application/ld+json">
+    {`
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "Services - Zwolinski Quality Construction",
+      "url": "https://zwolinskiconstr.com/services",
+      "mainEntity": [
+        {
+          "@type": "Service",
+          "name": "Basement Remodeling",
+          "description": "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
+          "provider": {
+            "@type": "LocalBusiness",
+            "name": "Zwolinski Quality Construction",
+            "telephone": "+1-267-471-6120",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "166 E Walnut St",
+              "addressLocality": "Perkasie",
+              "addressRegion": "PA",
+              "postalCode": "18944",
+              "addressCountry": "US"
+            }
+          }
+        },
+        {
+          "@type": "Service",
+          "name": "Bathroom Remodeling",
+          "description": "Transform your bathroom into a luxurious spa-like retreat with our expert remodeling services."
+        },
+        {
+          "@type": "Service",
+          "name": "Kitchen Remodeling",
+          "description": "Create your dream kitchen with custom cabinets, modern appliances, and elegant finishes."
+        }
+      ]
+    }
+    `}
+  </script>
+</Helmet>;
 
 const Services = () => {
   const services = [
