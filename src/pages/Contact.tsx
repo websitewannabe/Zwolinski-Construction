@@ -18,6 +18,10 @@ const Contact = () => {
           name="description"
           content="Get in touch with Zwolinski Quality Construction for expert remodeling services. Call, email, or visit our Perkasie office to schedule a consultation."
         />
+        <meta
+          name="keywords"
+          content="contact Zwolinski Construction, get a quote, schedule consultation, contractor phone number, construction company email, Perkasie construction contact"
+        />
         <link rel="canonical" href="https://zwolinskiconstr.com/contact" />
         <script type="application/ld+json">{`
           {

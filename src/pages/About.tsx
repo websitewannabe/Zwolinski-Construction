@@ -37,6 +37,10 @@ const About = () => {
           name="description"
           content="Learn more about Zwolinski Quality Construction, our values, and our commitment to quality craftsmanship across Bucks, Montgomery, and Lehigh Counties."
         />
+        <meta
+          name="keywords"
+          content="about Zwolinski Construction, Arnold Zwolinski, remodeling experience, company history, family-owned construction, trusted local contractor, Perkasie construction team"
+        />
         <link rel="canonical" href="https://zwolinskiconstr.com/about" />
         <script type="application/ld+json">{`
           {

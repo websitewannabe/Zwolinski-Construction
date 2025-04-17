@@ -40,6 +40,10 @@ const Gallery = () => {
           name="description"
           content="Explore our project gallery showcasing finished remodeling work including kitchens, bathrooms, basements, and more by Zwolinski Quality Construction."
         />
+        <meta
+          name="keywords"
+          content="remodeling gallery, project showcase, construction photos, before and after remodeling, finished kitchens, bathroom transformations, basement makeovers, Zwolinski project gallery"
+        />
         <link rel="canonical" href="https://zwolinskiconstr.com/gallery" />
         <script type="application/ld+json">{`
           {

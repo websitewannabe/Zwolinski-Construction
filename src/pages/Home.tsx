@@ -170,6 +170,10 @@ const Home = () => {
           name="description"
           content="Expert remodeling services in Bucks, Montgomery, and Lehigh Counties."
         />
+        <meta
+          name="keywords"
+          content="Zwolinski Quality Construction, remodeling contractor, general contractor, home renovation, Perkasie construction, Bucks County remodeling, Montgomery County contractor, Lehigh County construction, kitchen remodeling, bathroom remodeling, basement remodeling"
+        />
         <link rel="canonical" href="https://zwolinskiconstr.com/" />
         <script type="application/ld+json">{`
           {
