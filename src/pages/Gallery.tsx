@@ -49,6 +49,13 @@ const Gallery = () => {
               Browse through our collection of completed projects and see the
               quality of our work firsthand.
             </p>
+            <a
+                href="/contact"
+                className="inline-flex items-center px-6 py-3 bg-[#157FBB] text-white rounded-md hover:bg-[#1369A0] transition-colors border border-gray-600"
+              >
+                Get Started Today
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </a>
           </div>
         </div>
       </section>
