@@ -98,9 +98,10 @@ const Services = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <div
+              <Link
                 key={index}
-                className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 flex flex-col h-full"
+                to={`/gallery?section=${service.title.split(" ")[0].toLowerCase()}`}
+                className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 flex flex-col h-full transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
               >
                 <service.icon className="h-12 w-12 text-white mb-4" />
                 <h3 className="text-xl font-semibold mb-4 text-white">
@@ -116,14 +117,11 @@ const Services = () => {
                   ))}
                 </ul>
                 <div className="mt-auto pt-8">
-                  <Link
-                    to={`/gallery?section=${service.title.split(" ")[0].toLowerCase()}`}
-                    className="inline-flex items-center px-4 py-2 bg-[#157FBB] text-white rounded hover:bg-[#4BA5CF] transition-colors border border-gray-600"
-                  >
+                  <span className="inline-flex items-center px-4 py-2 bg-[#157FBB] text-white rounded group-hover:bg-[#4BA5CF] transition-colors border border-gray-600">
                     View Gallery <ArrowRight className="ml-2 h-4 w-4" />
-                  </Link>
+                  </span>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
         </div>
