@@ -22,7 +22,16 @@ const Home = () => {
       prev.includes(index) ? prev.filter((i) => i !== index) : [...prev, index],
     );
   };
-  const testimonialsPerPage = 3;
+  const [testimonialsPerPage, setTestimonialsPerPage] = useState(window.innerWidth < 768 ? 1 : 3);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setTestimonialsPerPage(window.innerWidth < 768 ? 1 : 3);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const testimonials = [
     {
@@ -314,7 +323,7 @@ const Home = () => {
           </h2>
           <div className="relative">
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="col-span-full grid grid-cols-1 md:grid-cols-3 gap-8 transition-all duration-500 ease-out transform">
+              <div className={`col-span-full grid grid-cols-1 ${testimonialsPerPage === 3 ? 'md:grid-cols-3' : ''} gap-8 transition-all duration-500 ease-out transform`}>
                 {currentTestimonials.map((testimonial, index) => (
                   <div
                     key={index}
