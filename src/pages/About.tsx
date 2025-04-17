@@ -132,7 +132,7 @@ const About = () => {
       <section className="bg-black py-16">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl font-bold text-center mb-12 text-white">
-            Our Reviews
+            See Our Reviews
           </h2>
           <div className="flex flex-col md:flex-row gap-8 justify-center items-stretch">
             <a
@@ -194,9 +194,7 @@ const About = () => {
           <h2 className="text-3xl font-bold mb-4 text-black">
             Curious About What We Offer?
           </h2>
-          <p className="text-xl mb-8 text-gray-800">
-            Check out our services.
-          </p>
+          <p className="text-xl mb-8 text-gray-800">Check out our services.</p>
           <a
             href="/services"
             className="inline-flex items-center px-8 py-4 bg-[#157FBB] text-white rounded-md hover:bg-[#4BA5CF] transition-colors font-semibold border border-gray-600"
