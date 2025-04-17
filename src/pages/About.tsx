@@ -65,11 +65,11 @@ const About = () => {
       <section className="relative h-[400px] md:h-[600px] bg-cover bg-center bg-gray-200">
         <picture>
           <source
-            srcSet="/images/gallery/kitchens/IMG_6051.webp"
-            type="image/webp"
+            srcSet="/images/gallery/kitchens/IMG_6051.jpg"
+            type="image/jpeg"
           />
           <img
-            src="/images/gallery/kitchens/IMG_6051.optimized.jpg"
+            src="/images/gallery/kitchens/IMG_6051.jpg"
             alt="Zwolinski Quality Construction Hero"
             className="absolute inset-0 w-full h-full object-cover"
             width="1920"
