@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <img 
-              src="/images/projects/newLogo.png" 
+            <img
+              src="/images/projects/stackedLogo.png"
               alt="Zwolinski Quality Construction"
               className="h-16 mb-4"
             />
