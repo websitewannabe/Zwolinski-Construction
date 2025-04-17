@@ -137,6 +137,13 @@ const Footer = () => {
             >
               Accessibility
             </Link>
+            <span className="mx-2">|</span>
+            <a
+              href="/sitemap.xml"
+              className="text-gray-400 hover:text-silver mx-2"
+            >
+              Sitemap
+            </a>
           </div>
           <p>
             &copy; {new Date().getFullYear()} Zwolinski Quality Construction.
