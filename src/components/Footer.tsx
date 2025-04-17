@@ -8,10 +8,11 @@ const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">
-              <span className="text-silver">ZWOLINSKI</span>
-              <span className="block text-sm">Quality Construction</span>
-            </h3>
+            <img 
+              src="/images/projects/newLogo.png" 
+              alt="Zwolinski Quality Construction"
+              className="h-16 mb-4"
+            />
             <p className="text-gray-400">
               Zwolinski Construction delivers expert bathroom, basement, and
               kitchen remodels throughout Bucks County, combining quality
