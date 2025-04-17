@@ -31,32 +31,7 @@ const About = () => {
 
   return (
     <div>
-      <Helmet>
-        <script type="application/ld+json">
-          <title>About Us | Zwolinski Quality Construction</title>
-          <meta
-            name="description"
-            content="Learn more about Zwolinski Quality Construction, our values, and our commitment to quality craftsmanship across Bucks, Montgomery, and Lehigh Counties."
-          />
-          <link rel="canonical" href="https://zwolinskiconstr.com/about" />
-          {`{
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Zwolinski Quality Construction",
-            "url": "https://zwolinskiconstr.com/about",
-            "logo": "https://zwolinskiconstr.com/images/zwol25.png",
-            "description": "Zwolinski Quality Construction offers expert remodeling services including kitchens, bathrooms, basements, and more.",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Doylestown",
-              "addressRegion": "PA",
-              "addressCountry": "US"
-            },
-            "telephone": "+1-123-456-7890"
-          }`}
-        </script>
-      </Helmet>
-      ;{/* Hero Section */}
+      {/* Hero Section */}
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
@@ -223,6 +198,30 @@ const About = () => {
           </a>
         </div>
       </section>
+      <script type="application/ld+json">
+        <title>About Us | Zwolinski Quality Construction</title>
+        <meta
+          name="description"
+          content="Learn more about Zwolinski Quality Construction, our values, and our commitment to quality craftsmanship across Bucks, Montgomery, and Lehigh Counties."
+        />
+        <link rel="canonical" href="https://zwolinskiconstr.com/about" />
+        {`{
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            "name": "Zwolinski Quality Construction",
+            "url": "https://zwolinskiconstr.com/about",
+            "logo": "https://zwolinskiconstr.com/images/zwol25.png",
+            "description": "Zwolinski Quality Construction offers expert remodeling services including kitchens, bathrooms, basements, and more.",
+            "address": {
+              "@type": "PostalAddress",
+              "addressLocality": "Doylestown",
+              "addressRegion": "PA",
+              "addressCountry": "US"
+            },
+            "telephone": "+1-123-456-7890"
+          }`}
+      </script>
+      ;
     </div>
   );
 };
