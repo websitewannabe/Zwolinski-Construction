@@ -1,6 +1,5 @@
 import React from "react";
 import { Award, Users, Clock, Shield, ArrowRight } from "lucide-react";
-import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const values = [
@@ -31,56 +30,18 @@ const About = () => {
 
   return (
     <div>
-      <Helmet>
-        <title>About Us | Zwolinski Quality Construction</title>
-        <meta
-          name="description"
-          content="Learn more about Zwolinski Quality Construction, our values, and our commitment to quality craftsmanship across Bucks, Montgomery, and Lehigh Counties."
-        />
-        <meta
-          name="keywords"
-          content="about Zwolinski Construction, Arnold Zwolinski, remodeling experience, company history, family-owned construction, trusted local contractor, Perkasie construction team"
-        />
-        <link rel="canonical" href="https://zwolinskiconstr.com/about" />
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "LocalBusiness",
-            "name": "Zwolinski Quality Construction",
-            "url": "https://zwolinskiconstr.com/about",
-            "logo": "https://zwolinskiconstr.com/images/zwol25.png",
-            "description": "Zwolinski Quality Construction offers expert remodeling services including kitchens, bathrooms, basements, and more.",
-            "address": {
-              "@type": "PostalAddress",
-              "addressLocality": "Doylestown",
-              "addressRegion": "PA",
-              "addressCountry": "US"
-            },
-            "telephone": "+1-123-456-7890"
-          }
-        `}</script>
-      </Helmet>
-
       {/* Hero Section */}
-      <section className="relative h-[400px] md:h-[600px] bg-cover bg-center bg-gray-200">
-        <picture>
-          <source
-            srcSet="/images/gallery/kitchens/IMG_6051.jpg"
-            type="image/jpeg"
-          />
-          <img
-            src="/images/gallery/kitchens/IMG_6051.jpg"
-            alt="Zwolinski Quality Construction Hero"
-            className="absolute inset-0 w-full h-full object-cover"
-            width="1920"
-            height="1080"
-            loading="lazy"
-            decoding="async"
-          />
-        </picture>
+      <section
+        className="relative h-[400px] md:h-[600px] bg-cover bg-center"
+        style={{
+          backgroundImage: 'url("/images/gallery/kitchens/IMG_6051.jpg")',
+        }}
+      >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
-            <h1 className="text-3xl md:text-5xl font-bold mb-4">About Us</h1>
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
+              About Us
+            </h1>
             <p className="text-lg md:text-xl mb-8 max-w-2xl">
               Building trust through quality craftsmanship and exceptional
               service.

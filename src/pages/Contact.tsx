@@ -7,49 +7,10 @@ import {
   MessageSquare,
   ArrowRight,
 } from "lucide-react";
-import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
     <div>
-      <Helmet>
-        <title>Contact | Zwolinski Quality Construction</title>
-        <meta
-          name="description"
-          content="Get in touch with Zwolinski Quality Construction for expert remodeling services. Call, email, or visit our Perkasie office to schedule a consultation."
-        />
-        <meta
-          name="keywords"
-          content="contact Zwolinski Construction, get a quote, schedule consultation, contractor phone number, construction company email, Perkasie construction contact"
-        />
-        <link rel="canonical" href="https://zwolinskiconstr.com/contact" />
-        <script type="application/ld+json">{`
-          {
-            "@context": "https://schema.org",
-            "@type": "ContactPage",
-            "name": "Contact Zwolinski Quality Construction",
-            "url": "https://zwolinskiconstr.com/contact",
-            "mainEntity": {
-              "@type": "LocalBusiness",
-              "name": "Zwolinski Quality Construction",
-              "telephone": "+1-267-471-6120",
-              "email": "arnoldzwolinski@verizon.net",
-              "address": {
-                "@type": "PostalAddress",
-                "streetAddress": "166 E Walnut St",
-                "addressLocality": "Perkasie",
-                "addressRegion": "PA",
-                "postalCode": "18944",
-                "addressCountry": "US"
-              },
-              "openingHours": "Mo-Fr 09:00-17:00",
-              "image": "https://zwolinskiconstr.com/images/zwol25.png",
-              "url": "https://zwolinskiconstr.com"
-            }
-          }
-        `}</script>
-      </Helmet>
-
       <section
         className="relative h-[300px] md:h-[600px] bg-cover bg-center"
         style={{
@@ -146,8 +107,7 @@ const Contact = () => {
                       Business Hours
                     </h3>
                     <p className="text-gray-600">
-                      Monday-Friday: 9:00AM - 5:00PM
-                      <br />
+                      Monday-Friday: 9:00AM - 5:00PM<br />
                       Saturday-Sunday: Appointment Only
                     </p>
                   </div>
