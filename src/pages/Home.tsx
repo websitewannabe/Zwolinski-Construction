@@ -8,6 +8,9 @@ import {
   ChevronRight,
   Users,
   Shield,
+  Lightbulb,
+  Bath,
+  Utensils,
 } from "lucide-react";
 
 const Home = () => {
@@ -218,6 +221,9 @@ const Home = () => {
                   />
                 </div>
                 <div className="p-6 border-t-4 border-gray-700 bg-black text-gray-300 flex-1">
+                  {service.title === "Basements" && <Lightbulb className="h-8 w-8 text-white mb-3" />}
+                  {service.title === "Bathrooms" && <Bath className="h-8 w-8 text-white mb-3" />}
+                  {service.title === "Kitchens" && <Utensils className="h-8 w-8 text-white mb-3" />}
                   <h3 className="text-2xl font-bold mb-3 text-white">
                     {service.title}
                   </h3>
