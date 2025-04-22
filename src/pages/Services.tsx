@@ -67,6 +67,86 @@ const Services = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Remodeling Services | Zwolinski Quality Construction</title>
+        <meta
+          name="description"
+          content="Explore Zwolinski Quality Construction's remodeling services including kitchens, bathrooms, and basements across Bucks, Montgomery, and Lehigh Counties."
+        />
+        <meta
+          name="keywords"
+          content="remodeling services, kitchen renovation, bathroom remodeling, basement finishing, Bucks County contractor, Montgomery County builder, Lehigh County home renovation, home improvement"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Zwolinski Quality Construction",
+            url: "https://zwolinskiconstr.com/services",
+            image: "https://zwolinskiconstr.com/images/logo.png",
+            logo: "https://zwolinskiconstr.com/images/logo.png",
+            description:
+              "Zwolinski Quality Construction offers premium remodeling services across Southeastern Pennsylvania, including kitchen, bathroom, and basement renovations.",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "166 E Walnut St",
+              addressLocality: "Perkasie",
+              addressRegion: "PA",
+              postalCode: "18944",
+              addressCountry: "US",
+            },
+            telephone: "+1-267-471-6120",
+            hasOfferCatalog: {
+              "@type": "OfferCatalog",
+              name: "Home Remodeling Services",
+              itemListElement: [
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Kitchen Remodeling",
+                    description:
+                      "Custom cabinetry, countertops, appliance integration, and lighting.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Bathroom Remodeling",
+                    description:
+                      "Custom showers, tile work, vanities, plumbing, and lighting.",
+                  },
+                },
+                {
+                  "@type": "Offer",
+                  itemOffered: {
+                    "@type": "Service",
+                    name: "Basement Remodeling",
+                    description:
+                      "Full basement renovations for living space, entertainment, or office.",
+                  },
+                },
+              ],
+            },
+            areaServed: {
+              "@type": "Place",
+              name: [
+                "Perkasie",
+                "Doylestown",
+                "Quakertown",
+                "Lansdale",
+                "Collegeville",
+                "Blue Bell",
+                "Allentown",
+                "Emmaus",
+                "Macungie",
+              ],
+            },
+          })}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"

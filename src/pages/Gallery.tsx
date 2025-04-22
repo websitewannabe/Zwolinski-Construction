@@ -34,6 +34,57 @@ const Gallery = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Project Gallery | Zwolinski Quality Construction</title>
+        <meta
+          name="description"
+          content="View completed remodeling projects by Zwolinski Quality Construction including kitchen, bathroom, and basement renovations in Southeastern PA."
+        />
+        <meta
+          name="keywords"
+          content="remodeling gallery, construction portfolio, home renovation photos, kitchen remodel examples, bathroom renovation ideas, basement remodeling inspiration, Zwolinski Construction projects"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            name: "Zwolinski Construction Project Gallery",
+            url: "https://zwolinskiconstr.com/gallery",
+            description:
+              "Browse Zwolinski Quality Construction's completed projects including kitchens, bathrooms, and basements throughout Bucks, Montgomery, and Lehigh Counties.",
+            publisher: {
+              "@type": "Organization",
+              name: "Zwolinski Quality Construction",
+              url: "https://zwolinskiconstr.com",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://zwolinskiconstr.com/images/logo.png",
+              },
+            },
+            mainEntity: {
+              "@type": "ItemList",
+              itemListElement: [
+                {
+                  "@type": "ListItem",
+                  position: 1,
+                  name: "Kitchen Remodeling Projects",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 2,
+                  name: "Bathroom Remodeling Projects",
+                },
+                {
+                  "@type": "ListItem",
+                  position: 3,
+                  name: "Basement Remodeling Projects",
+                },
+              ],
+            },
+          })}
+        </script>
+      </Helmet>
+
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{

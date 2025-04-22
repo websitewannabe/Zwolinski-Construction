@@ -31,6 +31,55 @@ const About = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>
+          About Zwolinski Quality Construction | Home Remodeling Experts
+        </title>
+        <meta
+          name="description"
+          content="Learn about Zwolinski Quality Construction—trusted for expert remodeling, renovations, and home improvements in Bucks, Montgomery, and Lehigh Counties."
+        />
+        <meta
+          name="keywords"
+          content="about Zwolinski Construction, remodeling company PA, trusted contractor, residential construction, home improvement, renovation experts, Bucks County, Montgomery County, Lehigh County"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "LocalBusiness",
+            name: "Zwolinski Quality Construction",
+            url: "https://zwolinskiconstr.com/about",
+            image: "https://zwolinskiconstr.com/images/zwol25.png",
+            logo: "https://zwolinskiconstr.com/images/zwol25.png",
+            description:
+              "Zwolinski Construction is a trusted remodeling company offering full-service renovations including kitchens, bathrooms, basements, and home additions across Southeastern Pennsylvania.",
+            address: {
+              "@type": "PostalAddress",
+              streetAddress: "123 Construction Ln",
+              addressLocality: "Doylestown",
+              addressRegion: "PA",
+              postalCode: "18901",
+              addressCountry: "US",
+            },
+            telephone: "+1-215-555-1234",
+            openingHours: "Mo-Fr 08:00-17:00",
+            areaServed: {
+              "@type": "Place",
+              name: [
+                "Doylestown",
+                "Quakertown",
+                "Norristown",
+                "Allentown",
+                "Lansdale",
+                "Blue Bell",
+                "Phoenixville",
+                "King of Prussia",
+              ],
+            },
+          })}
+        </script>
+      </Helmet>
+
       {/* Hero Section */}
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
