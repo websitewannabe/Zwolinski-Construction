@@ -1,5 +1,6 @@
 import React from "react";
 import { Award, Users, Clock, Shield, ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const About = () => {
   const values = [
