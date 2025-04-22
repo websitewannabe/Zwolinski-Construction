@@ -11,7 +11,7 @@ const Footer = () => {
             <img
               src="/images/projects/stackedLogo.webp"
               alt="Zwolinski Quality Construction"
-              className="h-24 mb-4"
+              className="h-32 mb-4"
             />
             <p className="text-gray-400">
               Zwolinski Construction delivers expert bathroom, basement, and
