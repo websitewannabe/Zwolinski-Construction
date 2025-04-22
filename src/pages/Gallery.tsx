@@ -41,10 +41,10 @@ const Gallery = () => {
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
-            <h1 className="text-5xl font-bold mb-4">
+            <h1 className="text-3xl md:text-5xl font-bold mb-4">
               Project <span className="text-silver">Gallery</span>
             </h1>
-            <p className="text-xl mb-8 max-w-2xl">
+            <p className="text-lg md:text-xl mb-8 max-w-2xl">
               Browse through our collection of completed projects and see the
               quality of our work firsthand.
             </p>
