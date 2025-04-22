@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { ArrowRight, Lightbulb, Utensils, Bath } from "lucide-react";
 import { galleryData } from "../types/gallery";
+import { Helmet } from "react-helmet-async";
 
 const Gallery = () => {
   const searchParams = new URLSearchParams(window.location.search);

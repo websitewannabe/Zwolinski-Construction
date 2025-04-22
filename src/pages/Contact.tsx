@@ -7,6 +7,7 @@ import {
   MessageSquare,
   ArrowRight,
 } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Contact = () => {
   return (
@@ -107,7 +108,8 @@ const Contact = () => {
                       Business Hours
                     </h3>
                     <p className="text-gray-600">
-                      Monday-Friday: 9:00AM - 5:00PM<br />
+                      Monday-Friday: 9:00AM - 5:00PM
+                      <br />
                       Saturday-Sunday: Appointment Only
                     </p>
                   </div>

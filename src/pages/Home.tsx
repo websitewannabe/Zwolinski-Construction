@@ -165,88 +165,45 @@ const Home = () => {
   return (
     <div>
       <Helmet>
+        <title>Zwolinski Quality Construction | Home Remodeling in PA</title>
+        <meta
+          name="description"
+          content="Zwolinski Quality Construction specializes in expert home remodeling services including kitchens, bathrooms, and basements in Bucks, Montgomery, and Lehigh Counties."
+        />
+        <meta
+          name="keywords"
+          content="home remodeling, bathroom remodeling, kitchen renovation, basement finishing, Zwolinski Construction, Bucks County contractor, Montgomery County contractor, Lehigh County contractor, PA home improvement"
+        />
         <script type="application/ld+json">
           {JSON.stringify({
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
-            name: "Signature Cleaners",
-            url: "https://signaturecleaners.com",
-            image: "https://signaturecleaners.com/src/images/interior.jpg",
-            logo: "https://signaturecleaners.com/src/images/logo.png",
+            name: "Zwolinski Quality Construction",
+            url: "https://zwolinskiconstr.com",
+            image: "https://zwolinskiconstr.com/images/logo.png",
+            logo: "https://zwolinskiconstr.com/images/logo.png",
             description:
-              "Signature Cleaners offers expert dry cleaning, laundry, tailoring, and garment care with pickup and delivery services throughout Bucks County, PA.",
-            telephone: "+1-215-345-1470",
+              "Zwolinski Construction offers professional remodeling services including kitchens, bathrooms, basements, and more throughout Bucks, Montgomery, and Lehigh Counties.",
+            telephone: "+1-215-555-1234",
             address: {
               "@type": "PostalAddress",
-              streetAddress: "123 Main Street",
+              streetAddress: "123 Construction Ln",
               addressLocality: "Doylestown",
               addressRegion: "PA",
               postalCode: "18901",
               addressCountry: "US",
             },
-            openingHours: "Mo-Fr 08:00-18:00",
+            openingHours: "Mo-Fr 08:00-17:00",
             areaServed: {
               "@type": "Place",
               name: [
                 "Doylestown",
-                "New Hope",
-                "Newtown",
-                "Warrington",
-                "Furlong",
-                "Richboro",
-                "Warminster",
-                "Buckingham",
-                "Yardley",
-                "Jamison",
-              ],
-            },
-            hasOfferCatalog: {
-              "@type": "OfferCatalog",
-              name: "Signature Cleaners Services",
-              itemListElement: [
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Dry Cleaning",
-                    description:
-                      "State-of-the-art dry cleaning for suits, dresses, and more.",
-                    priceSpecification: {
-                      "@type": "PriceSpecification",
-                      priceCurrency: "USD",
-                      price: "6.99",
-                    },
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Wash & Fold",
-                    description:
-                      "Convenient wash and fold service for everyday laundry.",
-                    priceSpecification: {
-                      "@type": "PriceSpecification",
-                      priceCurrency: "USD",
-                      price: "2.99",
-                      unitText: "Pound",
-                    },
-                  },
-                },
-                {
-                  "@type": "Offer",
-                  itemOffered: {
-                    "@type": "Service",
-                    name: "Wedding Gown Cleaning",
-                    description:
-                      "Preservation and detailed cleaning of wedding gowns.",
-                    priceSpecification: {
-                      "@type": "PriceSpecification",
-                      priceCurrency: "USD",
-                      price: "99.99",
-                    },
-                  },
-                },
+                "Quakertown",
+                "Allentown",
+                "Lansdale",
+                "Norristown",
+                "King of Prussia",
+                "Bethlehem",
               ],
             },
           })}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { Lightbulb, Bath, Utensils, ArrowRight } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 import { ClipboardCheck, Users, MessageSquare, MapPin } from "lucide-react";
 
