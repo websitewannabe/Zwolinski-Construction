@@ -177,7 +177,7 @@ const Home = () => {
               <br />
               Delivering Excellence
             </h1>
-            <p className="text-lg md:text-xl mb-8 max-w-2xl">
+            <p className="hidden md:block text-lg md:text-xl mb-8 max-w-2xl">
               Zwolinski Quality Construction brings over 25 years of experience
               in residential and commercial construction to Bucks County,
               Montgomery County, and Lehigh County.
