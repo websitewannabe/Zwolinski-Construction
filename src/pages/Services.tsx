@@ -68,6 +68,7 @@ const Services = () => {
   return (
     <div>
       <Helmet>
+        <link rel="canonical" href="https://zwolinskiconstr.com/services" />
         <title>Remodeling Services | Zwolinski Quality Construction</title>
         <meta
           name="description"

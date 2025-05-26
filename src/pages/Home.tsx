@@ -165,6 +165,7 @@ const Home = () => {
   return (
     <div>
       <Helmet>
+        <link rel="canonical" href="https://zwolinskiconstr.com/" />
         <title>Zwolinski Quality Construction | Home Remodeling in PA</title>
         <meta
           name="description"

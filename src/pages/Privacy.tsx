@@ -16,6 +16,7 @@ const Privacy = () => {
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
       <Helmet>
+        <link rel="canonical" href="https://zwolinskiconstr.com/privacy" />
         <title>Privacy Policy | Zwolinski Quality Construction</title>
         <meta
           name="description"

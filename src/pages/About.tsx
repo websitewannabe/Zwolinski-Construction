@@ -32,6 +32,7 @@ const About = () => {
   return (
     <div>
       <Helmet>
+        <link rel="canonical" href="https://zwolinskiconstr.com/about" />
         <title>
           About Zwolinski Quality Construction | Home Remodeling Experts
         </title>

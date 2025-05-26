@@ -35,6 +35,7 @@ const Gallery = () => {
   return (
     <div>
       <Helmet>
+        <link rel="canonical" href="https://zwolinskiconstr.com/gallery" />
         <title>Project Gallery | Zwolinski Quality Construction</title>
         <meta
           name="description"

@@ -13,6 +13,7 @@ const Contact = () => {
   return (
     <div>
       <Helmet>
+        <link rel="canonical" href="https://zwolinskiconstr.com/contact" />
         <title>Contact Zwolinski Quality Construction | Get a Free Quote</title>
         <meta
           name="description"
