@@ -70,6 +70,52 @@
         "West End",
         "East Side"
       ]
+    },
+    {
+      "id": "perkasie",
+      "name": "Perkasie",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18944"],
+      "description": "Professional construction and remodeling services in Perkasie, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Perkasie Borough",
+        "Menlo Park",
+        "Central Park"
+      ],
+      "neighborhoods": [
+        "Perkasie Borough",
+        "East Rockhill Township"
+      ]
+    },
+    {
+      "id": "silverdale",
+      "name": "Silverdale",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18962"],
+      "description": "Trusted construction contractor serving Silverdale, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Peace Valley Park",
+        "Lake Galena",
+        "Silverdale Village"
+      ],
+      "neighborhoods": [
+        "Silverdale Village",
+        "West Rockhill Township"
+      ]
     }
   ]
 }
