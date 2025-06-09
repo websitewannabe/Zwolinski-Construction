@@ -60,6 +60,19 @@
     </noscript>
     <!-- End Google Tag Manager (noscript) -->
 
+    <!-- Hidden form for Netlify detection -->
+    <form name="contact" netlify netlify-honeypot="bot-field" hidden>
+      <input type="text" name="name" />
+      <input type="tel" name="phone" />
+      <input type="email" name="email" />
+      <select name="projectType">
+        <option value="bathroom">Bathroom</option>
+        <option value="basement">Basement</option>
+        <option value="kitchen">Kitchen</option>
+      </select>
+      <textarea name="message"></textarea>
+    </form>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

@@ -1,13 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import {
   Phone,
   Mail,
   MapPin,
   Clock,
   MessageSquare,
-  ArrowRight,
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import ContactForm from "../components/ContactForm";
 
 const Contact = () => {
   return (
@@ -172,18 +172,9 @@ const Contact = () => {
               </div>
             </div>
 
-            {/* Google Form */}
-            <div className="bg-gray-900 p-8 rounded-lg border border-gray-700 order-1 md:order-2">
-              <h2 className="text-3xl font-bold mb-8 text-white">
-                Send Us a Message
-              </h2>
-              <div className="w-full h-[600px]">
-                <iframe
-                  src="https://bv6w3pwoi5y.typeform.com/to/lMePPdwo"
-                  style={{ width: "100%", height: "100%", border: "0" }}
-                  allow="camera; microphone; autoplay; encrypted-media;"
-                />
-              </div>
+            {/* Contact Form */}
+            <div className="order-1 md:order-2">
+              <ContactForm />
             </div>
           </div>
         </div>
