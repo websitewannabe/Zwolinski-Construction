@@ -241,11 +241,12 @@ const Gallery = () => {
 
       {/* CTA Section */}
       <section className="relative py-16 border-t border-gray-300">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/constructionHero.jpg')}&w=1920&q=85&f=webp')`,
-          }}
+        <OptimizedImage
+          src="/images/projects/constructionHero.jpg"
+          alt="Construction Hero"
+          width={1920}
+          height={600}
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
