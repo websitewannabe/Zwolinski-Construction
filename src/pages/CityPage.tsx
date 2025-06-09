@@ -69,22 +69,22 @@ const CityPage = () => {
           />
         </div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
-          <h1 className="text-5xl font-bold mb-6">
+          <h1 className="text-5xl font-bold mb-6 text-black">
             Construction Services in {city.name}
           </h1>
-          <p className="text-xl mb-8 max-w-3xl mx-auto">
+          <p className="text-xl mb-8 max-w-3xl mx-auto text-black">
             {city.description}
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <a
               href="tel:(267) 471-6120"
-              className="bg-silver text-zwolinski-navy px-8 py-3 rounded-lg font-semibold hover:bg-silver/90 transition-colors"
+              className="bg-black text-white px-8 py-3 rounded-lg font-semibold hover:bg-gray-800 transition-colors"
             >
               Call (267) 471-6120
             </a>
             <a
               href="/contact"
-              className="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-zwolinski-navy transition-colors"
+              className="border-2 border-black text-black px-8 py-3 rounded-lg font-semibold hover:bg-black hover:text-white transition-colors"
             >
               Get Free Estimate
             </a>
