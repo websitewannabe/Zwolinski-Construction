@@ -8,9 +8,17 @@ interface ImageTransformOptions {
 }
 
 export const useNetlifyImage = () => {
+  // Check if we're in development mode
+  const isDevelopment = import.meta.env.DEV;
+  
   const transformImage = (src: string, options: ImageTransformOptions = {}) => {
     if (!src.startsWith('/')) {
       return src; // External URLs don't need transformation
+    }
+
+    // In development, return the original URL without transformations
+    if (isDevelopment) {
+      return src;
     }
 
     const {
@@ -35,6 +43,15 @@ export const useNetlifyImage = () => {
   };
 
   const generateResponsiveSet = (src: string, baseWidth: number, options: Omit<ImageTransformOptions, 'width'> = {}) => {
+    // In development, return a single size
+    if (isDevelopment) {
+      return [{
+        src: transformImage(src, { ...options, width: baseWidth }),
+        width: baseWidth,
+        descriptor: `${baseWidth}w`
+      }];
+    }
+    
     const sizes = [baseWidth, baseWidth * 1.5, baseWidth * 2];
     return sizes.map(width => ({
       src: transformImage(src, { ...options, width: Math.round(width) }),

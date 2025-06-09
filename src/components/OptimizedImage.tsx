@@ -24,10 +24,18 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
   loading = 'lazy',
   sizes,
 }) => {
+  // Check if we're in development mode
+  const isDevelopment = import.meta.env.DEV;
+  
   // Generate Netlify image transformation URL
   const getOptimizedUrl = (originalSrc: string, w?: number, h?: number, q?: number, f?: string) => {
     if (!originalSrc.startsWith('/')) {
       return originalSrc; // External URLs
+    }
+
+    // In development, return the original URL without Netlify transformations
+    if (isDevelopment) {
+      return originalSrc;
     }
 
     const params = new URLSearchParams();
@@ -42,7 +50,7 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
 
   // Generate responsive srcSet for different screen densities
   const generateSrcSet = () => {
-    if (!width) return undefined;
+    if (!width || isDevelopment) return undefined; // Skip srcSet in development
 
     const sizes = [width, width * 1.5, width * 2];
     return sizes
