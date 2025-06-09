@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Lightbulb, Bath, Utensils, ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from "../components/OptimizedImage";
 
 import { ClipboardCheck, Users, MessageSquare, MapPin } from "lucide-react";
 
@@ -149,12 +150,14 @@ const Services = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section
-        className="relative h-[300px] md:h-[500px] bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/servicesHero.jpg')}&w=1920&q=85&f=webp')`,
-        }}
-      >
+      <section className="relative h-[300px] md:h-[500px]">
+        <OptimizedImage
+          src="/images/projects/servicesHero.jpg"
+          alt="Services Hero"
+          width={1920}
+          height={500}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
@@ -276,11 +279,12 @@ const Services = () => {
 
       {/* CTA Section */}
       <section className="relative py-16 border-t border-gray-300">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/constructionHero.jpg')}&w=1920&q=85&f=webp')`,
-          }}
+        <OptimizedImage
+          src="/images/projects/constructionHero.jpg"
+          alt="Construction Hero"
+          width={1920}
+          height={600}
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">

@@ -1,6 +1,7 @@
 import React from "react";
 import { Award, Users, Clock, Shield, ArrowRight } from "lucide-react";
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from "../components/OptimizedImage";
 
 const About = () => {
   const values = [
@@ -82,12 +83,14 @@ const About = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section
-        className="relative h-[400px] md:h-[600px] bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/aboutLivingRoom.jpg')}&w=1920&q=85&f=webp')`,
-        }}
-      >
+      <section className="relative h-[400px] md:h-[600px]">
+        <OptimizedImage
+          src="/images/projects/aboutLivingRoom.jpg"
+          alt="About Us Hero"
+          width={1920}
+          height={600}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">About Us</h1>
@@ -143,9 +146,12 @@ const About = () => {
               </p>
             </div>
             <div className="w-full">
-              <img
-                src={`/.netlify/images?url=${encodeURIComponent('/images/zwol25.png')}&w=800&q=90&f=webp`}
+              <OptimizedImage
+                src="/images/zwol25.png"
                 alt="Logo"
+                width={800}
+                height={700}
+                quality={90}
                 className="rounded-lg shadow-xl w-full max-h-[700px] object-contain"
               />
             </div>
@@ -230,11 +236,12 @@ const About = () => {
       </section>
       {/* CTA Section */}
       <section className="relative py-16">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/constructionHero.jpg')}&w=1920&q=85&f=webp')`,
-          }}
+        <OptimizedImage
+          src="/images/projects/constructionHero.jpg"
+          alt="Construction Hero"
+          width={1920}
+          height={600}
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">

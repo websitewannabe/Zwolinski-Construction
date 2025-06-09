@@ -8,6 +8,7 @@ import {
 } from "lucide-react";
 import { Helmet } from "react-helmet-async";
 import ContactForm from "../components/ContactForm";
+import OptimizedImage from "../components/OptimizedImage";
 
 const Contact = () => {
   return (
@@ -69,10 +70,13 @@ const Contact = () => {
 
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
-        style={{
-          backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/gallery/bathrooms/newBathroom3.jpg')}&w=1920&q=85&f=webp')`,
-        }}
       >
+        <OptimizedImage
+          src="/images/gallery/bathrooms/newBathroom3.jpg"
+          alt="Contact Us"
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
             <h1 className="text-5xl font-bold mb-4">

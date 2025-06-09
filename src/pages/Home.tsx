@@ -213,12 +213,14 @@ const Home = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section
-        className="relative h-[450px] md:h-[650px] bg-cover bg-center"
-        style={{
-          backgroundImage: `url('${import.meta.env.DEV ? '/images/projects/constructionHero.jpg' : `/.netlify/images?url=${encodeURIComponent('/images/projects/constructionHero.jpg')}&w=1920&q=85&f=webp`}')`,
-        }}
-      >
+      <section className="relative h-[450px] md:h-[650px]">
+        <OptimizedImage
+          src="/images/projects/constructionHero.jpg"
+          alt="Construction Hero"
+          width={1920}
+          height={650}
+          className="absolute inset-0 w-full h-full object-cover"
+        />
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
             <h1 className="text-3xl md:text-5xl font-bold mb-4">
@@ -471,11 +473,12 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="relative py-16 border-t border-gray-300">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('${import.meta.env.DEV ? '/images/projects/constructionHero.jpg' : `/.netlify/images?url=${encodeURIComponent('/images/projects/constructionHero.jpg')}&w=1920&q=85&f=webp`}')`,
-          }}
+        <OptimizedImage
+          src="/images/projects/constructionHero.jpg"
+          alt="Construction Hero"
+          width={1920}
+          height={600}
+          className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
         <div className="relative max-w-7xl mx-auto px-4 text-center">
