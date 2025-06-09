@@ -1,0 +1,75 @@
+
+{
+  "cities": [
+    {
+      "id": "doylestown",
+      "name": "Doylestown",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18901", "18902"],
+      "description": "Professional construction and remodeling services in Doylestown, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Doylestown Borough",
+        "Central Bucks School District",
+        "Mercer Museum"
+      ],
+      "neighborhoods": [
+        "Downtown Doylestown",
+        "Doylestown Township"
+      ]
+    },
+    {
+      "id": "quakertown",
+      "name": "Quakertown",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18951"],
+      "description": "Trusted construction contractor serving Quakertown, PA. Quality home remodeling and construction services in Bucks County.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Quakertown Borough",
+        "Quakertown Community Park",
+        "Memorial Park"
+      ],
+      "neighborhoods": [
+        "Upper Bucks",
+        "Richland Township"
+      ]
+    },
+    {
+      "id": "allentown",
+      "name": "Allentown",
+      "state": "PA",
+      "county": "Lehigh County",
+      "zipCodes": ["18101", "18102", "18103", "18104", "18109"],
+      "description": "Expert construction services in Allentown, PA. Zwolinski Quality Construction provides professional remodeling throughout Lehigh County.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "PPL Center",
+        "Allentown Art Museum",
+        "Coca-Cola Park"
+      ],
+      "neighborhoods": [
+        "Center City",
+        "West End",
+        "East Side"
+      ]
+    }
+  ]
+}

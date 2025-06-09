@@ -12,6 +12,8 @@ import Contact from "./pages/Contact";
 import Reviews from "./pages/Reviews";
 import Accessibility from "./pages/Accessibility";
 import Privacy from "./pages/Privacy";
+import CityPage from "./pages/CityPage"; // Assuming you have this component
+import CitiesIndex from "./pages/CitiesIndex"; // Assuming you have this component
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen flex flex-col">
@@ -90,6 +92,24 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Privacy />
+      </Layout>
+    ),
+    errorElement: <Error />,
+  },
+  {
+    path: "/cities",
+    element: (
+      <Layout>
+        <CitiesIndex />
+      </Layout>
+    ),
+    errorElement: <Error />,
+  },
+  {
+    path: "/cities/:cityId",
+    element: (
+      <Layout>
+        <CityPage />
       </Layout>
     ),
     errorElement: <Error />,
