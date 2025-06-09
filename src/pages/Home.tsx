@@ -13,6 +13,7 @@ import {
   Bath,
   Utensils,
 } from "lucide-react";
+import OptimizedImage from "../components/OptimizedImage";
 
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(0);
@@ -274,9 +275,11 @@ const Home = () => {
                 className="bg-black rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full flex flex-col group"
               >
                 <div className="h-56 relative">
-                  <img
+                  <OptimizedImage
                     src={service.image}
                     alt={service.title}
+                    width={400}
+                    height={300}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -471,7 +474,7 @@ const Home = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/projects/constructionHero.jpg')",
+            backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/constructionHero.jpg')}&w=1920&q=85&f=webp')`,
           }}
         />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
