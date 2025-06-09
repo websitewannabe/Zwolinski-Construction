@@ -279,7 +279,7 @@ const Services = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/projects/constructionHero.jpg')",
+            backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/constructionHero.jpg')}&w=1920&q=85&f=webp')`,
           }}
         />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
