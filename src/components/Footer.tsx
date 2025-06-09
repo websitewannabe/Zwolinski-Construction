@@ -3,6 +3,22 @@ import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
+  const loadEqualWebScript = () => {
+    const script = document.createElement("script");
+    script.src = "https://cdn.equalweb.com/core/3.0.6/equalweb.js";
+    script.integrity =
+      "sha384-WnVjZ5WjfhVnGeg0v9eJBOEiK9rKj6mQWkYRoSzXoP4JjmxUq6lWw+XlZeP9K0GZ";
+    script.async = true;
+    script.onload = () => {
+      window.equalWebDark = true;
+      window.EQW.on("ready", function () {
+        //  console.log("EqualWeb is ready");
+      });
+      window.EQW.run();
+    };
+    document.body.appendChild(script);
+  };
+
   return (
     <footer className="bg-black text-gray-300">
       <div className="max-w-7xl mx-auto px-4 py-12 sm:px-6 lg:px-8">
@@ -138,6 +154,13 @@ const Footer = () => {
             >
               Accessibility
             </Link>
+            <span className="mx-2">|</span>
+            <button
+              onClick={loadEqualWebScript}
+              className="text-gray-400 hover:text-silver mx-2 cursor-pointer"
+            >
+              Accessibility Options
+            </button>
             <span className="mx-2">|</span>
             <a
               href="/sitemap.xml"
