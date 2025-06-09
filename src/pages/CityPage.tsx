@@ -50,9 +50,9 @@ const CityPage = () => {
   return (
     <>
       <Helmet>
-        <title>{`Construction Services in ${city.name}, ${city.state} | Zwolinski Quality Construction`}</title>
+        <title>{`Construction Services in ${city.name} | Zwolinski Quality Construction`}</title>
         <meta name="description" content={city.description} />
-        <meta name="keywords" content={`construction ${city.name}, remodeling ${city.name}, contractor ${city.state}, ${city.county} construction, ${city.services.join(', ')} ${city.name}`} />
+        <meta name="keywords" content={`construction ${city.name}, remodeling ${city.name}, contractor, ${city.services.join(', ')} ${city.name}`} />
         <link rel="canonical" href={`https://zwolinskiconstr.com/cities/${city.id}`} />
         <script type="application/ld+json">
           {JSON.stringify(structuredData)}
@@ -70,7 +70,7 @@ const CityPage = () => {
         </div>
         <div className="relative max-w-7xl mx-auto px-4 text-center">
           <h1 className="text-5xl font-bold mb-6">
-            Construction Services in {city.name}, {city.state}
+            Construction Services in {city.name}
           </h1>
           <p className="text-xl mb-8 max-w-3xl mx-auto">
             {city.description}
@@ -104,7 +104,7 @@ const CityPage = () => {
                 <CheckCircle className="text-silver mb-4" size={32} />
                 <h3 className="text-xl font-semibold mb-2">{service}</h3>
                 <p className="text-gray-600">
-                  Professional {service.toLowerCase()} services in {city.name}, {city.state}
+                  Professional {service.toLowerCase()} services in {city.name}
                 </p>
               </div>
             ))}
@@ -112,69 +112,34 @@ const CityPage = () => {
         </div>
       </section>
 
-      {/* Service Areas */}
+      {/* Why Choose Us Section */}
       <section className="py-16">
-        <div className="max-w-7xl mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12">
-            <div>
-              <h2 className="text-3xl font-bold mb-6 text-zwolinski-navy">
-                Serving {city.county}
-              </h2>
-              <p className="text-gray-600 mb-6">
-                We proudly serve {city.name} and the surrounding areas in {city.county}. 
-                Our team is familiar with local building codes and requirements.
-              </p>
-              
-              {city.neighborhoods.length > 0 && (
-                <div className="mb-6">
-                  <h3 className="text-xl font-semibold mb-3">Service Areas:</h3>
-                  <ul className="grid grid-cols-2 gap-2">
-                    {city.neighborhoods.map((neighborhood, index) => (
-                      <li key={index} className="flex items-center">
-                        <CheckCircle className="text-silver mr-2" size={16} />
-                        {neighborhood}
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              )}
-
-              {city.zipCodes.length > 0 && (
-                <div>
-                  <h3 className="text-xl font-semibold mb-3">Zip Codes Served:</h3>
-                  <p className="text-gray-600">{city.zipCodes.join(', ')}</p>
-                </div>
-              )}
-            </div>
-
-            <div>
-              <h3 className="text-2xl font-semibold mb-6 text-zwolinski-navy">
-                Why Choose Us in {city.name}?
-              </h3>
-              <ul className="space-y-3">
-                <li className="flex items-start">
-                  <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span>Licensed and insured contractor in {city.state}</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span>Familiar with local {city.name} building codes</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span>Free estimates for all {city.name} residents</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span>Quality craftsmanship guaranteed</span>
-                </li>
-                <li className="flex items-start">
-                  <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
-                  <span>Serving {city.county} for over 10 years</span>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div className="max-w-4xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center text-zwolinski-navy">
+            Why Choose Us in {city.name}?
+          </h2>
+          <ul className="space-y-4">
+            <li className="flex items-start">
+              <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
+              <span>Licensed and insured contractor</span>
+            </li>
+            <li className="flex items-start">
+              <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
+              <span>Familiar with local {city.name} building codes</span>
+            </li>
+            <li className="flex items-start">
+              <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
+              <span>Free estimates for all {city.name} residents</span>
+            </li>
+            <li className="flex items-start">
+              <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
+              <span>Quality craftsmanship guaranteed</span>
+            </li>
+            <li className="flex items-start">
+              <CheckCircle className="text-silver mr-3 mt-1 flex-shrink-0" size={20} />
+              <span>Over 10 years of experience</span>
+            </li>
+          </ul>
         </div>
       </section>
 

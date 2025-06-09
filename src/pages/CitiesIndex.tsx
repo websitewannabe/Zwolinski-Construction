@@ -38,9 +38,8 @@ const CitiesIndex = () => {
                 <MapPin className="text-silver mr-3" size={24} />
                 <div>
                   <h2 className="text-xl font-semibold text-zwolinski-navy">
-                    {city.name}, {city.state}
+                    {city.name}
                   </h2>
-                  <p className="text-gray-600">{city.county}</p>
                 </div>
               </div>
               <p className="text-gray-600 mb-4 line-clamp-3">
