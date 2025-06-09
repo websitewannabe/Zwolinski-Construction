@@ -90,7 +90,7 @@ const Gallery = () => {
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("images/gallery/bathrooms/newBathroom7.jpg")',
+          backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/gallery/bathrooms/newBathroom7.jpg')}&w=1920&q=85&f=webp')`,
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
@@ -241,7 +241,7 @@ const Gallery = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/projects/constructionHero.jpg')",
+            backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/constructionHero.jpg')}&w=1920&q=85&f=webp')`,
           }}
         />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
