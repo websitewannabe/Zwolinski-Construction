@@ -144,7 +144,7 @@ const About = () => {
             </div>
             <div className="w-full">
               <img
-                src="/images/zwol25.png"
+                src={`/.netlify/images?url=${encodeURIComponent('/images/zwol25.png')}&w=800&q=90&f=webp`}
                 alt="Logo"
                 className="rounded-lg shadow-xl w-full max-h-[700px] object-contain"
               />
@@ -233,7 +233,7 @@ const About = () => {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: "url('/images/projects/constructionHero.jpg')",
+            backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/constructionHero.jpg')}&w=1920&q=85&f=webp')`,
           }}
         />
         <div className="absolute inset-0 bg-[#C0C0C0]/90" />
