@@ -10,6 +10,7 @@ import {
   X,
   Phone,
 } from "lucide-react";
+import OptimizedImage from "./OptimizedImage";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
@@ -27,9 +28,12 @@ const Navbar = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
-            <img
-              src={`/.netlify/images?url=${encodeURIComponent('/images/projects/newLogo.webp')}&w=200&q=90&f=webp`}
+            <OptimizedImage
+              src="/images/projects/newLogo.webp"
               alt="Zwolinski Quality Construction"
+              width={200}
+              height={64}
+              quality={90}
               className="h-12 md:h-16"
             />
           </Link>
