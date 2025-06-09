@@ -85,7 +85,7 @@ const About = () => {
       <section
         className="relative h-[400px] md:h-[600px] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/images/gallery/kitchens/IMG_6051-min.jpg")',
+          backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/aboutLivingRoom.jpg')}&w=1920&q=85&f=webp')`,
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">

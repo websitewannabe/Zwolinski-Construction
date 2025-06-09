@@ -150,9 +150,9 @@ const Services = () => {
 
       {/* Hero Section */}
       <section
-        className="relative h-[400px] md:h-[600px] bg-cover bg-center"
+        className="relative h-[300px] md:h-[500px] bg-cover bg-center"
         style={{
-          backgroundImage: 'url("/images/projects/servicesHero.jpg")',
+          backgroundImage: `url('/.netlify/images?url=${encodeURIComponent('/images/projects/servicesHero.jpg')}&w=1920&q=85&f=webp')`,
         }}
       >
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">

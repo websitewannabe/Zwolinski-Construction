@@ -1,0 +1,67 @@
+
+import React from 'react';
+
+interface OptimizedImageProps {
+  src: string;
+  alt: string;
+  width?: number;
+  height?: number;
+  quality?: number;
+  format?: 'webp' | 'jpg' | 'png' | 'auto';
+  className?: string;
+  loading?: 'lazy' | 'eager';
+  sizes?: string;
+}
+
+const OptimizedImage: React.FC<OptimizedImageProps> = ({
+  src,
+  alt,
+  width,
+  height,
+  quality = 85,
+  format = 'auto',
+  className,
+  loading = 'lazy',
+  sizes,
+}) => {
+  // Generate Netlify image transformation URL
+  const getOptimizedUrl = (originalSrc: string, w?: number, h?: number, q?: number, f?: string) => {
+    if (!originalSrc.startsWith('/')) {
+      return originalSrc; // External URLs
+    }
+
+    const params = new URLSearchParams();
+    if (w) params.append('w', w.toString());
+    if (h) params.append('h', h.toString());
+    if (q) params.append('q', q.toString());
+    if (f && f !== 'auto') params.append('f', f);
+
+    const queryString = params.toString();
+    return queryString ? `/.netlify/images?url=${encodeURIComponent(originalSrc)}&${queryString}` : originalSrc;
+  };
+
+  // Generate responsive srcSet for different screen densities
+  const generateSrcSet = () => {
+    if (!width) return undefined;
+
+    const sizes = [width, width * 1.5, width * 2];
+    return sizes
+      .map(size => `${getOptimizedUrl(src, Math.round(size), height ? Math.round((height * size) / width) : undefined, quality, format)} ${size / width}x`)
+      .join(', ');
+  };
+
+  return (
+    <img
+      src={getOptimizedUrl(src, width, height, quality, format)}
+      srcSet={generateSrcSet()}
+      alt={alt}
+      width={width}
+      height={height}
+      className={className}
+      loading={loading}
+      sizes={sizes}
+    />
+  );
+};
+
+export default OptimizedImage;

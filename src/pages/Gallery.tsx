@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import { ArrowRight, Lightbulb, Utensils, Bath } from "lucide-react";
 import { galleryData } from "../types/gallery";
 import { Helmet } from "react-helmet-async";
+import OptimizedImage from "../components/OptimizedImage";
 
 const Gallery = () => {
   const searchParams = new URLSearchParams(window.location.search);
@@ -182,9 +183,11 @@ const Gallery = () => {
                           key={imageIndex}
                           className="relative group overflow-hidden rounded-lg h-[300px]"
                         >
-                          <img
+                          <OptimizedImage
                             src={image.url}
-                            alt={image.description || image.title}
+                            alt={image.title}
+                            width={400}
+                            height={300}
                             className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-300"
                           />
                           <div className="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-0 group-hover:opacity-90 transition-opacity duration-300 flex flex-col justify-end p-6">
