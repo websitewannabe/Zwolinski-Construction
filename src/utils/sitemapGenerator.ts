@@ -71,6 +71,7 @@ export const generateSitemap = (): string => {
 
   // Add dynamic city pages
   const cities = getAllCities();
+  console.log('Cities found for sitemap:', cities.length, cities.map(c => c.id));
   const cityPages: SitemapUrl[] = cities.map(city => ({
     loc: `${baseUrl}/cities/${city.id}`,
     changefreq: 'monthly',
