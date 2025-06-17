@@ -116,6 +116,535 @@
         "Silverdale Village",
         "West Rockhill Township"
       ]
+    },
+    {
+      "id": "buckingham",
+      "name": "Buckingham",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18912", "18925"],
+      "description": "Professional construction and remodeling services in Buckingham, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Buckingham Township",
+        "Tyler State Park",
+        "Buckingham Valley Vineyards"
+      ],
+      "neighborhoods": [
+        "Buckingham Township",
+        "Holicong"
+      ]
+    },
+    {
+      "id": "carversville",
+      "name": "Carversville",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18913"],
+      "description": "Trusted construction contractor serving Carversville, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Solebury Township",
+        "Delaware River",
+        "Historic Carversville"
+      ],
+      "neighborhoods": [
+        "Carversville Village",
+        "Solebury Township"
+      ]
+    },
+    {
+      "id": "chalfont",
+      "name": "Chalfont",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18914"],
+      "description": "Professional construction and remodeling services in Chalfont, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Chalfont Borough",
+        "New Britain Township",
+        "Chalfont Station"
+      ],
+      "neighborhoods": [
+        "Chalfont Borough",
+        "New Britain"
+      ]
+    },
+    {
+      "id": "dublin",
+      "name": "Dublin",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18917"],
+      "description": "Trusted construction contractor serving Dublin, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Dublin Borough",
+        "Neshaminy Creek",
+        "Dublin Green"
+      ],
+      "neighborhoods": [
+        "Dublin Borough",
+        "Bedminster Township"
+      ]
+    },
+    {
+      "id": "fountainville",
+      "name": "Fountainville",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18923"],
+      "description": "Professional construction and remodeling services in Fountainville, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Doylestown Township",
+        "Central Bucks School District",
+        "Fountainville Village"
+      ],
+      "neighborhoods": [
+        "Fountainville",
+        "Doylestown Township"
+      ]
+    },
+    {
+      "id": "furlong",
+      "name": "Furlong",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18925"],
+      "description": "Trusted construction contractor serving Furlong, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Buckingham Township",
+        "Furlong Station",
+        "Peace Valley Park"
+      ],
+      "neighborhoods": [
+        "Furlong Village",
+        "Buckingham Township"
+      ]
+    },
+    {
+      "id": "holland",
+      "name": "Holland",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18966"],
+      "description": "Professional construction and remodeling services in Holland, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Northampton Township",
+        "Council Rock School District",
+        "Holland Park"
+      ],
+      "neighborhoods": [
+        "Holland",
+        "Northampton Township"
+      ]
+    },
+    {
+      "id": "ivyland",
+      "name": "Ivyland",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18974"],
+      "description": "Trusted construction contractor serving Ivyland, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Ivyland Borough",
+        "Warminster Township",
+        "Ivyland Station"
+      ],
+      "neighborhoods": [
+        "Ivyland Borough",
+        "Warminster"
+      ]
+    },
+    {
+      "id": "jamison",
+      "name": "Jamison",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18929"],
+      "description": "Professional construction and remodeling services in Jamison, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Warwick Township",
+        "Central Bucks School District",
+        "Jamison Village"
+      ],
+      "neighborhoods": [
+        "Jamison",
+        "Warwick Township"
+      ]
+    },
+    {
+      "id": "lahaska",
+      "name": "Lahaska",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18931"],
+      "description": "Trusted construction contractor serving Lahaska, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Buckingham Township",
+        "Peddler's Village",
+        "Lahaska Station"
+      ],
+      "neighborhoods": [
+        "Lahaska",
+        "Buckingham Township"
+      ]
+    },
+    {
+      "id": "morrisville",
+      "name": "Morrisville",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["19067"],
+      "description": "Professional construction and remodeling services in Morrisville, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Morrisville Borough",
+        "Delaware River",
+        "Williamson Park"
+      ],
+      "neighborhoods": [
+        "Morrisville Borough",
+        "Falls Township"
+      ]
+    },
+    {
+      "id": "newhope",
+      "name": "New Hope",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18938"],
+      "description": "Trusted construction contractor serving New Hope, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "New Hope Borough",
+        "Delaware River",
+        "New Hope & Ivyland Railroad"
+      ],
+      "neighborhoods": [
+        "New Hope Borough",
+        "Solebury Township"
+      ]
+    },
+    {
+      "id": "newtown",
+      "name": "Newtown",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18940"],
+      "description": "Professional construction and remodeling services in Newtown, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Newtown Borough",
+        "Tyler State Park",
+        "Council Rock School District"
+      ],
+      "neighborhoods": [
+        "Newtown Borough",
+        "Newtown Township"
+      ]
+    },
+    {
+      "id": "ottsville",
+      "name": "Ottsville",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18942"],
+      "description": "Trusted construction contractor serving Ottsville, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Nockamixon Township",
+        "Lake Nockamixon",
+        "Nockamixon State Park"
+      ],
+      "neighborhoods": [
+        "Ottsville",
+        "Nockamixon Township"
+      ]
+    },
+    {
+      "id": "pipersville",
+      "name": "Pipersville",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18947"],
+      "description": "Professional construction and remodeling services in Pipersville, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Bedminster Township",
+        "Tohickon Creek",
+        "Ralph Stover State Park"
+      ],
+      "neighborhoods": [
+        "Pipersville",
+        "Bedminster Township"
+      ]
+    },
+    {
+      "id": "pointpleasant",
+      "name": "Point Pleasant",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18950"],
+      "description": "Trusted construction contractor serving Point Pleasant, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Tinicum Township",
+        "Delaware River",
+        "Point Pleasant Community Center"
+      ],
+      "neighborhoods": [
+        "Point Pleasant",
+        "Tinicum Township"
+      ]
+    },
+    {
+      "id": "richboro",
+      "name": "Richboro",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18954"],
+      "description": "Professional construction and remodeling services in Richboro, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Northampton Township",
+        "Richboro Elementary",
+        "Council Rock School District"
+      ],
+      "neighborhoods": [
+        "Richboro",
+        "Northampton Township"
+      ]
+    },
+    {
+      "id": "southampton",
+      "name": "Southampton",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18966"],
+      "description": "Trusted construction contractor serving Southampton, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Southampton Township",
+        "Tamanend Park",
+        "Centennial School District"
+      ],
+      "neighborhoods": [
+        "Southampton",
+        "Upper Southampton"
+      ]
+    },
+    {
+      "id": "trevose",
+      "name": "Trevose",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["19053", "19047"],
+      "description": "Professional construction and remodeling services in Trevose, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Bensalem Township",
+        "Neshaminy State Park",
+        "Street Road"
+      ],
+      "neighborhoods": [
+        "Trevose",
+        "Bensalem Township"
+      ]
+    },
+    {
+      "id": "warminster",
+      "name": "Warminster",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18974"],
+      "description": "Trusted construction contractor serving Warminster, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Warminster Township",
+        "Warminster Community Park",
+        "Centennial School District"
+      ],
+      "neighborhoods": [
+        "Warminster Township",
+        "Ivyland"
+      ]
+    },
+    {
+      "id": "warrington",
+      "name": "Warrington",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18976"],
+      "description": "Professional construction and remodeling services in Warrington, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Warrington Township",
+        "Central Bucks School District",
+        "Warrington Community Park"
+      ],
+      "neighborhoods": [
+        "Warrington Township",
+        "Warrington Village"
+      ]
+    },
+    {
+      "id": "washingtoncrossing",
+      "name": "Washington Crossing",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["18977"],
+      "description": "Trusted construction contractor serving Washington Crossing, PA. Quality home remodeling and construction services in Bucks County with attention to detail.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Washington Crossing Historic Park",
+        "Delaware River",
+        "Upper Makefield Township"
+      ],
+      "neighborhoods": [
+        "Washington Crossing",
+        "Upper Makefield Township"
+      ]
+    },
+    {
+      "id": "yardley",
+      "name": "Yardley",
+      "state": "PA",
+      "county": "Bucks County",
+      "zipCodes": ["19067"],
+      "description": "Professional construction and remodeling services in Yardley, PA. Zwolinski Quality Construction serves Bucks County with expert craftsmanship and reliable service.",
+      "services": [
+        "Kitchen Remodeling",
+        "Bathroom Renovation",
+        "Basement Finishing",
+        "Home Additions"
+      ],
+      "landmarks": [
+        "Yardley Borough",
+        "Delaware Canal",
+        "Lake Afton"
+      ],
+      "neighborhoods": [
+        "Yardley Borough",
+        "Lower Makefield Township"
+      ]
     }
   ]
 }
