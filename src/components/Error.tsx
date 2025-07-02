@@ -11,7 +11,7 @@ const Error = () => {
   return (
     <div className="min-h-screen flex flex-col">
       <Navbar />
-      <main className="flex-grow flex items-center justify-center bg-black">
+      <main className="flex-grow flex items-center justify-center bg-black py-24">
         <div className="max-w-md text-center px-4">
           {/* Assuming AlertTriangle is imported correctly */}
           {/* <AlertTriangle className="mx-auto h-24 w-24 text-zwolinski-secondary mb-6" /> */}
