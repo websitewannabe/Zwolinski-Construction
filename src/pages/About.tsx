@@ -83,7 +83,7 @@ const About = () => {
       </Helmet>
 
       {/* Hero Section */}
-      <section className="relative h-[400px] md:h-[600px]">
+      <section className="relative h-[300px] md:h-[500px]">
         <OptimizedImage
           src="/images/projects/aboutLivingRoom.jpg"
           alt="About Us Hero"

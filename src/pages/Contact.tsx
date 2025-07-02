@@ -69,7 +69,7 @@ const Contact = () => {
       </Helmet>
 
       <section
-        className="relative h-[400px] md:h-[600px] bg-cover bg-center"
+        className="relative h-[300px] md:h-[500px] bg-cover bg-center"
       >
         <OptimizedImage
           src="/images/gallery/bathrooms/newBathroom3.jpg"
