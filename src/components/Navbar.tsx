@@ -29,7 +29,7 @@ const Navbar = () => {
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center">
             <OptimizedImage
-              src="/dist/images/projects/newlogo.png"
+              src="/images/projects/newLogo.webp"
               alt="Zwolinski Quality Construction"
               width={200}
               height={64}
