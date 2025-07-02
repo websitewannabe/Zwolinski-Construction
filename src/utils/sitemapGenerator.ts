@@ -66,6 +66,12 @@ export const generateSitemap = (): string => {
       changefreq: 'monthly',
       priority: 0.7,
       lastmod
+    },
+    {
+      loc: `${baseUrl}/sitemap`,
+      changefreq: 'monthly',
+      priority: 0.4,
+      lastmod
     }
   ];
 
