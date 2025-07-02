@@ -28,32 +28,35 @@ const Footer = () => {
       "btnStyle": {
         "vPosition": [
           "80%",
-          "80%"
+          "20%"
         ],
         "scale": [
           "0.5",
           "0.5"
         ],
         "color": {
-          "main": "#000000",
+          "main": "#1876c9",
           "second": "#ffffff"
         },
         "icon": {
           "outline": false,
           "type": 7,
-          "shape": "circle"
+          "shape": "semicircle"
         }
       }
     };
 
-    // Load the accessibility script
-    const script = document.createElement("script");
-    script.src = "https://cdn.equalweb.com/core/5.1.13/accessibility.js";
-    script.defer = true;
-    script.integrity = "sha512-70/AbMe6C9H3r5hjsQleJEY4y5l9ykt4WYSgyZj/WjpY/ord/26LWfva163b9W+GwWkfwbP0iLT+h6KRl+LoXA==";
-    script.crossOrigin = "anonymous";
-    script.setAttribute('data-cfasync', true);
-    document.body.appendChild(script);
+    // Load the accessibility script using the new method
+    const doc = document;
+    const head = document.head;
+    const body = document.body;
+    const coreCall = doc.createElement('script');
+    coreCall.src = window.interdeal.domains.js + 'core/5.1.13/accessibility.js';
+    coreCall.defer = true;
+    coreCall.integrity = 'sha512-70/AbMe6C9H3r5hjsQleJEY4y5l9ykt4WYSgyZj/WjpY/ord/26LWfva163b9W+GwWkfwbP0iLT+h6KRl+LoXA==';
+    coreCall.crossOrigin = 'anonymous';
+    coreCall.setAttribute('data-cfasync', true);
+    body ? body.appendChild(coreCall) : head.appendChild(coreCall);
   };
 
   return (
