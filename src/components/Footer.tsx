@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Phone, Mail, MapPin, Facebook } from "lucide-react";
+import { Phone, Mail, MapPin, Facebook, Eye } from "lucide-react";
 
 // TypeScript declaration for EqualWeb
 declare global {
@@ -120,9 +120,10 @@ const Footer = () => {
               <li>
                 <button
                   onClick={loadEqualWebScript}
-                  className="text-gray-400 hover:text-silver transition-colors text-left"
+                  className="flex items-center space-x-2 text-gray-400 hover:text-silver transition-colors text-left"
                 >
-                  Accessibility Tools
+                  <Eye className="h-4 w-4" />
+                  <span>Accessibility Tools</span>
                 </button>
               </li>
             </ul>
