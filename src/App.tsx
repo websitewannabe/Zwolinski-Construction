@@ -4,6 +4,7 @@ import { HelmetProvider } from 'react-helmet-async'; // Added import
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Error from "./components/Error";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Services from "./pages/Services";
@@ -18,6 +19,7 @@ import Sitemap from "./pages/Sitemap";
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen flex flex-col">
+    <ScrollToTop />
     <Navbar />
     <main className="flex-grow">{children}</main>
     <Footer />
