@@ -4,6 +4,11 @@ import { Phone, Mail, MapPin, Facebook, Instagram } from "lucide-react";
 
 const Footer = () => {
   const loadEqualWebScript = () => {
+    // Check if script is already loaded
+    if (document.querySelector('script[src*="equalweb.js"]')) {
+      return;
+    }
+    
     const script = document.createElement("script");
     script.src = "https://cdn.equalweb.com/core/3.0.6/equalweb.js";
     script.integrity =
@@ -80,6 +85,14 @@ const Footer = () => {
                   Contact
                 </Link>
               </li>
+              <li>
+                <button
+                  onClick={loadEqualWebScript}
+                  className="text-gray-400 hover:text-silver transition-colors text-left"
+                >
+                  Accessibility Tools
+                </button>
+              </li>
             </ul>
           </div>
 
@@ -154,13 +167,6 @@ const Footer = () => {
             >
               Accessibility
             </Link>
-            <span className="mx-2">|</span>
-            <button
-              onClick={loadEqualWebScript}
-              className="text-gray-400 hover:text-silver mx-2 cursor-pointer"
-            >
-              Accessibility Options
-            </button>
             <span className="mx-2">|</span>
             <a
               href="/sitemap.xml"
