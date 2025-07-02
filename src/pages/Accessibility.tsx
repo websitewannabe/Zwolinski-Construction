@@ -40,7 +40,7 @@ const Accessibility = () => {
       </Helmet>
 
       <h1 className="text-4xl font-bold mb-8 text-zwolinski-navy">
-        Declaration of Accessibility Introduction
+        Accessibility Statement
       </h1>
       <div className="prose max-w-none">
         <p className="mb-4">
