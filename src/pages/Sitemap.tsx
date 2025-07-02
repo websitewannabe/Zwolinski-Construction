@@ -1,5 +1,6 @@
 
 import React, { useEffect } from 'react';
+import { Helmet } from 'react-helmet-async';
 import { generateSitemap } from '../utils/sitemapGenerator';
 
 const Sitemap = () => {
@@ -23,6 +24,10 @@ const Sitemap = () => {
   // Return the XML as plain text with proper formatting
   return (
     <div style={{ margin: 0, padding: 0 }}>
+      <Helmet>
+        <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+        <title>Sitemap | Zwolinski Quality Construction</title>
+      </Helmet>
       <pre 
         style={{ 
           fontFamily: 'monospace', 
