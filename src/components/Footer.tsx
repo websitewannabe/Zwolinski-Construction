@@ -5,22 +5,47 @@ import { Phone, Mail, MapPin, Facebook } from "lucide-react";
 const Footer = () => {
   const loadEqualWebScript = () => {
     // Check if script is already loaded
-    if (document.querySelector('script[src*="equalweb.js"]')) {
+    if (document.querySelector('script[src*="accessibility.js"]')) {
       return;
     }
     
-    const script = document.createElement("script");
-    script.src = "https://cdn.equalweb.com/core/3.0.6/equalweb.js";
-    script.integrity =
-      "sha384-WnVjZ5WjfhVnGeg0v9eJBOEiK9rKj6mQWkYRoSzXoP4JjmxUq6lWw+XlZeP9K0GZ";
-    script.async = true;
-    script.onload = () => {
-      window.equalWebDark = true;
-      window.EQW.on("ready", function () {
-        //  console.log("EqualWeb is ready");
-      });
-      window.EQW.run();
+    // Set up EqualWeb configuration
+    window.interdeal = {
+      "sitekey": "0b5ee2eb111e583d15929d50a9707d6b",
+      "Position": "left",
+      "domains": {
+        "js": "https://cdn.equalweb.com/",
+        "acc": "https://access.equalweb.com/"
+      },
+      "Menulang": "EN",
+      "btnStyle": {
+        "vPosition": [
+          "80%",
+          "80%"
+        ],
+        "scale": [
+          "0.5",
+          "0.5"
+        ],
+        "color": {
+          "main": "#000000",
+          "second": "#ffffff"
+        },
+        "icon": {
+          "outline": false,
+          "type": 7,
+          "shape": "circle"
+        }
+      }
     };
+
+    // Load the accessibility script
+    const script = document.createElement("script");
+    script.src = "https://cdn.equalweb.com/core/5.1.13/accessibility.js";
+    script.defer = true;
+    script.integrity = "sha512-70/AbMe6C9H3r5hjsQleJEY4y5l9ykt4WYSgyZj/WjpY/ord/26LWfva163b9W+GwWkfwbP0iLT+h6KRl+LoXA==";
+    script.crossOrigin = "anonymous";
+    script.setAttribute('data-cfasync', true);
     document.body.appendChild(script);
   };
 
