@@ -90,7 +90,7 @@ const Gallery = () => {
       {/* Hero Section */}
       <section className="relative h-[300px] md:h-[500px]">
         <OptimizedImage
-          src="/images/gallery/bathrooms/IMG_6024.jpg"
+          src="/images/projects/constructionHero.jpg"
           alt="Gallery Hero"
           width={1920}
           height={500}
