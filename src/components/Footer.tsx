@@ -2,6 +2,13 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Phone, Mail, MapPin, Facebook } from "lucide-react";
 
+// TypeScript declaration for EqualWeb
+declare global {
+  interface Window {
+    interdeal: any;
+  }
+}
+
 const Footer = () => {
   const loadEqualWebScript = () => {
     // Check if script is already loaded
