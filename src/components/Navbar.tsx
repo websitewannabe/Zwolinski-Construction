@@ -28,7 +28,6 @@ const Navbar = () => {
   ];
 
   const serviceItems = [
-    { name: "All Services", path: "/services", icon: Wrench },
     { name: "Basement Remodeling", path: "/services/basement-remodeling", icon: Lightbulb },
     { name: "Bathroom Remodeling", path: "/services/bathroom-remodeling", icon: Bath },
     { name: "Kitchen Remodeling", path: "/services/kitchen-remodeling", icon: Utensils },
@@ -69,8 +68,8 @@ const Navbar = () => {
             
             {/* Services Dropdown */}
             <div className="relative">
-              <button
-                onClick={() => setIsServicesOpen(!isServicesOpen)}
+              <Link
+                to="/services"
                 className="flex items-center space-x-1 hover:text-silver transition-colors h-[40px]"
                 onMouseEnter={() => setIsServicesOpen(true)}
                 onMouseLeave={() => setIsServicesOpen(false)}
@@ -78,7 +77,7 @@ const Navbar = () => {
                 <Wrench className="h-4 w-4" />
                 <span>Services</span>
                 <ChevronDown className="h-4 w-4" />
-              </button>
+              </Link>
               
               {isServicesOpen && (
                 <div 
