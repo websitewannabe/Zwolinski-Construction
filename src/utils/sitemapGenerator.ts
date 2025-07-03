@@ -1,104 +1,116 @@
-
-import { getAllCities } from './cityUtils';
+import { getAllCities } from "./cityUtils";
 
 export interface SitemapUrl {
   loc: string;
-  changefreq: 'always' | 'hourly' | 'daily' | 'weekly' | 'monthly' | 'yearly' | 'never';
+  changefreq:
+    | "always"
+    | "hourly"
+    | "daily"
+    | "weekly"
+    | "monthly"
+    | "yearly"
+    | "never";
   priority: number;
   lastmod?: string;
 }
 
 export const generateSitemap = (): string => {
-  const baseUrl = 'https://zwolinskiconstr.com';
-  const lastmod = new Date().toISOString().split('T')[0]; // YYYY-MM-DD format
-  
+  const baseUrl = "https://zwolinskiconstr.com";
+  const lastmod = new Date().toISOString().split("T")[0]; // YYYY-MM-DD format
+
   const staticPages: SitemapUrl[] = [
     {
       loc: `${baseUrl}/`,
-      changefreq: 'monthly',
+      changefreq: "monthly",
       priority: 1.0,
-      lastmod
+      lastmod,
     },
     {
       loc: `${baseUrl}/services`,
-      changefreq: 'monthly',
+      changefreq: "monthly",
       priority: 0.9,
-      lastmod
+      lastmod,
     },
     {
       loc: `${baseUrl}/gallery`,
-      changefreq: 'weekly',
+      changefreq: "weekly",
       priority: 0.8,
-      lastmod
+      lastmod,
     },
     {
       loc: `${baseUrl}/about`,
-      changefreq: 'monthly',
+      changefreq: "monthly",
       priority: 0.8,
-      lastmod
+      lastmod,
     },
     {
       loc: `${baseUrl}/contact`,
-      changefreq: 'monthly',
+      changefreq: "monthly",
       priority: 0.7,
-      lastmod
+      lastmod,
     },
     {
       loc: `${baseUrl}/reviews`,
-      changefreq: 'weekly',
+      changefreq: "weekly",
       priority: 0.6,
-      lastmod
+      lastmod,
     },
     {
       loc: `${baseUrl}/accessibility`,
-      changefreq: 'yearly',
+      changefreq: "yearly",
       priority: 0.3,
-      lastmod
+      lastmod,
     },
     {
       loc: `${baseUrl}/privacy`,
-      changefreq: 'yearly',
+      changefreq: "yearly",
       priority: 0.3,
-      lastmod
+      lastmod,
     },
     {
       loc: `${baseUrl}/cities`,
-      changefreq: 'monthly',
+      changefreq: "monthly",
       priority: 0.7,
-      lastmod
+      lastmod,
     },
     {
       loc: `${baseUrl}/sitemap`,
-      changefreq: 'monthly',
+      changefreq: "monthly",
       priority: 0.4,
-      lastmod
-    }
+      lastmod,
+    },
   ];
 
   // Add dynamic city pages
   const cities = getAllCities();
-  console.log('Cities found for sitemap:', cities.length, cities.map(c => c.id));
-  const cityPages: SitemapUrl[] = cities.map(city => ({
+  console.log(
+    "Cities found for sitemap:",
+    cities.length,
+    cities.map((c) => c.id),
+  );
+  const cityPages: SitemapUrl[] = cities.map((city) => ({
     loc: `${baseUrl}/cities/${city.id}`,
-    changefreq: 'monthly',
+    changefreq: "monthly",
     priority: 0.6,
-    lastmod
+    lastmod,
   }));
 
   const allUrls = [...staticPages, ...cityPages];
 
   // Generate XML
-  const urlEntries = allUrls.map(url => {
-    return `  <url>
+  const urlEntries = allUrls
+    .map((url) => {
+      return `  <url>
     <loc>${url.loc}</loc>
     <changefreq>${url.changefreq}</changefreq>
     <priority>${url.priority}</priority>
     <lastmod>${url.lastmod}</lastmod>
   </url>`;
-  }).join('\n');
+    })
+    .join("\n");
 
   return `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${urlEntries}
-</urlset>`;
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    ${urlEntries}
+    </urlset>`.trimStart();
 };
