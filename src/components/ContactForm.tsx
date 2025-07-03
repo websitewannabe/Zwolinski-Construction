@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Send } from 'lucide-react';
 
@@ -88,10 +87,10 @@ const ContactForm = () => {
       <h2 className="text-3xl font-bold mb-8 text-white">
         Send Us a Message
       </h2>
-      
+
       <form onSubmit={handleSubmit} name="contact" method="POST" data-netlify="true">
         <input type="hidden" name="form-name" value="contact" />
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div>
             <label htmlFor="name" className="block text-sm font-medium text-gray-300 mb-2">
@@ -104,11 +103,11 @@ const ContactForm = () => {
               value={formData.name}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent"
+              className="w-full px-4 py-3 bg-white border border-gray-600 rounded-md text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent"
               placeholder="Your full name"
             />
           </div>
-          
+
           <div>
             <label htmlFor="phone" className="block text-sm font-medium text-gray-300 mb-2">
               Phone Number *
@@ -120,7 +119,7 @@ const ContactForm = () => {
               value={formData.phone}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent"
+              className="w-full px-4 py-3 bg-white border border-gray-600 rounded-md text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent"
               placeholder="(267) 471-6120"
             />
           </div>
@@ -138,11 +137,11 @@ const ContactForm = () => {
               value={formData.email}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent"
+              className="w-full px-4 py-3 bg-white border border-gray-600 rounded-md text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent"
               placeholder="your.email@example.com"
             />
           </div>
-          
+
           <div>
             <label htmlFor="projectType" className="block text-sm font-medium text-gray-300 mb-2">
               Project Type *
@@ -153,7 +152,7 @@ const ContactForm = () => {
               value={formData.projectType}
               onChange={handleChange}
               required
-              className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-md text-white focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent"
+              className="w-full px-4 py-3 bg-white border border-gray-600 rounded-md text-black focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent"
             >
               <option value="">Select a project type</option>
               <option value="bathroom">Bathroom</option>
@@ -174,7 +173,7 @@ const ContactForm = () => {
             onChange={handleChange}
             required
             rows={5}
-            className="w-full px-4 py-3 bg-gray-800 border border-gray-600 rounded-md text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent resize-vertical"
+            className="w-full px-4 py-3 bg-white border border-gray-600 rounded-md text-black placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-[#157FBB] focus:border-transparent resize-vertical"
             placeholder="Tell us about your project..."
           />
         </div>
