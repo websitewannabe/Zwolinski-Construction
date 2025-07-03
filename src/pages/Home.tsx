@@ -257,23 +257,26 @@ const Home = () => {
                 description:
                   "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
                 image: "/images/gallery/bathrooms/IMG_0231_400x300.jpg",
+                link: "/services/basement-remodeling",
               },
               {
                 title: "Bathrooms",
                 description:
                   "Transform your bathroom into a luxurious spa-like retreat with our expert remodeling services.",
                 image: "/images/gallery/bathrooms/IMG_6024_400x300.jpg",
+                link: "/services/bathroom-remodeling",
               },
               {
                 title: "Kitchens",
                 description:
                   "Create your dream kitchen with custom cabinets, modern appliances, and elegant finishes.",
                 image: "/images/gallery/kitchens/IMG_0113_400x300.jpg",
+                link: "/services/kitchen-remodeling",
               },
             ].map((service) => (
               <Link
                 key={service.title}
-                to={`/services#${service.title.toLowerCase()}`}
+                to={service.link}
                 className="bg-black rounded-lg shadow-lg overflow-hidden transition-transform hover:scale-105 h-full flex flex-col group"
               >
                 <div className="h-56 relative">
