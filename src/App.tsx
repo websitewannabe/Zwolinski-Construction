@@ -16,6 +16,9 @@ import Privacy from "./pages/Privacy";
 import CityPage from "./pages/CityPage"; // Assuming you have this component
 import CitiesIndex from "./pages/CitiesIndex"; // Assuming you have this component
 import Sitemap from "./pages/Sitemap";
+import BasementRemodeling from "./pages/BasementRemodeling";
+import BathroomRemodeling from "./pages/BathroomRemodeling";
+import KitchenRemodeling from "./pages/KitchenRemodeling";
 
 const Layout = ({ children }: { children: React.ReactNode }) => (
   <div className="min-h-screen flex flex-col">
@@ -50,6 +53,33 @@ const router = createBrowserRouter([
     element: (
       <Layout>
         <Services />
+      </Layout>
+    ),
+    errorElement: <Error />,
+  },
+  {
+    path: "/services/basement-remodeling",
+    element: (
+      <Layout>
+        <BasementRemodeling />
+      </Layout>
+    ),
+    errorElement: <Error />,
+  },
+  {
+    path: "/services/bathroom-remodeling",
+    element: (
+      <Layout>
+        <BathroomRemodeling />
+      </Layout>
+    ),
+    errorElement: <Error />,
+  },
+  {
+    path: "/services/kitchen-remodeling",
+    element: (
+      <Layout>
+        <KitchenRemodeling />
       </Layout>
     ),
     errorElement: <Error />,
