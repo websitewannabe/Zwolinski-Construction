@@ -119,7 +119,7 @@ const BathroomRemodeling = () => {
               className="rounded-lg shadow-lg"
             />
             <OptimizedImage
-              src="/images/gallery/bathrooms/IMG_6024.jpg"
+              src="/images/gallery/bathrooms/newBathroom4.jpg"
               alt="Bathroom Project 2"
               width={400}
               height={300}
