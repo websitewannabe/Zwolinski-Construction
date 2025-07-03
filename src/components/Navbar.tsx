@@ -51,22 +51,27 @@ const Navbar = () => {
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
-            {navItems.map((item) => (
-              <Link
-                key={item.name}
-                to={item.path}
-                className="flex items-center space-x-1 hover:text-silver transition-colors"
-              >
-                <item.icon className="h-4 w-4" />
-                <span>{item.name}</span>
-              </Link>
-            ))}
+            <Link
+              to="/"
+              className="flex items-center space-x-1 hover:text-silver transition-colors"
+            >
+              <Home className="h-4 w-4" />
+              <span>Home</span>
+            </Link>
+            
+            <Link
+              to="/about"
+              className="flex items-center space-x-1 hover:text-silver transition-colors"
+            >
+              <Users className="h-4 w-4" />
+              <span>About</span>
+            </Link>
             
             {/* Services Dropdown */}
             <div className="relative">
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
-                className="flex items-center space-x-1 hover:text-silver transition-colors"
+                className="flex items-center space-x-1 hover:text-silver transition-colors h-[40px]"
                 onMouseEnter={() => setIsServicesOpen(true)}
                 onMouseLeave={() => setIsServicesOpen(false)}
               >
@@ -77,7 +82,7 @@ const Navbar = () => {
               
               {isServicesOpen && (
                 <div 
-                  className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-black border border-gray-600 rounded-md shadow-lg z-50"
+                  className="absolute top-[40px] left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-black border border-gray-600 rounded-md shadow-lg z-50"
                   onMouseEnter={() => setIsServicesOpen(true)}
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
@@ -95,6 +100,22 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+            
+            <Link
+              to="/gallery"
+              className="flex items-center space-x-1 hover:text-silver transition-colors"
+            >
+              <Image className="h-4 w-4" />
+              <span>Gallery</span>
+            </Link>
+            
+            <Link
+              to="/contact"
+              className="flex items-center space-x-1 hover:text-silver transition-colors"
+            >
+              <MessageSquare className="h-4 w-4" />
+              <span>Contact</span>
+            </Link>
             
             <a
               href="tel:+12674716120"
