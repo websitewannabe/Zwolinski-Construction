@@ -182,10 +182,17 @@ const Services = () => {
       <section className="py-16 bg-[#C0C0C0]">
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {services.map((service, index) => (
+            {services.map((service, index) => {
+              const serviceLinks = {
+                "Basement Remodeling": "/services/basement-remodeling",
+                "Bathroom Remodeling": "/services/bathroom-remodeling", 
+                "Kitchen Remodeling": "/services/kitchen-remodeling"
+              };
+              
+              return (
               <Link
                 key={index}
-                to={`/gallery?section=${service.title.split(" ")[0].toLowerCase()}`}
+                to={serviceLinks[service.title as keyof typeof serviceLinks]}
                 className="bg-gradient-to-br from-gray-900 to-black p-6 rounded-lg shadow-xl border border-gray-600 flex flex-col h-full transition-all duration-300 hover:scale-105 hover:shadow-2xl group"
               >
                 <service.icon className="h-12 w-12 text-white mb-4" />
@@ -203,11 +210,11 @@ const Services = () => {
                 </ul>
                 <div className="mt-auto pt-8">
                   <span className="inline-flex items-center px-4 py-2 bg-[#157FBB] text-white rounded group-hover:bg-[#4BA5CF] transition-colors border border-gray-600">
-                    View Gallery <ArrowRight className="ml-2 h-4 w-4" />
+                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
                   </span>
                 </div>
               </Link>
-            ))}
+            )})}
           </div>
         </div>
       </section>
