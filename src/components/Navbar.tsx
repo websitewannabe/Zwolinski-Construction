@@ -77,7 +77,7 @@ const Navbar = () => {
               
               {isServicesOpen && (
                 <div 
-                  className="absolute top-full left-0 mt-2 w-64 bg-black border border-gray-600 rounded-md shadow-lg z-50"
+                  className="absolute top-full left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-black border border-gray-600 rounded-md shadow-lg z-50"
                   onMouseEnter={() => setIsServicesOpen(true)}
                   onMouseLeave={() => setIsServicesOpen(false)}
                 >
