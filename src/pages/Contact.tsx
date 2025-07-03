@@ -182,6 +182,112 @@ const Contact = () => {
           </div>
         </div>
       </section>
+
+      {/* Cities Section */}
+      <section className="py-16 bg-gray-100">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-3xl font-bold mb-8 text-center text-zwolinski-navy">
+            Service Areas
+          </h2>
+          <p className="text-center text-gray-600 mb-8">
+            We proudly serve these communities throughout Pennsylvania:
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+            <a href="/cities/doylestown" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Doylestown
+            </a>
+            <a href="/cities/quakertown" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Quakertown
+            </a>
+            <a href="/cities/allentown" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Allentown
+            </a>
+            <a href="/cities/perkasie" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Perkasie
+            </a>
+            <a href="/cities/silverdale" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Silverdale
+            </a>
+            <a href="/cities/buckingham" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Buckingham
+            </a>
+            <a href="/cities/carversville" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Carversville
+            </a>
+            <a href="/cities/chalfont" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Chalfont
+            </a>
+            <a href="/cities/dublin" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Dublin
+            </a>
+            <a href="/cities/fountainville" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Fountainville
+            </a>
+            <a href="/cities/furlong" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Furlong
+            </a>
+            <a href="/cities/holland" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Holland
+            </a>
+            <a href="/cities/ivyland" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Ivyland
+            </a>
+            <a href="/cities/jamison" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Jamison
+            </a>
+            <a href="/cities/lahaska" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Lahaska
+            </a>
+            <a href="/cities/morrisville" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Morrisville
+            </a>
+            <a href="/cities/newhope" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              New Hope
+            </a>
+            <a href="/cities/newtown" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Newtown
+            </a>
+            <a href="/cities/ottsville" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Ottsville
+            </a>
+            <a href="/cities/pipersville" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Pipersville
+            </a>
+            <a href="/cities/pointpleasant" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Point Pleasant
+            </a>
+            <a href="/cities/richboro" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Richboro
+            </a>
+            <a href="/cities/southampton" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Southampton
+            </a>
+            <a href="/cities/trevose" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Trevose
+            </a>
+            <a href="/cities/warminster" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Warminster
+            </a>
+            <a href="/cities/warrington" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Warrington
+            </a>
+            <a href="/cities/washingtoncrossing" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Washington Crossing
+            </a>
+            <a href="/cities/yardley" className="text-zwolinski-navy hover:text-[#157FBB] transition-colors">
+              Yardley
+            </a>
+          </div>
+          <div className="text-center mt-8">
+            <a 
+              href="/cities" 
+              className="inline-flex items-center px-6 py-3 border border-zwolinski-navy text-zwolinski-navy hover:bg-zwolinski-navy hover:text-white rounded-lg transition-colors"
+            >
+              View All Service Areas
+            </a>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
