@@ -67,12 +67,14 @@ const Navbar = () => {
             </Link>
             
             {/* Services Dropdown */}
-            <div className="relative">
+            <div 
+              className="relative"
+              onMouseEnter={() => setIsServicesOpen(true)}
+              onMouseLeave={() => setIsServicesOpen(false)}
+            >
               <Link
                 to="/services"
                 className="flex items-center space-x-1 hover:text-silver transition-colors h-[40px]"
-                onMouseEnter={() => setIsServicesOpen(true)}
-                onMouseLeave={() => setIsServicesOpen(false)}
               >
                 <Wrench className="h-4 w-4" />
                 <span>Services</span>
@@ -81,9 +83,7 @@ const Navbar = () => {
               
               {isServicesOpen && (
                 <div 
-                  className="absolute top-[40px] left-1/2 transform -translate-x-1/2 mt-2 w-64 bg-black border border-gray-600 rounded-md shadow-lg z-50"
-                  onMouseEnter={() => setIsServicesOpen(true)}
-                  onMouseLeave={() => setIsServicesOpen(false)}
+                  className="absolute top-full left-1/2 transform -translate-x-1/2 w-64 bg-black border border-gray-600 rounded-md shadow-lg z-50"
                 >
                   {serviceItems.map((service) => (
                     <Link
