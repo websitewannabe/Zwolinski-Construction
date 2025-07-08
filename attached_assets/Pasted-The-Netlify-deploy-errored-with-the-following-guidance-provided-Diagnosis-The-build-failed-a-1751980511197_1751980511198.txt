@@ -1,0 +1,43 @@
+The Netlify deploy errored, with the following guidance provided:
+
+**Diagnosis:**
+The build failed at the stage of installing dependencies due to an `EJSONPARSE` error in the `package.json` file. The error message indicates a syntax issue in the JSON structure of the `package.json`.
+
+**Solution:**
+1. Verify the `package.json` in the repository to identify and correct the syntax error at position 199 in the file.
+2. Ensure that all JSON objects have the correct structure with commas separating key-value pairs where necessary.
+3. Once the issue is fixed, commit the changes to the repository and trigger a new build to ensure successful dependency installation.
+
+The relevant error logs are:
+
+Line 11: Starting to install dependencies
+Line 12: Started restoring cached python cache
+Line 13: Finished restoring cached python cache
+Line 14: Started restoring cached ruby cache
+Line 15: Finished restoring cached ruby cache
+Line 16: Started restoring cached go cache
+Line 17: Finished restoring cached go cache
+Line 18: Using PHP version
+Line 19: Started restoring cached Node.js version
+Line 20: Finished restoring cached Node.js version
+Line 21: Failed during stage 'Install dependencies': dependency_installation script returned non-zero exit code: 1
+Line 22: v20.19.3 is already installed.
+Line 23: Now using node v20.19.3 (npm v10.8.2)
+Line 24: Enabling Node.js Corepack
+Line 25: Started restoring cached build plugins
+Line 26: Finished restoring cached build plugins
+Line 27: Started restoring cached corepack dependencies
+Line 28: Finished restoring cached corepack dependencies
+Line 29: No npm workspaces detected
+Line 30: Started restoring cached node modules
+Line 31: Finished restoring cached node modules
+Line 32: Installing npm packages using npm version 10.8.2
+Line 33: npm error code EJSONPARSE
+Line 34: npm error path /opt/build/repo/package.json
+Line 35: npm error JSON.parse Expected ',' or '}' after property value in JSON at position 199 while parsing near "...apGenerator.js\"\n 
+Line 36: npm error JSON.parse Failed to parse JSON data.
+Line 37: npm error JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+Line 38: npm error A complete log of this run can be found in: /opt/buildhome/.npm/_logs/2025-07-08T13_10_44_687Z-debug-0.log
+Line 39: Error during npm install
+Line 40: Failing build: Failed to install dependencies
+Line 41: Finished processing build request in 14.857s
