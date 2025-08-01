@@ -11,6 +11,8 @@ interface OptimizedImageProps {
   className?: string;
   loading?: 'lazy' | 'eager';
   sizes?: string;
+  priority?: boolean; // For LCP optimization
+  fetchPriority?: 'high' | 'low' | 'auto';
 }
 
 const OptimizedImage: React.FC<OptimizedImageProps> = ({
@@ -23,7 +25,12 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
   className,
   loading = 'lazy',
   sizes,
+  priority = false,
+  fetchPriority = 'auto',
 }) => {
+  // Override loading behavior for priority images (LCP optimization)
+  const finalLoading = priority ? 'eager' : loading;
+  const finalFetchPriority = priority ? 'high' : fetchPriority;
   // Check if we're in development mode
   const isDevelopment = import.meta.env.DEV;
   
@@ -66,7 +73,8 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
       width={width}
       height={height}
       className={className}
-      loading={loading}
+      loading={finalLoading}
+      fetchPriority={finalFetchPriority}
       sizes={sizes}
     />
   );

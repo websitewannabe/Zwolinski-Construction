@@ -223,10 +223,12 @@ const Home = () => {
       <section className="relative h-[450px] md:h-[650px]">
         <OptimizedImage
           src="/images/projects/constructionHero.jpg"
-          alt="Construction Hero"
+          alt="Professional construction and home remodeling services by Zwolinski Quality Construction"
           width={1920}
           height={650}
           className="absolute inset-0 w-full h-full object-cover"
+          priority={true}
+          sizes="100vw"
         />
         <div className="relative max-w-7xl mx-auto px-4 h-full flex items-center">
           <div className="text-gray-300 bg-black/80 backdrop-blur-md p-8 rounded-lg max-w-2xl border border-gray-700">
