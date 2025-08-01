@@ -5,8 +5,26 @@
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="robots" content="index,follow" />
-    <!-- Preload LCP image for better performance -->
+    
+    <!-- Preconnect to external origins for faster loading -->
+    <link rel="preconnect" href="https://www.googletagmanager.com">
+    <link rel="preconnect" href="https://www.google.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Preload critical resources -->
     <link rel="preload" as="image" href="/images/projects/constructionHero.jpg" fetchpriority="high">
+    
+    <!-- Preload critical JavaScript chunks for faster loading -->
+    <link rel="preload" as="script" href="/assets/react-vendor-D0Gb-xM1.js" fetchpriority="high">
+    <link rel="preload" as="script" href="/assets/index-BAsu9PAE.js" fetchpriority="high">
+    <link rel="preload" as="style" href="/assets/index-ClAtiG8z.css" fetchpriority="high">
+    
+    <!-- Preload secondary chunks -->
+    <link rel="preload" as="script" href="/assets/router-vendor-CVdKOz-X.js">
+    <link rel="preload" as="script" href="/assets/meta-vendor-DjWGQsEQ.js">
+    <link rel="preload" as="script" href="/assets/icons-vendor-DDmenmUb.js">
+    
     <title>Zwolinski Quality Construction</title>
     <!-- Google Tag Manager - Optimized for performance -->
     <script>
