@@ -15,15 +15,8 @@
     <!-- Preload critical resources -->
     <link rel="preload" as="image" href="/images/projects/constructionHero.jpg" fetchpriority="high">
     
-    <!-- Preload critical JavaScript chunks for faster loading -->
-    <link rel="preload" as="script" href="/assets/react-vendor-D0Gb-xM1.js" fetchpriority="high">
-    <link rel="preload" as="script" href="/assets/index-BAsu9PAE.js" fetchpriority="high">
-    <link rel="preload" as="style" href="/assets/index-ClAtiG8z.css" fetchpriority="high">
-    
-    <!-- Preload secondary chunks -->
-    <link rel="preload" as="script" href="/assets/router-vendor-CVdKOz-X.js">
-    <link rel="preload" as="script" href="/assets/meta-vendor-DjWGQsEQ.js">
-    <link rel="preload" as="script" href="/assets/icons-vendor-DDmenmUb.js">
+    <!-- Note: JavaScript chunk preloads are handled by Vite automatically in development -->
+    <!-- Production builds will have optimized preload hints injected by the build process -->
     
     <title>Zwolinski Quality Construction</title>
     <!-- Google Tag Manager - Optimized for performance -->
@@ -40,12 +33,16 @@
         // Use requestIdleCallback if available for better performance
         if (w.requestIdleCallback) {
           w.requestIdleCallback(function() {
-            f.parentNode.insertBefore(j, f);
+            if (f && f.parentNode) {
+              f.parentNode.insertBefore(j, f);
+            }
           });
         } else {
           // Fallback for browsers without requestIdleCallback
           setTimeout(function() {
-            f.parentNode.insertBefore(j, f);
+            if (f && f.parentNode) {
+              f.parentNode.insertBefore(j, f);
+            }
           }, 1);
         }
       })(window, document, "script", "dataLayer", "GTM-M5W2MT4T");
