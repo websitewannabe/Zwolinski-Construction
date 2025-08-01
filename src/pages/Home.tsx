@@ -14,6 +14,7 @@ import {
   Utensils,
 } from "lucide-react";
 import OptimizedImage from "../components/OptimizedImage";
+import SocialMeta from "../components/SocialMeta";
 
 const Home = () => {
   const [currentPage, setCurrentPage] = useState(0);
