@@ -1,9 +1,40 @@
 import React from "react";
 import { MessageSquare } from "lucide-react";
+import { Helmet } from "react-helmet-async";
 
 const Reviews = () => {
   return (
     <div>
+      <Helmet>
+        <link rel="canonical" href="https://zwolinskiconstr.com/reviews" />
+        <title>Leave a Review | Zwolinski Quality Construction</title>
+        <meta
+          name="description"
+          content="Share your experience with Zwolinski Quality Construction. Leave a review on Google or HomeAdvisor to help other homeowners find quality remodeling services."
+        />
+        <meta
+          name="keywords"
+          content="Zwolinski Construction reviews, customer testimonials, Google reviews, HomeAdvisor reviews, remodeling contractor reviews, Bucks County contractor ratings"
+        />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebPage",
+            name: "Customer Reviews",
+            url: "https://zwolinskiconstr.com/reviews",
+            description: "Share your experience with Zwolinski Quality Construction by leaving a review on Google or HomeAdvisor.",
+            publisher: {
+              "@type": "Organization",
+              name: "Zwolinski Quality Construction",
+              url: "https://zwolinskiconstr.com",
+              logo: {
+                "@type": "ImageObject",
+                url: "https://zwolinskiconstr.com/images/logo.png",
+              },
+            },
+          })}
+        </script>
+      </Helmet>
       <section className="py-12">
         <div className="max-w-7xl mx-auto px-4">
           <h1 className="text-5xl font-bold mb-8 text-zwolinski-navy text-center">

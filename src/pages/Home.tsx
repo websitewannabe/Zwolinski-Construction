@@ -165,6 +165,12 @@ const Home = () => {
 
   return (
     <div>
+      <SocialMeta
+        title="Zwolinski Quality Construction | Home Remodeling in PA"
+        description="Zwolinski Quality Construction specializes in expert home remodeling services including kitchens, bathrooms, and basements in Bucks, Montgomery, and Lehigh Counties."
+        url="https://zwolinskiconstr.com/"
+        image="https://zwolinskiconstr.com/images/projects/constructionHero.jpg"
+      />
       <Helmet>
         <link rel="canonical" href="https://zwolinskiconstr.com/" />
         <title>Zwolinski Quality Construction | Home Remodeling in PA</title>
