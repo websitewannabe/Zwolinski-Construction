@@ -74,7 +74,7 @@ const OptimizedImage: React.FC<OptimizedImageProps> = ({
       height={height}
       className={className}
       loading={finalLoading}
-      fetchPriority={finalFetchPriority}
+      fetchpriority={finalFetchPriority}
       sizes={sizes}
     />
   );
