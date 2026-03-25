@@ -57,32 +57,34 @@ export async function generateMetadata({
   });
 }
 
-const serviceShowcase = [
-  {
-    title: "Basement Remodeling",
-    description:
-      "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
-    image: "/images/gallery/basements/IMG_0227.JPG",
-    link: "/services/basement-remodeling",
-    icon: Lightbulb,
-  },
-  {
-    title: "Bathroom Remodeling",
-    description:
-      "Transform your bathroom into a luxurious spa-like retreat with expert craftsmanship.",
-    image: "/images/gallery/bathrooms/IMG_6024.jpg",
-    link: "/services/bathroom-remodeling",
-    icon: Bath,
-  },
-  {
-    title: "Kitchen Remodeling",
-    description:
-      "Create your dream kitchen with custom cabinets, modern appliances, and elegant finishes.",
-    image: "/images/gallery/kitchens/IMG_6094.jpg",
-    link: "/services/kitchen-remodeling",
-    icon: Utensils,
-  },
-];
+function getServiceShowcase(cityId: string) {
+  return [
+    {
+      title: "Basement Remodeling",
+      description:
+        "Convert your unused basement into a beautiful living space, entertainment area, or home office.",
+      image: "/images/gallery/basements/IMG_0227.JPG",
+      link: `/services/basement-remodeling/${cityId}`,
+      icon: Lightbulb,
+    },
+    {
+      title: "Bathroom Remodeling",
+      description:
+        "Transform your bathroom into a luxurious spa-like retreat with expert craftsmanship.",
+      image: "/images/gallery/bathrooms/IMG_6024.jpg",
+      link: `/services/bathroom-remodeling/${cityId}`,
+      icon: Bath,
+    },
+    {
+      title: "Kitchen Remodeling",
+      description:
+        "Create your dream kitchen with custom cabinets, modern appliances, and elegant finishes.",
+      image: "/images/gallery/kitchens/IMG_6094.jpg",
+      link: `/services/kitchen-remodeling/${cityId}`,
+      icon: Utensils,
+    },
+  ];
+}
 
 const galleryImages = [
   { src: "/images/gallery/bathrooms/newBathroom2.jpg", alt: "Bathroom remodel" },
@@ -119,6 +121,8 @@ export default async function CityPage({ params }: CityPageProps) {
   const cityReviews = testimonials
     .filter((t) => t.name)
     .slice(seed % 5, (seed % 5) + 3);
+
+  const serviceShowcase = getServiceShowcase(city.id);
 
   const jsonLd = {
     "@context": "https://schema.org",

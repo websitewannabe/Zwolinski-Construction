@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { Phone, Mail, MapPin, Facebook, Accessibility } from "lucide-react";
+import EmailLink from "@/components/EmailLink";
 
 declare global {
   interface Window {
@@ -97,6 +98,8 @@ export default function Footer() {
                 { name: "About", href: "/about" },
                 { name: "Services", href: "/services" },
                 { name: "Gallery", href: "/gallery" },
+                { name: "Reviews", href: "/reviews" },
+                { name: "FAQ", href: "/faq" },
                 { name: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.name}>
@@ -143,13 +146,14 @@ export default function Footer() {
                 <Phone className="h-4 w-4 text-accent/60" />
                 (267) 471-6120
               </a>
-              <a
-                href="mailto:arnoldzwolinski@verizon.net"
-                className="flex items-center gap-3 text-zinc-400 hover:text-primary-light transition-colors text-sm"
-              >
+              <span className="flex items-center gap-3 text-zinc-400 hover:text-primary-light transition-colors text-sm">
                 <Mail className="h-4 w-4 text-accent/60" />
-                arnoldzwolinski@verizon.net
-              </a>
+                <EmailLink
+                  user="arnoldzwolinski"
+                  domain="verizon.net"
+                  className="text-zinc-400 hover:text-primary-light transition-colors"
+                />
+              </span>
               <div className="flex items-center gap-3 text-zinc-400 text-sm">
                 <MapPin className="h-4 w-4 text-accent/60" />
                 Perkasie, PA 18944

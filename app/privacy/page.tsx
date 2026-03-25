@@ -1,3 +1,4 @@
+import EmailLink from "@/components/EmailLink";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
@@ -145,12 +146,11 @@ export default function PrivacyPage() {
           <div className="card-luxury p-6 mt-4">
             <p className="text-zinc-400">
               <span className="text-zinc-300">Email:</span>{" "}
-              <a
-                href="mailto:arnoldzwolinski@verizon.net"
+              <EmailLink
+                user="arnoldzwolinski"
+                domain="verizon.net"
                 className="text-primary hover:underline"
-              >
-                arnoldzwolinski@verizon.net
-              </a>
+              />
             </p>
             <p className="text-zinc-400 mt-2">
               <span className="text-zinc-300">Phone:</span>{" "}

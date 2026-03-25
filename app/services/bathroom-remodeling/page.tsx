@@ -1,8 +1,9 @@
 import Image from "next/image";
 import Link from "next/link";
-import { CheckCircle, ArrowRight } from "lucide-react";
+import { CheckCircle, ArrowRight, MapPin } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import { generatePageMetadata } from "@/lib/metadata";
+import citiesData from "@/data/cities.json";
 
 export const metadata = generatePageMetadata({
   title: "Trusted Bathroom Remodeler in Bucks County — 25+ Years of Excellence",
@@ -204,6 +205,34 @@ export default function BathroomRemodelingPage() {
               View Full Gallery
               <ArrowRight className="ml-2 h-4 w-4" />
             </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Service Areas */}
+      <section className="section-padding bg-black">
+        <div className="container-wide">
+          <div className="text-center mb-16">
+            <p className="text-primary text-sm uppercase tracking-[0.3em] mb-3">
+              Service Areas
+            </p>
+            <h2 className="heading-lg text-white">
+              Bathroom Remodeling Near You
+            </h2>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-3">
+            {citiesData.cities.map((city) => (
+              <Link
+                key={city.id}
+                href={`/services/bathroom-remodeling/${city.id}`}
+                className="card-luxury px-4 py-3 flex items-center gap-2 hover:border-primary/30 transition-all group"
+              >
+                <MapPin className="h-3.5 w-3.5 text-accent shrink-0" />
+                <span className="text-zinc-300 text-sm group-hover:text-white transition-colors">
+                  {city.name}
+                </span>
+              </Link>
+            ))}
           </div>
         </div>
       </section>

@@ -65,7 +65,11 @@ export default function HomePage() {
                 name: "Zwolinski Quality Construction",
                 url: "https://zwolinskiconstr.com",
                 telephone: "+1-267-471-6120",
-                email: "arnoldzwolinski@verizon.net",
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+1-267-471-6120",
+                  contactType: "customer service",
+                },
                 image: "https://zwolinskiconstr.com/images/projects/constructionHero.jpg",
                 priceRange: "$$$$",
                 description:
@@ -198,7 +202,11 @@ export default function HomePage() {
                   height: 72,
                 },
                 telephone: "+1-267-471-6120",
-                email: "arnoldzwolinski@verizon.net",
+                contactPoint: {
+                  "@type": "ContactPoint",
+                  telephone: "+1-267-471-6120",
+                  contactType: "customer service",
+                },
                 address: {
                   "@type": "PostalAddress",
                   addressLocality: "Perkasie",

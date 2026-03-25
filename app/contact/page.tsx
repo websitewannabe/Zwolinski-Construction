@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Phone, MessageSquare, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import ContactForm from "@/components/ContactForm";
+import EmailLink from "@/components/EmailLink";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
@@ -33,8 +34,9 @@ const contactCards = [
   {
     icon: Mail,
     label: "Email",
-    value: "arnoldzwolinski@verizon.net",
-    href: "mailto:arnoldzwolinski@verizon.net",
+    value: "email",
+    href: null,
+    isEmail: true,
   },
   {
     icon: MapPin,
@@ -117,7 +119,11 @@ export default function ContactPage() {
     name: "Zwolinski Quality Construction",
     url: "https://zwolinskiconstr.com",
     telephone: "+1-267-471-6120",
-    email: "arnoldzwolinski@verizon.net",
+    contactPoint: {
+      "@type": "ContactPoint",
+      telephone: "+1-267-471-6120",
+      contactType: "customer service",
+    },
     address: {
       "@type": "PostalAddress",
       streetAddress: "166 E Walnut St",
@@ -180,6 +186,26 @@ export default function ContactPage() {
 
               <div className="space-y-4">
                 {contactCards.map((card) => {
+                  if ("isEmail" in card && card.isEmail) {
+                    return (
+                      <div key={card.label} className="card-luxury p-5 flex items-start gap-4">
+                        <div className="flex-shrink-0 w-11 h-11 rounded-lg bg-accent/10 flex items-center justify-center">
+                          <card.icon className="h-5 w-5 text-accent" />
+                        </div>
+                        <div>
+                          <p className="text-xs uppercase tracking-wider text-zinc-500 mb-1">
+                            {card.label}
+                          </p>
+                          <EmailLink
+                            user="arnoldzwolinski"
+                            domain="verizon.net"
+                            className="text-white text-sm hover:text-primary-light transition-colors"
+                          />
+                        </div>
+                      </div>
+                    );
+                  }
+
                   const inner = (
                     <div className="card-luxury p-5 flex items-start gap-4">
                       <div className="flex-shrink-0 w-11 h-11 rounded-lg bg-accent/10 flex items-center justify-center">
