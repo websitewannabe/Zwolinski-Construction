@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import QuoteButton from "@/components/QuoteButton";
+import { blurData } from "@/lib/blur-data";
 
 interface HeroSectionProps {
   image: string;
@@ -26,6 +27,8 @@ export default function HeroSection({
   ctaHref = "/contact",
   useQuoteModal = true,
 }: HeroSectionProps) {
+  const blur = blurData[image];
+
   return (
     <section className="relative h-[340px] md:h-[490px] overflow-hidden">
       <Image
@@ -35,6 +38,7 @@ export default function HeroSection({
         className="object-cover"
         priority
         sizes="100vw"
+        {...(blur ? { placeholder: "blur" as const, blurDataURL: blur } : {})}
       />
       <div className="absolute inset-0 bg-gradient-to-r from-black/80 via-black/40 to-transparent" />
       <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />

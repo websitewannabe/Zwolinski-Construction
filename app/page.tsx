@@ -5,6 +5,7 @@ import TestimonialCarousel from "@/components/TestimonialCarousel";
 import QuoteButton from "@/components/QuoteButton";
 import { testimonials } from "@/data/testimonials";
 import { generatePageMetadata } from "@/lib/metadata";
+import { blurData } from "@/lib/blur-data";
 
 export const metadata = generatePageMetadata({
   title: "Trusted Home Remodeling Contractor in Bucks and Montgomery Counties",
@@ -230,6 +231,8 @@ export default function HomePage() {
           className="object-cover"
           priority
           sizes="100vw"
+          placeholder="blur"
+          blurDataURL={blurData["/images/projects/constructionHero.jpg"]}
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent" />
         <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent" />

@@ -3,6 +3,7 @@
 import { useState, useMemo } from "react";
 import Image from "next/image";
 import { galleryData } from "@/data/gallery";
+import { blurData } from "@/lib/blur-data";
 
 const filters = [
   { label: "All", value: "all" },
@@ -48,6 +49,8 @@ export default function GalleryContent() {
           className="object-cover"
           sizes="100vw"
           priority
+          placeholder="blur"
+          blurDataURL={blurData["/images/gallery/bathrooms/newBathroom2.jpg"]}
           aria-hidden="true"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/50 to-transparent" />
