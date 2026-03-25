@@ -44,7 +44,7 @@ export async function generateMetadata({
 
   return generatePageMetadata({
     title: `Bathroom Remodeling in ${city.name}, ${city.state}`,
-    description: `Professional bathroom remodeling for ${city.name} homeowners. Custom showers, vanities, tile work, and modern fixtures. 25+ years of expert craftsmanship in ${city.county}. Free estimates.`,
+    description: `Bathroom remodeling for ${city.name} homeowners. Custom showers, vanities, tile work, and modern fixtures. 25+ years in ${city.county}.`,
     keywords: [
       `${city.name} bathroom remodel`,
       `bathroom remodeling ${city.name} PA`,

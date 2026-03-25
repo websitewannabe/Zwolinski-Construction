@@ -5,7 +5,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "Customer Reviews — Zwolinski Quality Construction",
   description:
-    "See what Bucks and Montgomery County homeowners are saying about Zwolinski Quality Construction. Read reviews on Google and HomeAdvisor, or share your experience.",
+    "See what Bucks and Montgomery County homeowners say about us. Read reviews on Google and HomeAdvisor, or share your experience.",
   keywords: [
     "Zwolinski Construction reviews",
     "remodeling contractor reviews Bucks County",

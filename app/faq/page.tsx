@@ -7,7 +7,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "Frequently Asked Questions About Our Remodeling Services",
   description:
-    "Get answers about remodeling timelines, costs, permits, and our process. Zwolinski Quality Construction answers the most common questions from Bucks County homeowners.",
+    "Get answers about remodeling timelines, costs, permits, and our process. Common questions from Bucks County homeowners answered.",
   keywords: [
     "remodeling FAQ",
     "kitchen remodel cost Bucks County",

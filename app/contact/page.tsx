@@ -7,7 +7,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "Contact Zwolinski Quality Construction — Free Remodeling Estimates",
   description:
-    "Ready to start your remodeling project? Contact Zwolinski Quality Construction for a free estimate. Call, text, or fill out our form — we respond within 24 hours.",
+    "Ready to start your remodeling project? Contact us for a free estimate. Call, text, or fill out our form — we respond within 24 hours.",
   keywords: [
     "free remodeling estimate",
     "contact contractor Bucks County",

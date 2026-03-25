@@ -44,7 +44,7 @@ export async function generateMetadata({
 
   return generatePageMetadata({
     title: `Basement Remodeling in ${city.name}, ${city.state}`,
-    description: `Professional basement remodeling for ${city.name} homeowners. Finished basements, home theaters, bathrooms, and living spaces. 25+ years of expert craftsmanship in ${city.county}. Free estimates.`,
+    description: `Basement remodeling for ${city.name} homeowners. Finished basements, home theaters, and living spaces. 25+ years in ${city.county}.`,
     keywords: [
       `${city.name} basement remodel`,
       `basement remodeling ${city.name} PA`,

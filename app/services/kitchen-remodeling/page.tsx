@@ -7,7 +7,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "Trusted Kitchen Remodeler in Bucks County — 25+ Years of Excellence",
   description:
-    "Your kitchen should work as hard as you do. We design and build beautiful kitchens in Bucks and Montgomery County with custom cabinets, countertops, and modern layouts. Free estimates.",
+    "Your kitchen should work as hard as you do. Custom cabinets, countertops, and modern layouts in Bucks and Montgomery County. Free estimates.",
   keywords: [
     "kitchen remodeling Bucks County",
     "kitchen renovation PA",

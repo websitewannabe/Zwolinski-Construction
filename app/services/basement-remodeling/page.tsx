@@ -7,7 +7,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "Trusted Basement Remodeler in Bucks County — 25+ Years of Excellence",
   description:
-    "Unlock your basement's full potential. We design and build finished basements in Bucks and Montgomery County — home theaters, offices, bathrooms, and living spaces. Free estimates.",
+    "Unlock your basement's full potential. Finished basements, home theaters, offices, and bathrooms in Bucks and Montgomery County. Free estimates.",
   keywords: [
     "basement remodeling Bucks County",
     "basement finishing PA",

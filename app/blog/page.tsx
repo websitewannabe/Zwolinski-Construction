@@ -8,7 +8,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "Remodeling Tips, Cost Guides & Design Inspiration — Our Blog",
   description:
-    "Expert remodeling advice from a trusted Bucks County contractor. Read our guides on kitchen costs, bathroom trends, basement ideas, and how to choose the right contractor.",
+    "Expert remodeling advice from a trusted Bucks County contractor. Guides on kitchen costs, bathroom trends, basement ideas, and more.",
   keywords: [
     "remodeling blog",
     "kitchen remodel cost guide",

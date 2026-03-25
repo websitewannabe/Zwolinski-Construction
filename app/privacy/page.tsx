@@ -3,7 +3,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "Privacy Policy — Zwolinski Quality Construction",
   description:
-    "Read the privacy policy for Zwolinski Quality Construction. Learn how we collect, use, and protect your personal information when you visit our website or request a quote.",
+    "Read our privacy policy. Learn how we collect, use, and protect your personal information when you visit our website or request a quote.",
   canonical: "/privacy",
 });
 

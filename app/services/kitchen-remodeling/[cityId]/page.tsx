@@ -44,7 +44,7 @@ export async function generateMetadata({
 
   return generatePageMetadata({
     title: `Kitchen Remodeling in ${city.name}, ${city.state}`,
-    description: `Professional kitchen remodeling for ${city.name} homeowners. Custom cabinets, countertops, backsplashes, and modern layouts. 25+ years of expert craftsmanship in ${city.county}. Free estimates.`,
+    description: `Kitchen remodeling for ${city.name} homeowners. Custom cabinets, countertops, backsplashes, and modern layouts. 25+ years in ${city.county}.`,
     keywords: [
       `${city.name} kitchen remodel`,
       `kitchen remodeling ${city.name} PA`,

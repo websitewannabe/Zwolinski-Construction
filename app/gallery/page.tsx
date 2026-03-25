@@ -4,7 +4,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "Remodeling Project Gallery — Kitchen, Bathroom & Basement Photos",
   description:
-    "Browse real photos from completed kitchen, bathroom, and basement remodeling projects across Bucks and Montgomery County. See the quality craftsmanship behind every Zwolinski project.",
+    "Browse real photos from completed kitchen, bathroom, and basement remodels across Bucks and Montgomery County. See our craftsmanship firsthand.",
   keywords: [
     "remodeling photos Bucks County",
     "kitchen remodel gallery",

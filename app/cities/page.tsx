@@ -6,7 +6,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "Service Areas — Bucks, Montgomery & Lehigh County Remodeling",
   description:
-    "Zwolinski Quality Construction proudly serves 46 communities across Bucks, Montgomery, and Lehigh Counties. Find your city and get a free remodeling estimate today.",
+    "Serving 46 communities across Bucks, Montgomery, and Lehigh Counties. Find your city and get a free remodeling estimate.",
   keywords: [
     "remodeling service areas PA",
     "Bucks County remodeling cities",

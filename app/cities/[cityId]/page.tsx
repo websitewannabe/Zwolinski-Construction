@@ -43,7 +43,7 @@ export async function generateMetadata({
 
   return generatePageMetadata({
     title: `Trusted Home Remodeler in ${city.name}, ${city.state}`,
-    description: `Serving ${city.name} homeowners with expert kitchen, bathroom, and basement remodeling. 25+ years of trusted craftsmanship in ${city.county}. Free consultation.`,
+    description: `Kitchen, bathroom, and basement remodeling for ${city.name} homeowners. 25+ years of quality craftsmanship in ${city.county}. Free estimates.`,
     keywords: [
       `${city.name} home renovation`,
       `${city.name} contractor`,
