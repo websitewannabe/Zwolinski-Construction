@@ -29,13 +29,16 @@ export default function ContactForm() {
     setError("");
 
     try {
-      const body = new FormData();
-      body.append("form-name", "contact");
-      Object.entries(formData).forEach(([key, value]) => {
-        body.append(key, value);
+      const params = new URLSearchParams({
+        "form-name": "contact",
+        ...formData,
       });
 
-      const response = await fetch("/", { method: "POST", body });
+      const response = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: params.toString(),
+      });
 
       if (response.ok) {
         setIsSubmitted(true);
@@ -87,7 +90,6 @@ export default function ContactForm() {
         onSubmit={handleSubmit}
         name="contact"
         method="POST"
-        data-netlify="true"
       >
         <input type="hidden" name="form-name" value="contact" />
         <input type="hidden" name="bot-field" />

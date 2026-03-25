@@ -53,13 +53,16 @@ function QuoteModalContent({ onClose }: { onClose: () => void }) {
     setError("");
 
     try {
-      const body = new FormData();
-      body.append("form-name", "quote");
-      Object.entries(formData).forEach(([key, value]) => {
-        body.append(key, value);
+      const params = new URLSearchParams({
+        "form-name": "quote",
+        ...formData,
       });
 
-      const response = await fetch("/", { method: "POST", body });
+      const response = await fetch("/__forms.html", {
+        method: "POST",
+        headers: { "Content-Type": "application/x-www-form-urlencoded" },
+        body: params.toString(),
+      });
 
       if (response.ok) {
         setIsSubmitted(true);
