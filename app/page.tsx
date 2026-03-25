@@ -4,6 +4,22 @@ import { ArrowRight, Users, Shield, Bath, Utensils, Lightbulb } from "lucide-rea
 import TestimonialCarousel from "@/components/TestimonialCarousel";
 import QuoteButton from "@/components/QuoteButton";
 import { testimonials } from "@/data/testimonials";
+import { generatePageMetadata } from "@/lib/metadata";
+
+export const metadata = generatePageMetadata({
+  title: "Trusted Home Remodeling Contractor in Bucks and Montgomery Counties",
+  description:
+    "Luxury kitchen, bathroom, and basement remodeling in Bucks, Montgomery, and Lehigh Counties. 25+ years of expert craftsmanship. Free consultations available.",
+  keywords: [
+    "home additions",
+    "kitchen remodeling Bucks County",
+    "bathroom remodeling Montgomery County",
+    "basement finishing PA",
+    "luxury home renovation",
+    "Bucks County home improvement",
+  ],
+  canonical: "/",
+});
 
 const services = [
   {

@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
 import { ArrowRight, Code, Palette, Rocket, Globe } from "lucide-react";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Site Credits",
+export const metadata = generatePageMetadata({
+  title: "Site Credits — Built by Website Wannabe, Powered by AI Wannabe",
   description:
-    "This website was designed and built by Website Wannabe, powered by AI Wannabe.",
-  alternates: { canonical: "/site-credits" },
-};
+    "This website was designed and built by Website Wannabe and powered by AI Wannabe. Custom web design, development, SEO, and AI-driven solutions for contractors.",
+  canonical: "/site-credits",
+});
 
 export default function SiteCreditsPage() {
   return (

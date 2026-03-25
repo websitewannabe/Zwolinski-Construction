@@ -1,12 +1,19 @@
-import type { Metadata } from "next";
 import GalleryContent from "./GalleryContent";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Project Gallery",
+export const metadata = generatePageMetadata({
+  title: "Remodeling Project Gallery — Kitchen, Bathroom & Basement Photos",
   description:
-    "Browse our portfolio of bathroom, kitchen, and basement remodeling projects.",
-  alternates: { canonical: "/gallery" },
-};
+    "Browse real photos from completed kitchen, bathroom, and basement remodeling projects across Bucks and Montgomery County. See the quality craftsmanship behind every Zwolinski project.",
+  keywords: [
+    "remodeling photos Bucks County",
+    "kitchen remodel gallery",
+    "bathroom renovation photos",
+    "basement finishing before after",
+    "home remodeling portfolio PA",
+  ],
+  canonical: "/gallery",
+});
 
 export default function GalleryPage() {
   const jsonLd = {

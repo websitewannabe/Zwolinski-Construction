@@ -1,14 +1,21 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { MapPin } from "lucide-react";
 import citiesData from "@/data/cities.json";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Service Areas",
+export const metadata = generatePageMetadata({
+  title: "Service Areas — Bucks, Montgomery & Lehigh County Remodeling",
   description:
-    "Zwolinski Quality Construction serves communities across Bucks, Montgomery, and Lehigh Counties in Pennsylvania. Find your city and learn about our local remodeling services.",
-  alternates: { canonical: "/cities" },
-};
+    "Zwolinski Quality Construction proudly serves 46 communities across Bucks, Montgomery, and Lehigh Counties. Find your city and get a free remodeling estimate today.",
+  keywords: [
+    "remodeling service areas PA",
+    "Bucks County remodeling cities",
+    "Montgomery County contractor",
+    "Lehigh County home renovation",
+    "local remodeling contractor near me",
+  ],
+  canonical: "/cities",
+});
 
 interface City {
   id: string;

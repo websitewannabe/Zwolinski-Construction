@@ -4,6 +4,7 @@ import Script from "next/script";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { QuoteModalProvider } from "@/components/QuoteModal";
+import { siteConfig } from "@/lib/metadata";
 import "./globals.css";
 
 const inter = Inter({
@@ -19,39 +20,18 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://zwolinskiconstr.com"),
+  metadataBase: new URL(siteConfig.url),
   title: {
-    default: "Zwolinski Quality Construction | Luxury Home Remodeling in PA",
-    template: "%s | Zwolinski Quality Construction",
+    default: siteConfig.name,
+    template: "%s",
   },
-  description:
-    "Zwolinski Quality Construction specializes in luxury home remodeling services including kitchens, bathrooms, and basements in Bucks, Montgomery, and Lehigh Counties.",
-  keywords: [
-    "home remodeling",
-    "bathroom remodeling",
-    "kitchen renovation",
-    "basement finishing",
-    "Zwolinski Construction",
-    "Bucks County contractor",
-    "PA home improvement",
-  ],
-  openGraph: {
-    type: "website",
-    locale: "en_US",
-    url: "https://zwolinskiconstr.com",
-    siteName: "Zwolinski Quality Construction",
-    images: [
-      {
-        url: "/images/projects/constructionHero.jpg",
-        width: 1920,
-        height: 650,
-        alt: "Zwolinski Quality Construction",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-  },
+  description: siteConfig.description,
+  keywords: siteConfig.keywords,
+  authors: siteConfig.authors,
+  creator: siteConfig.creator,
+  openGraph: siteConfig.openGraph,
+  twitter: siteConfig.twitter,
+  robots: siteConfig.robots,
 };
 
 export default function RootLayout({

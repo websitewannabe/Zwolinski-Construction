@@ -1,15 +1,23 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Basement Remodeling",
+export const metadata = generatePageMetadata({
+  title: "Trusted Basement Remodeler in Bucks County — 25+ Years of Excellence",
   description:
-    "Professional basement remodeling services by Zwolinski Quality Construction. Space planning, waterproofing, custom built-ins, and more in Bucks, Montgomery, and Lehigh Counties.",
-  alternates: { canonical: "/services/basement-remodeling" },
-};
+    "Unlock your basement's full potential. We design and build finished basements in Bucks and Montgomery County — home theaters, offices, bathrooms, and living spaces. Free estimates.",
+  keywords: [
+    "basement remodeling Bucks County",
+    "basement finishing PA",
+    "finished basement contractor",
+    "basement renovation Montgomery County",
+    "home theater basement",
+    "basement bathroom addition",
+  ],
+  canonical: "/services/basement-remodeling",
+});
 
 const features = [
   "Space Planning & Design",

@@ -1,13 +1,19 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { MessageSquare } from "lucide-react";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Leave a Review",
+export const metadata = generatePageMetadata({
+  title: "Customer Reviews — Zwolinski Quality Construction",
   description:
-    "Leave a review for Zwolinski Quality Construction on Google or HomeAdvisor. Your feedback helps us serve our community better.",
-  alternates: { canonical: "/reviews" },
-};
+    "See what Bucks and Montgomery County homeowners are saying about Zwolinski Quality Construction. Read reviews on Google and HomeAdvisor, or share your experience.",
+  keywords: [
+    "Zwolinski Construction reviews",
+    "remodeling contractor reviews Bucks County",
+    "home renovation reviews PA",
+    "trusted contractor testimonials",
+  ],
+  canonical: "/reviews",
+});
 
 const reviewPlatforms = [
   {

@@ -1,15 +1,21 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Award, Users, Clock, Shield, ArrowRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "About Us",
+export const metadata = generatePageMetadata({
+  title: "About Zwolinski Quality Construction — 25+ Years of Expert Remodeling",
   description:
-    "Learn about Zwolinski Quality Construction — trusted for expert remodeling, renovations, and home improvements in Bucks, Montgomery, and Lehigh Counties.",
-  alternates: { canonical: "/about" },
-};
+    "Family-owned remodeling contractor trusted by Bucks and Montgomery County homeowners for over 25 years. Quality craftsmanship, transparent pricing, and dedicated project management.",
+  keywords: [
+    "about Zwolinski Construction",
+    "family owned contractor PA",
+    "trusted remodeling contractor Bucks County",
+    "25 years experience home renovation",
+  ],
+  canonical: "/about",
+});
 
 const values = [
   {

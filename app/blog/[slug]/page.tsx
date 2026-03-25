@@ -5,6 +5,7 @@ import { ArrowLeft, Calendar, Clock, ArrowRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import QuoteButton from "@/components/QuoteButton";
 import { blogPosts, getBlogPost, getRelatedPosts } from "@/data/blog";
+import { generatePageMetadata } from "@/lib/metadata";
 
 interface BlogPostPageProps {
   params: Promise<{ slug: string }>;
@@ -24,18 +25,22 @@ export async function generateMetadata({
     return { title: "Post Not Found" };
   }
 
-  return {
-    title: post.title,
+  return generatePageMetadata({
+    title: `${post.title} — Zwolinski Quality Construction`,
     description: post.excerpt,
-    alternates: { canonical: `/blog/${post.id}` },
+    keywords: [
+      post.category,
+      `${post.category} tips`,
+      "remodeling advice",
+      "home improvement PA",
+    ],
+    canonical: `/blog/${post.id}`,
     openGraph: {
-      title: post.title,
-      description: post.excerpt,
       type: "article",
       publishedTime: post.date,
       authors: ["Zwolinski Quality Construction"],
     },
-  };
+  });
 }
 
 export default async function BlogPostPage({ params }: BlogPostPageProps) {

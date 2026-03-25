@@ -1,15 +1,21 @@
-import type { Metadata } from "next";
 import Link from "next/link";
 import { Phone, MessageSquare, Mail, MapPin, Clock, ArrowRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import ContactForm from "@/components/ContactForm";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Contact Us",
+export const metadata = generatePageMetadata({
+  title: "Contact Zwolinski Quality Construction — Free Remodeling Estimates",
   description:
-    "Get in touch with Zwolinski Quality Construction to discuss your remodeling project. Call, text, or email us today.",
-  alternates: { canonical: "/contact" },
-};
+    "Ready to start your remodeling project? Contact Zwolinski Quality Construction for a free estimate. Call, text, or fill out our form — we respond within 24 hours.",
+  keywords: [
+    "free remodeling estimate",
+    "contact contractor Bucks County",
+    "remodeling consultation PA",
+    "home renovation quote",
+  ],
+  canonical: "/contact",
+});
 
 const contactCards = [
   {

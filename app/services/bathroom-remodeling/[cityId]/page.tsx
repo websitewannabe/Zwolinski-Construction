@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import QuoteButton from "@/components/QuoteButton";
 import citiesData from "@/data/cities.json";
 import { testimonials } from "@/data/testimonials";
+import { generatePageMetadata } from "@/lib/metadata";
 
 interface City {
   id: string;
@@ -41,13 +42,18 @@ export async function generateMetadata({
     return { title: "City Not Found" };
   }
 
-  return {
+  return generatePageMetadata({
     title: `Bathroom Remodeling in ${city.name}, ${city.state}`,
-    description: `Professional bathroom remodeling in ${city.name}, ${city.state}. Custom showers, vanities, tile work, and modern fixtures. 25+ years of expert craftsmanship in ${city.county}. Free estimates.`,
-    alternates: {
-      canonical: `/services/bathroom-remodeling/${city.id}`,
-    },
-  };
+    description: `Professional bathroom remodeling for ${city.name} homeowners. Custom showers, vanities, tile work, and modern fixtures. 25+ years of expert craftsmanship in ${city.county}. Free estimates.`,
+    keywords: [
+      `${city.name} bathroom remodel`,
+      `bathroom remodeling ${city.name} PA`,
+      `bathroom renovation ${city.county}`,
+      `${city.county} bathroom contractor`,
+      `custom shower ${city.name}`,
+    ],
+    canonical: `/services/bathroom-remodeling/${city.id}`,
+  });
 }
 
 const galleryImages = [

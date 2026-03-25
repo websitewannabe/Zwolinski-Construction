@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import QuoteButton from "@/components/QuoteButton";
 import citiesData from "@/data/cities.json";
 import { testimonials } from "@/data/testimonials";
+import { generatePageMetadata } from "@/lib/metadata";
 
 interface City {
   id: string;
@@ -41,13 +42,18 @@ export async function generateMetadata({
     return { title: "City Not Found" };
   }
 
-  return {
+  return generatePageMetadata({
     title: `Kitchen Remodeling in ${city.name}, ${city.state}`,
-    description: `Professional kitchen remodeling in ${city.name}, ${city.state}. Custom cabinets, countertops, backsplashes, and modern layouts. 25+ years of expert craftsmanship in ${city.county}. Free estimates.`,
-    alternates: {
-      canonical: `/services/kitchen-remodeling/${city.id}`,
-    },
-  };
+    description: `Professional kitchen remodeling for ${city.name} homeowners. Custom cabinets, countertops, backsplashes, and modern layouts. 25+ years of expert craftsmanship in ${city.county}. Free estimates.`,
+    keywords: [
+      `${city.name} kitchen remodel`,
+      `kitchen remodeling ${city.name} PA`,
+      `kitchen renovation ${city.county}`,
+      `${city.county} kitchen contractor`,
+      `custom cabinets ${city.name}`,
+    ],
+    canonical: `/services/kitchen-remodeling/${city.id}`,
+  });
 }
 
 const galleryImages = [

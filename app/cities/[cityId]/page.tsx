@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import QuoteButton from "@/components/QuoteButton";
 import citiesData from "@/data/cities.json";
 import { testimonials } from "@/data/testimonials";
+import { generatePageMetadata } from "@/lib/metadata";
 
 interface City {
   id: string;
@@ -40,11 +41,20 @@ export async function generateMetadata({
     return { title: "City Not Found" };
   }
 
-  return {
-    title: `Remodeling in ${city.name}, ${city.state}`,
-    description: `Professional home remodeling and construction services in ${city.name}, ${city.state}. Kitchen, bathroom, and basement remodeling by Zwolinski Quality Construction.`,
-    alternates: { canonical: `/cities/${city.id}` },
-  };
+  return generatePageMetadata({
+    title: `Trusted Home Remodeler in ${city.name}, ${city.state}`,
+    description: `Serving ${city.name} homeowners with expert kitchen, bathroom, and basement remodeling. 25+ years of trusted craftsmanship in ${city.county}. Free consultation.`,
+    keywords: [
+      `${city.name} home renovation`,
+      `${city.name} contractor`,
+      `${city.county} contractor`,
+      `kitchen remodeling ${city.name}`,
+      `bathroom renovation ${city.name}`,
+      `basement remodeling ${city.name}`,
+      `home improvement ${city.name} PA`,
+    ],
+    canonical: `/cities/${city.id}`,
+  });
 }
 
 const serviceShowcase = [

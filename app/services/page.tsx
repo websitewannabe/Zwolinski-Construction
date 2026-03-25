@@ -1,4 +1,3 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import {
@@ -12,13 +11,21 @@ import {
   MapPin,
 } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Remodeling Services",
+export const metadata = generatePageMetadata({
+  title: "Kitchen, Bathroom & Basement Remodeling Services in Bucks County, PA",
   description:
-    "Zwolinski Quality Construction offers expert kitchen, bathroom, and basement remodeling services in Bucks, Montgomery, and Lehigh Counties. Quality craftsmanship guaranteed.",
-  alternates: { canonical: "/services" },
-};
+    "Full-service kitchen, bathroom, and basement remodeling from a trusted Bucks County contractor. 25+ years of quality craftsmanship. Free estimates and transparent pricing.",
+  keywords: [
+    "remodeling services Bucks County",
+    "kitchen remodeling PA",
+    "bathroom renovation Bucks County",
+    "basement finishing Montgomery County",
+    "home remodeling services",
+  ],
+  canonical: "/services",
+});
 
 const services = [
   {

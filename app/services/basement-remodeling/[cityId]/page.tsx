@@ -6,6 +6,7 @@ import HeroSection from "@/components/HeroSection";
 import QuoteButton from "@/components/QuoteButton";
 import citiesData from "@/data/cities.json";
 import { testimonials } from "@/data/testimonials";
+import { generatePageMetadata } from "@/lib/metadata";
 
 interface City {
   id: string;
@@ -41,13 +42,18 @@ export async function generateMetadata({
     return { title: "City Not Found" };
   }
 
-  return {
+  return generatePageMetadata({
     title: `Basement Remodeling in ${city.name}, ${city.state}`,
-    description: `Professional basement remodeling in ${city.name}, ${city.state}. Finished basements, home theaters, bathrooms, and living spaces. 25+ years of expert craftsmanship in ${city.county}. Free estimates.`,
-    alternates: {
-      canonical: `/services/basement-remodeling/${city.id}`,
-    },
-  };
+    description: `Professional basement remodeling for ${city.name} homeowners. Finished basements, home theaters, bathrooms, and living spaces. 25+ years of expert craftsmanship in ${city.county}. Free estimates.`,
+    keywords: [
+      `${city.name} basement remodel`,
+      `basement remodeling ${city.name} PA`,
+      `basement finishing ${city.county}`,
+      `${city.county} basement contractor`,
+      `finished basement ${city.name}`,
+    ],
+    canonical: `/services/basement-remodeling/${city.id}`,
+  });
 }
 
 const galleryImages = [

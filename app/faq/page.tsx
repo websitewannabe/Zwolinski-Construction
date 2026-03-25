@@ -1,15 +1,23 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import { ChevronDown } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import QuoteButton from "@/components/QuoteButton";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "FAQ",
+export const metadata = generatePageMetadata({
+  title: "Frequently Asked Questions About Our Remodeling Services",
   description:
-    "Find answers to frequently asked questions about Zwolinski Quality Construction's remodeling services, process, timelines, and costs in Bucks, Montgomery, and Lehigh Counties.",
-  alternates: { canonical: "/faq" },
-};
+    "Get answers about remodeling timelines, costs, permits, and our process. Zwolinski Quality Construction answers the most common questions from Bucks County homeowners.",
+  keywords: [
+    "remodeling FAQ",
+    "kitchen remodel cost Bucks County",
+    "bathroom renovation timeline",
+    "remodeling permits PA",
+    "home renovation questions",
+    "contractor FAQ",
+  ],
+  canonical: "/faq",
+});
 
 const faqSections = [
   {

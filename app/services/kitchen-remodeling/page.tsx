@@ -1,15 +1,23 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Kitchen Remodeling",
+export const metadata = generatePageMetadata({
+  title: "Trusted Kitchen Remodeler in Bucks County — 25+ Years of Excellence",
   description:
-    "Expert kitchen remodeling services by Zwolinski Quality Construction. Custom cabinets, countertops, appliance integration, and more in Bucks, Montgomery, and Lehigh Counties.",
-  alternates: { canonical: "/services/kitchen-remodeling" },
-};
+    "Your kitchen should work as hard as you do. We design and build beautiful kitchens in Bucks and Montgomery County with custom cabinets, countertops, and modern layouts. Free estimates.",
+  keywords: [
+    "kitchen remodeling Bucks County",
+    "kitchen renovation PA",
+    "custom cabinets installation",
+    "kitchen contractor Montgomery County",
+    "countertop installation",
+    "kitchen design Bucks County",
+  ],
+  canonical: "/services/kitchen-remodeling",
+});
 
 const features = [
   "Cabinet Installation",

@@ -1,16 +1,24 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { Clock, Calendar } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import { blogPosts } from "@/data/blog";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Our Blog",
+export const metadata = generatePageMetadata({
+  title: "Remodeling Tips, Cost Guides & Design Inspiration — Our Blog",
   description:
-    "Expert remodeling tips, cost guides, and design inspiration from Zwolinski Quality Construction — serving Bucks, Montgomery, and Lehigh Counties.",
-  alternates: { canonical: "/blog" },
-};
+    "Expert remodeling advice from a trusted Bucks County contractor. Read our guides on kitchen costs, bathroom trends, basement ideas, and how to choose the right contractor.",
+  keywords: [
+    "remodeling blog",
+    "kitchen remodel cost guide",
+    "bathroom design trends",
+    "basement renovation ideas",
+    "home improvement tips PA",
+    "remodeling advice Bucks County",
+  ],
+  canonical: "/blog",
+});
 
 export default function BlogPage() {
   const blogSchema = {

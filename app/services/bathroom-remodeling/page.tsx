@@ -1,15 +1,23 @@
-import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { CheckCircle, ArrowRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Bathroom Remodeling",
+export const metadata = generatePageMetadata({
+  title: "Trusted Bathroom Remodeler in Bucks County — 25+ Years of Excellence",
   description:
-    "Professional bathroom remodeling services by Zwolinski Quality Construction. Custom showers, vanities, tile work, and modern fixtures in Bucks, Montgomery, and Lehigh Counties.",
-  alternates: { canonical: "/services/bathroom-remodeling" },
-};
+    "Your bathroom should feel like a retreat. We design and build beautiful bathrooms in Bucks and Montgomery County with custom showers, vanities, and tile work. Free estimates.",
+  keywords: [
+    "bathroom remodeling Bucks County",
+    "bathroom renovation PA",
+    "custom shower installation",
+    "bathroom contractor Montgomery County",
+    "vanity installation",
+    "tile work Bucks County",
+  ],
+  canonical: "/services/bathroom-remodeling",
+});
 
 const features = [
   "Custom Shower Design",

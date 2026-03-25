@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Privacy Policy",
+export const metadata = generatePageMetadata({
+  title: "Privacy Policy — Zwolinski Quality Construction",
   description:
-    "Read the privacy policy for Zwolinski Quality Construction. Learn how we collect, use, and protect your personal information.",
-  alternates: { canonical: "/privacy" },
-};
+    "Read the privacy policy for Zwolinski Quality Construction. Learn how we collect, use, and protect your personal information when you visit our website or request a quote.",
+  canonical: "/privacy",
+});
 
 export default function PrivacyPage() {
   return (

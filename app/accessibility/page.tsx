@@ -1,11 +1,11 @@
-import type { Metadata } from "next";
+import { generatePageMetadata } from "@/lib/metadata";
 
-export const metadata: Metadata = {
-  title: "Accessibility",
+export const metadata = generatePageMetadata({
+  title: "Accessibility Statement — Zwolinski Quality Construction",
   description:
-    "Zwolinski Quality Construction is committed to ensuring digital accessibility for all users. Learn about our accessibility efforts and how to contact us with concerns.",
-  alternates: { canonical: "/accessibility" },
-};
+    "Zwolinski Quality Construction is committed to digital accessibility for all users. Learn about our efforts and how to contact us with accessibility concerns.",
+  canonical: "/accessibility",
+});
 
 export default function AccessibilityPage() {
   return (
