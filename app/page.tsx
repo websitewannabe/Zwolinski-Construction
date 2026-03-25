@@ -84,28 +84,16 @@ export default function HomePage() {
                 },
                 areaServed: [
                   {
-                    "@type": "County",
-                    name: "Bucks County",
-                    containedInPlace: {
-                      "@type": "State",
-                      name: "Pennsylvania",
-                    },
+                    "@type": "AdministrativeArea",
+                    name: "Bucks County, Pennsylvania",
                   },
                   {
-                    "@type": "County",
-                    name: "Montgomery County",
-                    containedInPlace: {
-                      "@type": "State",
-                      name: "Pennsylvania",
-                    },
+                    "@type": "AdministrativeArea",
+                    name: "Montgomery County, Pennsylvania",
                   },
                   {
-                    "@type": "County",
-                    name: "Lehigh County",
-                    containedInPlace: {
-                      "@type": "State",
-                      name: "Pennsylvania",
-                    },
+                    "@type": "AdministrativeArea",
+                    name: "Lehigh County, Pennsylvania",
                   },
                 ],
                 hasOfferCatalog: {
@@ -141,6 +129,7 @@ export default function HomePage() {
                   bestRating: "5",
                   worstRating: "1",
                   ratingCount: "150",
+                  reviewCount: "150",
                 },
                 review: testimonials
                   .filter((t) => t.name)
@@ -202,7 +191,12 @@ export default function HomePage() {
                 "@id": "https://zwolinskiconstr.com/#organization",
                 name: "Zwolinski Quality Construction",
                 url: "https://zwolinskiconstr.com",
-                logo: "https://zwolinskiconstr.com/images/projects/constructionHero.jpg",
+                logo: {
+                  "@type": "ImageObject",
+                  url: "https://zwolinskiconstr.com/images/projects/newLogo.webp",
+                  width: 350,
+                  height: 72,
+                },
                 telephone: "+1-267-471-6120",
                 email: "arnoldzwolinski@verizon.net",
                 address: {

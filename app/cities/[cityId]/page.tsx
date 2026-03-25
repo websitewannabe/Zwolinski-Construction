@@ -129,14 +129,22 @@ export default async function CityPage({ params }: CityPageProps) {
         description: `Professional home remodeling and construction services in ${city.name}, ${city.state}. Kitchen, bathroom, and basement remodeling by Zwolinski Quality Construction.`,
         url: `https://zwolinskiconstr.com/cities/${city.id}`,
         telephone: "+1-267-471-6120",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Perkasie",
+          addressRegion: "PA",
+          postalCode: "18944",
+          addressCountry: "US",
+        },
         areaServed: {
-          "@type": "City",
-          name: city.name,
-          addressRegion: city.state,
+          "@type": "AdministrativeArea",
+          name: `${city.name}, ${city.state}`,
         },
         aggregateRating: {
           "@type": "AggregateRating",
           ratingValue: "5",
+          bestRating: "5",
+          worstRating: "1",
           reviewCount: String(testimonials.length),
         },
         review: cityReviews.map((t) => ({
@@ -145,6 +153,7 @@ export default async function CityPage({ params }: CityPageProps) {
           reviewRating: {
             "@type": "Rating",
             ratingValue: "5",
+            bestRating: "5",
           },
           reviewBody: t.text,
         })),
