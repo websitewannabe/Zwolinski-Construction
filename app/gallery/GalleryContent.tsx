@@ -56,7 +56,11 @@ export default function GalleryContent() {
           <p className="text-primary text-sm uppercase tracking-[0.3em] mb-3">
             Portfolio
           </p>
-          <h1 className="heading-xl text-white mb-10">Our Work</h1>
+          <h1 className="heading-xl text-white mb-3">Our Work</h1>
+          <p className="text-zinc-400 text-lg mb-10 max-w-2xl">
+            Browse our portfolio of completed kitchen, bathroom, and basement
+            remodeling projects across Bucks and Montgomery County.
+          </p>
 
           {/* Filter Buttons */}
           <div className="flex flex-wrap gap-3">

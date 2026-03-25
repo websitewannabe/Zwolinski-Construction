@@ -222,7 +222,7 @@ export default function HomePage() {
       />
 
       {/* Hero Section */}
-      <section className="relative h-[340px] md:h-[490px] overflow-hidden">
+      <section className="relative h-[90vh] overflow-hidden">
         <Image
           src="/images/projects/constructionHero.jpg"
           alt="Professional construction and home remodeling by Zwolinski Quality Construction"
