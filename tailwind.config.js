@@ -1,14 +1,28 @@
 /** @type {import('tailwindcss').Config} */
-export default {
-  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+module.exports = {
+  content: [
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
+  ],
   theme: {
     extend: {
       colors: {
-        'zwolinski-primary': '#000000',
-        'zwolinski-secondary': '#C0C0C0',
-        'zwolinski-accent': '#808080',
+        primary: {
+          DEFAULT: "#C0C0C0",
+          light: "#D9D9D9",
+          dark: "#A3A3A3",
+        },
+        accent: {
+          DEFAULT: "#147FBB",
+          light: "#4BA5CF",
+          dark: "#0F6999",
+        },
+      },
+      fontFamily: {
+        serif: ["Playfair Display", "Georgia", "serif"],
+        sans: ["Inter", "system-ui", "sans-serif"],
       },
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/typography")],
 };
