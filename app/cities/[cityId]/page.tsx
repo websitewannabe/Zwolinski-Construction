@@ -42,8 +42,8 @@ export async function generateMetadata({
   }
 
   return generatePageMetadata({
-    title: `Trusted Home Remodeler in ${city.name}, ${city.state}`,
-    description: `Kitchen, bathroom, and basement remodeling for ${city.name} homeowners. 25+ years of quality craftsmanship in ${city.county}. Free estimates.`,
+    title: `${city.name}'s Go-To Remodeling Contractor — Kitchens, Bathrooms & Basements`,
+    description: `${city.name} homeowners trust us for kitchen, bathroom, and basement remodels. 25+ years in ${city.county}, zero subcontractors. Get a free estimate.`,
     keywords: [
       `${city.name} home renovation`,
       `${city.name} contractor`,

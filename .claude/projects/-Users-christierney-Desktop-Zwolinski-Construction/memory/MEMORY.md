@@ -1,0 +1,2 @@
+- [project_nextjs_rebuild.md](project_nextjs_rebuild.md) - Site rebuilt from React/Vite to Next.js 15 with luxury black/gold design
+- [user_role.md](user_role.md) - Chris manages the site, prefers fast action and luxury aesthetics

@@ -43,8 +43,8 @@ export async function generateMetadata({
   }
 
   return generatePageMetadata({
-    title: `Bathroom Remodeling in ${city.name}, ${city.state}`,
-    description: `Bathroom remodeling for ${city.name} homeowners. Custom showers, vanities, tile work, and modern fixtures. 25+ years in ${city.county}.`,
+    title: `${city.name} Bathroom Remodeling — Showers, Vanities & Tile Upgrades`,
+    description: `${city.name} homeowners deserve a better bathroom. Custom showers, vanities, and tile work — done right by a crew with 25+ years in ${city.county}.`,
     keywords: [
       `${city.name} bathroom remodel`,
       `bathroom remodeling ${city.name} PA`,

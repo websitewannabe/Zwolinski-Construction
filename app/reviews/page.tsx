@@ -3,9 +3,9 @@ import { MessageSquare } from "lucide-react";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Customer Reviews — Zwolinski Quality Construction",
+  title: "What Homeowners Say About Us — Reviews from Real Clients",
   description:
-    "See what Bucks and Montgomery County homeowners say about us. Read reviews on Google and HomeAdvisor, or share your experience.",
+    "Don't take our word for it. Read what Bucks and Montgomery County homeowners say about working with us on Google and HomeAdvisor.",
   keywords: [
     "Zwolinski Construction reviews",
     "remodeling contractor reviews Bucks County",

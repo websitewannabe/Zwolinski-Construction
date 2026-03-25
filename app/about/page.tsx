@@ -5,9 +5,9 @@ import HeroSection from "@/components/HeroSection";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "About Zwolinski Quality Construction — 25+ Years of Expert Remodeling",
+  title: "Meet the Team Behind 25+ Years of Quality Remodeling in Bucks County",
   description:
-    "Family-owned remodeling contractor trusted by Bucks and Montgomery County homeowners for 25+ years. Quality craftsmanship and transparent pricing.",
+    "Family-owned, zero subcontractors, and over 25 years of hands-on experience. Learn why Bucks County homeowners keep coming back.",
   keywords: [
     "about Zwolinski Construction",
     "family owned contractor PA",

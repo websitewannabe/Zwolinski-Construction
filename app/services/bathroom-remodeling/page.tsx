@@ -6,9 +6,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import citiesData from "@/data/cities.json";
 
 export const metadata = generatePageMetadata({
-  title: "Trusted Bathroom Remodeler in Bucks County — 25+ Years of Excellence",
+  title: "Bathroom Remodeling in Bucks County — Showers, Tile & Complete Renovations",
   description:
-    "Your bathroom should feel like a retreat. Custom showers, vanities, and tile work in Bucks and Montgomery County. Free estimates.",
+    "Turn your outdated bathroom into a spa-like retreat. Custom showers, vanities, and tile work — fully managed by our own crew. Free estimates.",
   keywords: [
     "bathroom remodeling Bucks County",
     "bathroom renovation PA",

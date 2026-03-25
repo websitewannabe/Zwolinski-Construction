@@ -5,9 +5,9 @@ import QuoteButton from "@/components/QuoteButton";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Frequently Asked Questions About Our Remodeling Services",
+  title: "Remodeling FAQs — Costs, Timelines, Permits & What to Expect",
   description:
-    "Get answers about remodeling timelines, costs, permits, and our process. Common questions from Bucks County homeowners answered.",
+    "How much does a kitchen remodel cost? How long does a basement take? Get straight answers to the questions homeowners ask most.",
   keywords: [
     "remodeling FAQ",
     "kitchen remodel cost Bucks County",

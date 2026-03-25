@@ -14,9 +14,9 @@ import HeroSection from "@/components/HeroSection";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Kitchen, Bathroom & Basement Remodeling Services in Bucks County, PA",
+  title: "Our Remodeling Services — What We Do & How We Do It Differently",
   description:
-    "Kitchen, bathroom, and basement remodeling from a trusted Bucks County contractor. 25+ years of quality craftsmanship. Free estimates.",
+    "Kitchens, bathrooms, basements, and more — all done by our own crew, never subcontractors. See what 25+ years of Bucks County craftsmanship looks like.",
   keywords: [
     "remodeling services Bucks County",
     "kitchen remodeling PA",

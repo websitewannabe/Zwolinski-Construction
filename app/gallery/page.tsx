@@ -2,9 +2,9 @@ import GalleryContent from "./GalleryContent";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Remodeling Project Gallery — Kitchen, Bathroom & Basement Photos",
+  title: "Before & After Photos — Real Kitchen, Bathroom & Basement Remodels",
   description:
-    "Browse real photos from completed kitchen, bathroom, and basement remodels across Bucks and Montgomery County. See our craftsmanship firsthand.",
+    "Browse real project photos from homes across Bucks and Montgomery County. No stock images — just our actual craftsmanship on display.",
   keywords: [
     "remodeling photos Bucks County",
     "kitchen remodel gallery",

@@ -43,8 +43,8 @@ export async function generateMetadata({
   }
 
   return generatePageMetadata({
-    title: `Kitchen Remodeling in ${city.name}, ${city.state}`,
-    description: `Kitchen remodeling for ${city.name} homeowners. Custom cabinets, countertops, backsplashes, and modern layouts. 25+ years in ${city.county}.`,
+    title: `${city.name} Kitchen Remodeling — Custom Cabinets, Countertops & Layouts`,
+    description: `Ready to love your kitchen again? ${city.name} homeowners get custom cabinets, countertops, and full renovations — all managed by one crew.`,
     keywords: [
       `${city.name} kitchen remodel`,
       `kitchen remodeling ${city.name} PA`,

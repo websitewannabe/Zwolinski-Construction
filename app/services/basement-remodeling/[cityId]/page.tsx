@@ -43,8 +43,8 @@ export async function generateMetadata({
   }
 
   return generatePageMetadata({
-    title: `Basement Remodeling in ${city.name}, ${city.state}`,
-    description: `Basement remodeling for ${city.name} homeowners. Finished basements, home theaters, and living spaces. 25+ years in ${city.county}.`,
+    title: `${city.name} Basement Finishing — Home Theaters, Offices & Living Spaces`,
+    description: `Turn your ${city.name} basement into usable living space. Home theaters, offices, in-law suites — waterproofed and built to last by our own crew.`,
     keywords: [
       `${city.name} basement remodel`,
       `basement remodeling ${city.name} PA`,

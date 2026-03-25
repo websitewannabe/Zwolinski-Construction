@@ -4,9 +4,9 @@ import citiesData from "@/data/cities.json";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Service Areas — Bucks, Montgomery & Lehigh County Remodeling",
+  title: "46 Communities We Serve Across Bucks, Montgomery & Lehigh Counties",
   description:
-    "Serving 46 communities across Bucks, Montgomery, and Lehigh Counties. Find your city and get a free remodeling estimate.",
+    "Find your town and see what we offer in your area. We serve 46 communities across three counties — and we're probably right around the corner.",
   keywords: [
     "remodeling service areas PA",
     "Bucks County remodeling cities",

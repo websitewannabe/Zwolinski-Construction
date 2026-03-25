@@ -8,9 +8,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import { blurData } from "@/lib/blur-data";
 
 export const metadata = generatePageMetadata({
-  title: "Trusted Home Remodeling Contractor in Bucks and Montgomery Counties",
+  title: "Bucks County's Top-Rated Home Remodeler — Kitchens, Bathrooms & Basements",
   description:
-    "Luxury kitchen, bathroom, and basement remodeling in Bucks, Montgomery, and Lehigh Counties. 25+ years of expert craftsmanship. Free consultations available.",
+    "See why homeowners across Bucks, Montgomery, and Lehigh Counties trust us with their biggest investment. 25+ years, zero subcontractors, free estimates.",
   keywords: [
     "home additions",
     "kitchen remodeling Bucks County",
