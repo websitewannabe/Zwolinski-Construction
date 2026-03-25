@@ -90,7 +90,7 @@ export default function AboutPage() {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <HeroSection
-        image="/images/projects/aboutLivingRoom.jpg"
+        image="/images/gallery/basements/F063D0DB-6CC7-455E-87FA-335C2820C7EF.jpg"
         imageAlt="About Zwolinski Quality Construction"
         title="About"
         titleAccent="Our Company"
