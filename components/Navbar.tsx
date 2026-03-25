@@ -37,8 +37,8 @@ export default function Navbar() {
               src="/images/projects/newLogo.webp"
               alt="Zwolinski Quality Construction"
               width={250}
-              height={80}
-              className="h-auto w-auto max-w-[250px] max-h-16 object-contain"
+              height={51}
+              className="w-[250px] h-auto"
               priority
             />
           </Link>

@@ -5,7 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { QuoteModalProvider } from "@/components/QuoteModal";
 import { siteConfig } from "@/lib/metadata";
-import ChatWidget from "@/components/ChatWidget";
+import ChatWidgetLoader from "@/components/ChatWidgetLoader";
 import "./globals.css";
 
 const inter = Inter({
@@ -67,7 +67,7 @@ export default function RootLayout({
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
-          <ChatWidget />
+          <ChatWidgetLoader />
         </QuoteModalProvider>
       </body>
     </html>
