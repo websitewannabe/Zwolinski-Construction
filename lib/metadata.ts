@@ -79,6 +79,10 @@ export function generatePageMetadata({
       ...siteConfig.openGraph,
       title,
       description,
+      // Set og:url to the page's canonical URL (falls back to site root)
+      url: canonical
+        ? `${siteConfig.url}${canonical}`
+        : siteConfig.openGraph.url,
       // images intentionally omitted — opengraph-image.tsx handles this
       ...openGraph,
     },
