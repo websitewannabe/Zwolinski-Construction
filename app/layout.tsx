@@ -5,6 +5,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import { QuoteModalProvider } from "@/components/QuoteModal";
 import { siteConfig } from "@/lib/metadata";
+import ChatWidget from "@/components/ChatWidget";
 import "./globals.css";
 
 const inter = Inter({
@@ -61,28 +62,12 @@ export default function RootLayout({
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
-        {/* Hidden Netlify forms for detection */}
-        <form name="contact" data-netlify="true" hidden>
-          <input type="text" name="name" />
-          <input type="tel" name="phone" />
-          <input type="email" name="email" />
-          <select name="projectType"><option value="">-</option></select>
-          <textarea name="message" />
-        </form>
-        <form name="quote" data-netlify="true" hidden>
-          <input type="text" name="name" />
-          <input type="tel" name="phone" />
-          <input type="email" name="email" />
-          <input type="text" name="address" />
-          <select name="projectType"><option value="">-</option></select>
-          <select name="timeline"><option value="">-</option></select>
-          <select name="budget"><option value="">-</option></select>
-          <textarea name="description" />
-        </form>
+        {/* Netlify Forms detected via public/__forms.html */}
         <QuoteModalProvider>
           <Navbar />
           <main className="min-h-screen">{children}</main>
           <Footer />
+          <ChatWidget />
         </QuoteModalProvider>
       </body>
     </html>
