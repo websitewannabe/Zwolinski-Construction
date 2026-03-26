@@ -143,7 +143,7 @@ export default function ChatWidget() {
             </div>
 
             {/* Messages */}
-            <div className="flex-1 overflow-y-auto p-4 space-y-3">
+            <div className="flex-1 overflow-y-auto p-4 space-y-3 bg-white">
               {messages.map((msg, i) => (
                 <div
                   key={i}
@@ -152,8 +152,8 @@ export default function ChatWidget() {
                   <div
                     className={`max-w-[85%] px-3.5 py-2.5 rounded-xl text-sm leading-relaxed ${
                       msg.role === "user"
-                        ? "bg-accent/20 border border-accent/30 text-white rounded-br-sm"
-                        : "bg-zinc-800/50 border border-zinc-700 text-zinc-300 rounded-bl-sm"
+                        ? "bg-accent/20 border border-accent/30 text-zinc-900 rounded-br-sm"
+                        : "bg-zinc-100 border border-zinc-200 text-zinc-700 rounded-bl-sm"
                     }`}
                   >
                     {msg.content}
@@ -162,11 +162,11 @@ export default function ChatWidget() {
               ))}
               {isLoading && (
                 <div className="flex justify-start">
-                  <div className="bg-zinc-800/50 border border-zinc-700 rounded-xl rounded-bl-sm px-4 py-3">
+                  <div className="bg-zinc-100 border border-zinc-200 rounded-xl rounded-bl-sm px-4 py-3">
                     <div className="flex gap-1.5">
-                      <div className="w-2 h-2 bg-zinc-500 rounded-full animate-bounce [animation-delay:0ms]" />
-                      <div className="w-2 h-2 bg-zinc-500 rounded-full animate-bounce [animation-delay:150ms]" />
-                      <div className="w-2 h-2 bg-zinc-500 rounded-full animate-bounce [animation-delay:300ms]" />
+                      <div className="w-2 h-2 bg-zinc-400 rounded-full animate-bounce [animation-delay:0ms]" />
+                      <div className="w-2 h-2 bg-zinc-400 rounded-full animate-bounce [animation-delay:150ms]" />
+                      <div className="w-2 h-2 bg-zinc-400 rounded-full animate-bounce [animation-delay:300ms]" />
                     </div>
                   </div>
                 </div>
@@ -214,18 +214,14 @@ export default function ChatWidget() {
 
       {/* Floating Toggle Button */}
       <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[89]">
-        {!isOpen && (
-          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#A3A3A3] to-[#147FBB] p-[2px]">
-            <div className="w-full h-full rounded-full bg-white" />
-          </div>
-        )}
         <button
           onClick={() => setIsOpen(!isOpen)}
           className={`relative w-14 h-14 rounded-full shadow-lg shadow-black/40 flex items-center justify-center transition-all duration-300 hover:scale-105 cursor-pointer ${
             isOpen
               ? "bg-zinc-800 border border-zinc-700 text-zinc-400 hover:text-white"
-              : "bg-transparent text-[#147FBB]"
+              : "text-white"
           }`}
+          style={!isOpen ? { background: "linear-gradient(135deg, #A3A3A3, #147FBB)" } : undefined}
           aria-label={isOpen ? "Close chat" : "Open chat"}
         >
         {isOpen ? (

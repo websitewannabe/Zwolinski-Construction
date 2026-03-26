@@ -243,7 +243,7 @@ export default function KitchenRemodelingPage() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <Link href="/blog/kitchen-remodel-ideas-2025" className="card-luxury p-6 group">
               <h3 className="font-serif text-lg text-white mb-2">Kitchen Design Trends</h3>
-              <p className="text-zinc-400 text-sm mb-3">The hottest kitchen remodel ideas for 2025.</p>
+              <p className="text-zinc-400 text-sm mb-3">The hottest kitchen remodel ideas for 2026.</p>
               <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all">
                 Read Guide <ArrowRight className="h-4 w-4" />
               </span>

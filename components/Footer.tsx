@@ -101,6 +101,7 @@ export default function Footer() {
                 { name: "Services", href: "/services" },
                 { name: "Gallery", href: "/gallery" },
                 { name: "Reviews", href: "/reviews" },
+                { name: "Blog", href: "/blog" },
                 { name: "FAQ", href: "/faq" },
                 { name: "Contact", href: "/contact" },
               ].map((link) => (

@@ -31,19 +31,19 @@ export const blogPosts: BlogPost[] = [
       <h2>Ready to Start Planning?</h2>
       <p>Whether you're envisioning a simple refresh or a complete bathroom overhaul, getting an accurate estimate starts with a conversation. Contact us for a free consultation and let's discuss your vision, your budget, and how we can make your dream bathroom a reality.</p>
     `,
-    date: "2025-01-15",
+    date: "2025-10-08",
     category: "Bathrooms",
     image: "/images/gallery/bathrooms/newBathroom2.jpg",
     readTime: "5 min read",
   },
   {
     id: "kitchen-remodel-ideas-2025",
-    title: "Top Kitchen Remodel Ideas for 2025",
+    title: "Top Kitchen Remodel Ideas for 2026",
     excerpt:
-      "Discover the hottest kitchen design trends for 2025,from two-tone cabinetry to smart storage solutions that maximize your space.",
+      "Discover the hottest kitchen design trends for 2026, from two-tone cabinetry to smart storage solutions that maximize your space.",
     content: `
-      <h2>Kitchen Design Trends Shaping 2025</h2>
-      <p>The kitchen remains the heart of the home, and 2025 is bringing fresh design ideas that blend aesthetics with functionality. Homeowners across Bucks County, Montgomery County, and Lehigh County are embracing bold new looks while prioritizing the practical features that make daily life easier. Whether you're planning a full kitchen gut renovation or a strategic update, these trends can help guide your design decisions.</p>
+      <h2>Kitchen Design Trends Shaping 2026</h2>
+      <p>The kitchen remains the heart of the home, and 2026 is bringing fresh design ideas that blend aesthetics with functionality. Homeowners across Bucks County, Montgomery County, and Lehigh County are embracing bold new looks while prioritizing the practical features that make daily life easier. Whether you're planning a full kitchen gut renovation or a strategic update, these trends can help guide your design decisions.</p>
 
       <h2>Two-Tone Cabinetry and Bold Color Choices</h2>
       <p>Gone are the days of all-white kitchens. In 2025, two-tone cabinetry is one of the most requested features we see from homeowners in Doylestown and Perkasie. A popular combination pairs deep navy or forest green lower cabinets with lighter uppers in soft white or natural wood tones. This approach adds visual depth and personality to the space without overwhelming it. Matte black hardware continues to be a strong complement, offering a clean modern edge against painted or stained wood.</p>
@@ -55,27 +55,27 @@ export const blogPosts: BlogPost[] = [
       <p>Quartz continues to dominate countertop choices thanks to its durability, low maintenance, and wide range of colors and patterns. Many homeowners in Montgomery County and Lehigh County are pairing quartz countertops with large-format porcelain slab backsplashes that create a seamless, easy-to-clean surface. This look is especially striking in kitchens with open floor plans, where the backsplash becomes a design focal point visible from the living and dining areas.</p>
 
       <h2>Bring Your Vision to Life</h2>
-      <p>At Zwolinski Quality Construction, we work closely with homeowners to translate these trends into kitchens that fit their lifestyle and budget. From initial design through final installation, our team handles every detail. If you're considering a kitchen remodel in 2025, reach out for a free consultation,we'd love to help you create a kitchen you'll enjoy for years to come.</p>
+      <p>At Zwolinski Quality Construction, we work closely with homeowners to translate these trends into kitchens that fit their lifestyle and budget. From initial design through final installation, our team handles every detail. If you're considering a kitchen remodel in 2026, reach out for a free consultation, we'd love to help you create a kitchen you'll enjoy for years to come.</p>
     `,
-    date: "2025-02-10",
+    date: "2025-11-14",
     category: "Kitchens",
     image: "/images/gallery/kitchens/IMG_6094.jpg",
     readTime: "6 min read",
   },
   {
     id: "basement-finishing-guide",
-    title: "The Complete Guide to Basement Finishing in Pennsylvania",
+    title: "The Complete Guide to Basement Finishing in Bucks County",
     excerpt:
-      "Everything you need to know about finishing your basement in PA,from moisture control and permits to layout planning and final touches.",
+      "Everything you need to know about finishing your basement in Bucks County, from moisture control and permits to layout planning and final touches.",
     content: `
       <h2>Why Finish Your Basement?</h2>
       <p>For homeowners in Bucks County, Montgomery County, and Lehigh County, a finished basement is one of the smartest investments you can make. It adds functional living space,whether you need a home office, a family entertainment room, a guest suite, or a home gym,without the cost and complexity of building an addition. A well-finished basement can add significant value to your home and dramatically improve your day-to-day living experience.</p>
 
       <h2>Addressing Moisture Before You Build</h2>
-      <p>Pennsylvania's climate means basements are susceptible to moisture issues. Before any finishing work begins, it's critical to address any water intrusion, humidity, or drainage problems. This may include exterior grading corrections, interior French drain systems, sump pump installation or upgrades, and vapor barriers on the concrete walls and floor. In the Doylestown and Perkasie areas, many older homes have stone or block foundations that require special attention to ensure a dry, comfortable finished space.</p>
+      <p>The southeastern Pennsylvania climate in Bucks County, Montgomery County, and Lehigh County means basements are susceptible to moisture issues. Before any finishing work begins, it's critical to address any water intrusion, humidity, or drainage problems. This may include exterior grading corrections, interior French drain systems, sump pump installation or upgrades, and vapor barriers on the concrete walls and floor. In the Doylestown and Perkasie areas, many older homes have stone or block foundations that require special attention to ensure a dry, comfortable finished space.</p>
 
       <h2>Permits and Building Codes</h2>
-      <p>Finishing a basement in Pennsylvania requires building permits, and the work must comply with local and state building codes. Key requirements include minimum ceiling height (typically 7 feet for habitable space), proper egress windows in bedrooms, adequate electrical circuits and GFCI protection, smoke and carbon monoxide detectors, and insulation meeting current energy codes. Working with a licensed contractor who understands Bucks County permitting requirements ensures your project passes inspection and is completed safely.</p>
+      <p>Finishing a basement in Bucks County requires building permits, and the work must comply with local and state building codes. Key requirements include minimum ceiling height (typically 7 feet for habitable space), proper egress windows in bedrooms, adequate electrical circuits and GFCI protection, smoke and carbon monoxide detectors, and insulation meeting current energy codes. Working with a licensed contractor who understands Bucks County permitting requirements ensures your project passes inspection and is completed safely.</p>
 
       <h2>Planning Your Layout</h2>
       <p>A successful basement finish starts with thoughtful layout planning. Consider how you'll use the space, where existing mechanicals (furnace, water heater, electrical panel) are located, and how natural light enters the space. Open floor plans work well for entertainment spaces, while partition walls can create dedicated rooms for offices or bedrooms. We recommend working with your contractor during the planning phase to identify opportunities and avoid costly surprises once construction begins.</p>
@@ -83,7 +83,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Get Started with a Free Consultation</h2>
       <p>Zwolinski Quality Construction has been finishing basements across Bucks County, Montgomery County, and Lehigh County for over 25 years. We handle every aspect of the project,from waterproofing and framing to electrical, plumbing, and final finishes. Contact us today for a free consultation and let's turn your basement into the living space your family deserves.</p>
     `,
-    date: "2025-03-05",
+    date: "2025-12-03",
     category: "Basements",
     image: "/images/gallery/basements/IMG_0227.JPG",
     readTime: "7 min read",
@@ -98,7 +98,7 @@ export const blogPosts: BlogPost[] = [
       <p>A remodeling project is one of the largest investments you'll make in your home. The contractor you choose will determine not only the quality of the finished product but also your experience throughout the process. In Bucks County, Montgomery County, and Lehigh County, there's no shortage of contractors to choose from,but the quality and reliability vary enormously. Taking time to vet your contractor thoroughly can save you thousands of dollars and months of frustration.</p>
 
       <h2>Check Licenses, Insurance, and References</h2>
-      <p>In Pennsylvania, home improvement contractors are required to be registered with the state Attorney General's office. Always verify that your contractor holds a valid PA Home Improvement Contractor registration (HIC number). Beyond that, confirm they carry general liability insurance and workers' compensation coverage. Ask for references from recent projects,ideally in Doylestown, Perkasie, or your local area,and actually call them. Ask about the quality of work, communication, timeline adherence, and how the contractor handled any issues that arose.</p>
+      <p>In Bucks County and throughout Pennsylvania, home improvement contractors are required to be registered with the state Attorney General's office. Always verify that your contractor holds a valid PA Home Improvement Contractor registration (HIC number). Beyond that, confirm they carry general liability insurance and workers' compensation coverage. Ask for references from recent projects,ideally in Doylestown, Perkasie, or your local area,and actually call them. Ask about the quality of work, communication, timeline adherence, and how the contractor handled any issues that arose.</p>
 
       <h2>Get Detailed Written Estimates</h2>
       <p>A reputable contractor will provide a detailed written estimate that breaks down materials, labor, and any allowances or contingencies. Be wary of vague estimates that list only a lump sum without explaining what's included. A detailed estimate protects both you and the contractor by setting clear expectations. Compare at least three estimates, but don't automatically choose the lowest price. A significantly lower bid often signals that corners will be cut, materials will be downgraded, or the contractor is underestimating the scope of work.</p>
@@ -109,7 +109,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Why Homeowners Trust Zwolinski Quality Construction</h2>
       <p>For over 25 years, homeowners across Bucks County, Montgomery County, and Lehigh County have trusted Zwolinski Quality Construction for their remodeling projects. We are fully licensed and insured, provide detailed transparent estimates, and prioritize communication at every stage. Our reputation is built on quality craftsmanship and genuine care for our clients. If you're planning a remodel, we'd be honored to earn your trust,contact us for a free consultation.</p>
     `,
-    date: "2025-03-20",
+    date: "2026-01-09",
     category: "Tips",
     image: "/images/projects/constructionHero.jpg",
     readTime: "6 min read",
@@ -135,7 +135,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Plan Your Bathroom Remodel Today</h2>
       <p>If you're ready to start planning your bathroom remodel in Bucks County, Montgomery County, or Lehigh County, contact Zwolinski Quality Construction for a free consultation. We'll walk you through the process, discuss realistic timelines, and help you create a bathroom you'll love.</p>
     `,
-    date: "2025-04-12",
+    date: "2026-01-22",
     category: "Bathrooms",
     image: "/images/gallery/bathrooms/IMG_6024.jpg",
     readTime: "5 min read",
@@ -161,7 +161,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Let Us Help You Choose</h2>
       <p>At Zwolinski Quality Construction, we help homeowners across Bucks County, Montgomery County, and Lehigh County navigate cabinet options for every budget and style. We work with trusted suppliers to offer competitive pricing on semi-custom and custom cabinets, and our installation team ensures a flawless fit. Contact us for a free kitchen consultation,we'll help you find the perfect cabinets for your home.</p>
     `,
-    date: "2025-05-08",
+    date: "2026-02-12",
     category: "Kitchens",
     image: "/images/gallery/kitchens/IMG_6051.jpg",
     readTime: "6 min read",
@@ -176,7 +176,7 @@ export const blogPosts: BlogPost[] = [
       <p>If you're planning to finish your basement in Bucks County, Montgomery County, or Lehigh County, waterproofing should be your very first priority,not an afterthought. Finishing a basement without properly addressing moisture is one of the most expensive mistakes a homeowner can make. Water intrusion behind finished walls leads to mold growth, structural damage, and the eventual need to tear out and redo the work. Investing in waterproofing upfront protects your entire remodeling investment.</p>
 
       <h2>Identify the Source of Moisture</h2>
-      <p>Before choosing a waterproofing solution, you need to understand where moisture is coming from. Common sources in Pennsylvania basements include hydrostatic pressure (groundwater pushing through the foundation), surface water runoff from poor grading or clogged gutters, condensation from humid air meeting cool basement walls, and plumbing leaks. In the Doylestown and Perkasie areas, many homes sit on clay-heavy soil that retains water and increases hydrostatic pressure during heavy rains. A thorough inspection,ideally during or after a rainstorm,will help identify the source and severity of any moisture issues.</p>
+      <p>Before choosing a waterproofing solution, you need to understand where moisture is coming from. Common sources in Bucks County and Montgomery County basements include hydrostatic pressure (groundwater pushing through the foundation), surface water runoff from poor grading or clogged gutters, condensation from humid air meeting cool basement walls, and plumbing leaks. In the Doylestown and Perkasie areas, many homes sit on clay-heavy soil that retains water and increases hydrostatic pressure during heavy rains. A thorough inspection,ideally during or after a rainstorm,will help identify the source and severity of any moisture issues.</p>
 
       <h2>Exterior vs. Interior Solutions</h2>
       <p>Exterior waterproofing involves excavating around the foundation, applying a waterproof membrane or coating, and installing or repairing exterior drain tile systems. It's the most effective long-term solution but also the most expensive, typically costing $10,000 to $25,000 or more. Interior solutions include French drain systems (installed along the interior perimeter of the basement floor), sump pump installation, vapor barriers on walls, and dehumidification systems. Interior drainage combined with a reliable sump pump is the most common and cost-effective approach for basements in Bucks County, with costs typically ranging from $3,000 to $10,000.</p>
@@ -187,7 +187,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Start Your Basement Remodel the Right Way</h2>
       <p>At Zwolinski Quality Construction, we've been waterproofing and finishing basements across Bucks County and the surrounding region for over 25 years. We assess every basement for moisture issues before beginning any finish work, ensuring your investment is protected from day one. Contact us for a free evaluation and let's build your basement the right way.</p>
     `,
-    date: "2025-06-14",
+    date: "2026-02-27",
     category: "Basements",
     image: "/images/gallery/basements/IMG_0170.jpg",
     readTime: "7 min read",
@@ -216,7 +216,7 @@ export const blogPosts: BlogPost[] = [
       <h2>Make Smart Remodeling Decisions</h2>
       <p>At Zwolinski Quality Construction, we help homeowners across Bucks County, Montgomery County, and Lehigh County make informed remodeling decisions that balance personal enjoyment with long-term value. Whether you're remodeling for yourself or preparing to sell, we'll help you get the most out of your investment. Contact us for a free consultation to discuss your project.</p>
     `,
-    date: "2025-07-22",
+    date: "2026-03-18",
     category: "Tips",
     image: "/images/projects/constructionHero.jpg",
     readTime: "6 min read",
