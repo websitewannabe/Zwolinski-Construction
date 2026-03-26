@@ -2,7 +2,7 @@ import EmailLink from "@/components/EmailLink";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Accessibility Statement — Zwolinski Quality Construction",
+  title: "Accessibility Statement | Zwolinski Quality Construction",
   description:
     "Zwolinski Quality Construction is committed to digital accessibility for all users. Learn about our efforts and how to contact us with accessibility concerns.",
   canonical: "/accessibility",

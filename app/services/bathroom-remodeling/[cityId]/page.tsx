@@ -43,8 +43,8 @@ export async function generateMetadata({
   }
 
   return generatePageMetadata({
-    title: `${city.name} Bathroom Remodeling — Showers, Vanities & Tile Upgrades`,
-    description: `${city.name} homeowners deserve a better bathroom. Custom showers, vanities, and tile work — done right by a crew with 25+ years in ${city.county}.`,
+    title: `${city.name} Bathroom Remodeling | Showers, Vanities & Tile Upgrades`,
+    description: `${city.name} homeowners deserve a better bathroom. Custom showers, vanities, and tile work done right by a crew with 25+ years in ${city.county}.`,
     keywords: [
       `${city.name} bathroom remodel`,
       `bathroom remodeling ${city.name} PA`,
@@ -69,7 +69,7 @@ const galleryImages = [
 
 const whyChooseUs = [
   "Over 25 years of bathroom remodeling experience across Bucks, Montgomery, and Lehigh Counties",
-  "Complete project management from design through final walkthrough — no subcontractor hassle",
+  "Complete project management from design through final walkthrough with no subcontractor hassle",
   "On-time, on-budget delivery with transparent pricing and no hidden fees",
   "Expert tile, plumbing, and fixture installation by our full-time crew",
 ];
@@ -173,7 +173,7 @@ export default async function BathroomRemodelingCityPage({
         imageAlt={`Bathroom remodeling in ${city.name}, ${city.state}`}
         title="Bathroom Remodeling in"
         titleAccent={`${city.name}, ${city.state}`}
-        subtitle={`Expert bathroom renovations for ${city.name} homeowners. Custom showers, vanities, tile, and fixtures — completed on time and on budget.`}
+        subtitle={`Expert bathroom renovations for ${city.name} homeowners. Custom showers, vanities, tile, and fixtures completed on time and on budget.`}
         ctaText="Get a Free Quote"
       />
 
@@ -201,7 +201,7 @@ export default async function BathroomRemodelingCityPage({
                   We specialize in custom shower installations, vanity design,
                   premium tile work, and modern fixture upgrades for homeowners
                   in {city.name} and the surrounding {city.county} area. Every
-                  project is managed start-to-finish by our own team — no
+                  project is managed start-to-finish by our own team, no
                   subcontractors, no delays.
                 </p>
                 <p>

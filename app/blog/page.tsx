@@ -6,7 +6,7 @@ import { blogPosts } from "@/data/blog";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Remodeling Advice You Can Trust — Cost Guides, Tips & Design Ideas",
+  title: "Remodeling Advice You Can Trust | Cost Guides, Tips & Design Ideas",
   description:
     "Honest answers on what remodels really cost, how long they take, and what to expect. Written by a contractor with 25+ years in the field.",
   keywords: [

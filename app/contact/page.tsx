@@ -6,7 +6,7 @@ import EmailLink from "@/components/EmailLink";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Get Your Free Remodeling Estimate — Call, Text, or Request Online",
+  title: "Get Your Free Remodeling Estimate | Call, Text, or Request Online",
   description:
     "Ready to start? We respond within 24 hours. Call, text, or fill out our form for a free, no-pressure estimate on your next project.",
   keywords: [

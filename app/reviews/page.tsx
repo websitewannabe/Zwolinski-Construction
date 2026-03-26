@@ -3,7 +3,7 @@ import { MessageSquare } from "lucide-react";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "What Homeowners Say About Us — Reviews from Real Clients",
+  title: "What Homeowners Say About Us | Reviews from Real Clients",
   description:
     "Don't take our word for it. Read what Bucks and Montgomery County homeowners say about working with us on Google and HomeAdvisor.",
   keywords: [

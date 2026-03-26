@@ -2,7 +2,7 @@ import EmailLink from "@/components/EmailLink";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Privacy Policy — Zwolinski Quality Construction",
+  title: "Privacy Policy | Zwolinski Quality Construction",
   description:
     "Read our privacy policy. Learn how we collect, use, and protect your personal information when you visit our website or request a quote.",
   canonical: "/privacy",

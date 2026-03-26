@@ -6,9 +6,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import citiesData from "@/data/cities.json";
 
 export const metadata = generatePageMetadata({
-  title: "Basement Finishing & Remodeling in Bucks County — Home Theaters, Offices & More",
+  title: "Basement Finishing & Remodeling in Bucks County | Home Theaters, Offices & More",
   description:
-    "Stop wasting square footage. We turn unfinished basements into home theaters, offices, and living spaces — waterproofed and built to last.",
+    "Stop wasting square footage. We turn unfinished basements into home theaters, offices, and living spaces, waterproofed and built to last.",
   keywords: [
     "basement remodeling Bucks County",
     "basement finishing PA",

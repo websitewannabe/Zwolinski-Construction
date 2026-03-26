@@ -6,9 +6,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import citiesData from "@/data/cities.json";
 
 export const metadata = generatePageMetadata({
-  title: "Bathroom Remodeling in Bucks County — Showers, Tile & Complete Renovations",
+  title: "Bathroom Remodeling in Bucks County | Showers, Tile & Complete Renovations",
   description:
-    "Turn your outdated bathroom into a spa-like retreat. Custom showers, vanities, and tile work — fully managed by our own crew. Free estimates.",
+    "Turn your outdated bathroom into a spa-like retreat. Custom showers, vanities, and tile work, fully managed by our own crew. Free estimates.",
   keywords: [
     "bathroom remodeling Bucks County",
     "bathroom renovation PA",

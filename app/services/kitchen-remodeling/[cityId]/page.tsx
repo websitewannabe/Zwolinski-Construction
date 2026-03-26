@@ -43,8 +43,8 @@ export async function generateMetadata({
   }
 
   return generatePageMetadata({
-    title: `${city.name} Kitchen Remodeling — Custom Cabinets, Countertops & Layouts`,
-    description: `Ready to love your kitchen again? ${city.name} homeowners get custom cabinets, countertops, and full renovations — all managed by one crew.`,
+    title: `${city.name} Kitchen Remodeling | Custom Cabinets, Countertops & Layouts`,
+    description: `Ready to love your kitchen again? ${city.name} homeowners get custom cabinets, countertops, and full renovations, all managed by one crew.`,
     keywords: [
       `${city.name} kitchen remodel`,
       `kitchen remodeling ${city.name} PA`,
@@ -69,7 +69,7 @@ const galleryImages = [
 
 const whyChooseUs = [
   "Over 25 years of kitchen remodeling experience across Bucks, Montgomery, and Lehigh Counties",
-  "Complete project management from design through final walkthrough — no subcontractor hassle",
+  "Complete project management from design through final walkthrough with no subcontractor hassle",
   "On-time, on-budget delivery with transparent pricing and no hidden fees",
   "Expert cabinetry, countertop, and appliance installation by our full-time crew",
 ];
@@ -173,7 +173,7 @@ export default async function KitchenRemodelingCityPage({
         imageAlt={`Kitchen remodeling in ${city.name}, ${city.state}`}
         title="Kitchen Remodeling in"
         titleAccent={`${city.name}, ${city.state}`}
-        subtitle={`Custom kitchen renovations for ${city.name} homeowners. Cabinets, countertops, backsplashes, and layouts — built to perfection.`}
+        subtitle={`Custom kitchen renovations for ${city.name} homeowners. Cabinets, countertops, backsplashes, and layouts built to perfection.`}
         ctaText="Get a Free Quote"
       />
 
@@ -202,7 +202,7 @@ export default async function KitchenRemodelingCityPage({
                   countertops, tile backsplashes, and full kitchen layout
                   redesigns for homeowners in {city.name} and throughout{" "}
                   {city.county}. Our own team manages every phase of the project
-                  — no subcontractors, no surprises.
+                  with no subcontractors and no surprises.
                 </p>
                 <p>
                   Whether you live near {city.landmarks[0] || city.name} or

@@ -6,9 +6,9 @@ import { generatePageMetadata } from "@/lib/metadata";
 import citiesData from "@/data/cities.json";
 
 export const metadata = generatePageMetadata({
-  title: "Custom Kitchen Remodeling in Bucks County — Cabinets, Countertops & More",
+  title: "Custom Kitchen Remodeling in Bucks County | Cabinets, Countertops & More",
   description:
-    "Your kitchen should work as hard as you do. We handle cabinets, countertops, layouts, and every detail — start to finish, no subcontractors.",
+    "Your kitchen should work as hard as you do. We handle cabinets, countertops, layouts, and every detail, start to finish, no subcontractors.",
   keywords: [
     "kitchen remodeling Bucks County",
     "kitchen renovation PA",

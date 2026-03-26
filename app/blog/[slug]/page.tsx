@@ -26,7 +26,7 @@ export async function generateMetadata({
   }
 
   return generatePageMetadata({
-    title: `${post.title} — Zwolinski Quality Construction`,
+    title: `${post.title} | Zwolinski Quality Construction`,
     description: post.excerpt,
     keywords: [
       post.category,

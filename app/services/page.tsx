@@ -14,9 +14,9 @@ import HeroSection from "@/components/HeroSection";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Our Remodeling Services — What We Do & How We Do It Differently",
+  title: "Our Remodeling Services | What We Do & How We Do It Differently",
   description:
-    "Kitchens, bathrooms, basements, and more — all done by our own crew, never subcontractors. See what 25+ years of Bucks County craftsmanship looks like.",
+    "Kitchens, bathrooms, basements, and more, all done by our own crew, never subcontractors. See what 25+ years of Bucks County craftsmanship looks like.",
   keywords: [
     "remodeling services Bucks County",
     "kitchen remodeling PA",

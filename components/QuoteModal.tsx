@@ -280,7 +280,7 @@ function QuoteModalContent({ onClose }: { onClose: () => void }) {
                   required
                   rows={4}
                   className="w-full px-4 py-3 bg-zinc-800/50 border border-zinc-700 rounded text-white placeholder-zinc-500 focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all resize-vertical"
-                  placeholder="Describe your project — size of the space, what you'd like done, any specific materials or styles you have in mind..."
+                  placeholder="Describe your project: size of the space, what you'd like done, any specific materials or styles you have in mind..."
                 />
               </div>
 

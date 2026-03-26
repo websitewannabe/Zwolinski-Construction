@@ -43,8 +43,8 @@ export async function generateMetadata({
   }
 
   return generatePageMetadata({
-    title: `${city.name} Basement Finishing — Home Theaters, Offices & Living Spaces`,
-    description: `Turn your ${city.name} basement into usable living space. Home theaters, offices, in-law suites — waterproofed and built to last by our own crew.`,
+    title: `${city.name} Basement Finishing | Home Theaters, Offices & Living Spaces`,
+    description: `Turn your ${city.name} basement into usable living space. Home theaters, offices, in-law suites, waterproofed and built to last by our own crew.`,
     keywords: [
       `${city.name} basement remodel`,
       `basement remodeling ${city.name} PA`,
@@ -69,7 +69,7 @@ const galleryImages = [
 
 const whyChooseUs = [
   "Over 25 years of basement remodeling experience across Bucks, Montgomery, and Lehigh Counties",
-  "Complete project management from design through final walkthrough — no subcontractor hassle",
+  "Complete project management from design through final walkthrough with no subcontractor hassle",
   "On-time, on-budget delivery with transparent pricing and no hidden fees",
   "Expert framing, electrical, plumbing, and finishing by our full-time crew",
 ];
@@ -200,7 +200,7 @@ export default async function BasementRemodelingCityPage({
                 </p>
                 <p>
                   We handle every aspect of basement finishing for {city.name}{" "}
-                  homeowners — framing, electrical, plumbing, drywall, flooring,
+                  homeowners including framing, electrical, plumbing, drywall, flooring,
                   and trim. Our team manages the full project so you get a
                   beautiful finished basement without coordinating multiple
                   contractors.

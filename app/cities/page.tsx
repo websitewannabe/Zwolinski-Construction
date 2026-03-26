@@ -6,7 +6,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 export const metadata = generatePageMetadata({
   title: "46 Communities We Serve Across Bucks, Montgomery & Lehigh Counties",
   description:
-    "Find your town and see what we offer in your area. We serve 46 communities across three counties — and we're probably right around the corner.",
+    "Find your town and see what we offer in your area. We serve 46 communities across three counties and we're probably right around the corner.",
   keywords: [
     "remodeling service areas PA",
     "Bucks County remodeling cities",

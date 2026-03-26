@@ -2,7 +2,7 @@ import { ArrowRight, Code, Palette, Rocket, Globe } from "lucide-react";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Site Credits — Built by Website Wannabe, Powered by AI Wannabe",
+  title: "Site Credits | Built by Website Wannabe, Powered by AI Wannabe",
   description:
     "This website was designed and built by Website Wannabe and powered by AI Wannabe. Custom web design, development, SEO, and AI-driven solutions for contractors.",
   canonical: "/site-credits",
@@ -31,7 +31,7 @@ export default function SiteCreditsPage() {
               >
                 Website Wannabe
               </a>{" "}
-              — a modern web design and development agency specializing in
+              , a modern web design and development agency specializing in
               high-performance websites for businesses that want to stand out
               online.
             </p>

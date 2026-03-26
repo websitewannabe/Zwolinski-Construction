@@ -8,7 +8,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 import { blurData } from "@/lib/blur-data";
 
 export const metadata = generatePageMetadata({
-  title: "Bucks County's Top-Rated Home Remodeler — Kitchens, Bathrooms & Basements",
+  title: "Bucks County's Top-Rated Home Remodeler | Kitchens, Bathrooms & Basements",
   description:
     "See why homeowners across Bucks, Montgomery, and Lehigh Counties trust us with their biggest investment. 25+ years, zero subcontractors, free estimates.",
   keywords: [

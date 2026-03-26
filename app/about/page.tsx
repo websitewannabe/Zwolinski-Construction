@@ -49,7 +49,7 @@ export default function AboutPage() {
     "@type": "AboutPage",
     name: "About Zwolinski Quality Construction",
     description:
-      "Learn about Zwolinski Quality Construction — trusted for expert remodeling, renovations, and home improvements in Bucks, Montgomery, and Lehigh Counties.",
+      "Learn about Zwolinski Quality Construction, trusted for expert remodeling, renovations, and home improvements in Bucks, Montgomery, and Lehigh Counties.",
     url: "https://zwolinskiconstr.com/about",
     mainEntity: {
       "@type": "Organization",

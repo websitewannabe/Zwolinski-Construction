@@ -42,7 +42,7 @@ export async function generateMetadata({
   }
 
   return generatePageMetadata({
-    title: `${city.name}'s Go-To Remodeling Contractor — Kitchens, Bathrooms & Basements`,
+    title: `${city.name}'s Go-To Remodeling Contractor | Kitchens, Bathrooms & Basements`,
     description: `${city.name} homeowners trust us for kitchen, bathroom, and basement remodels. 25+ years in ${city.county}, zero subcontractors. Get a free estimate.`,
     keywords: [
       `${city.name} home renovation`,
@@ -223,7 +223,7 @@ export default async function CityPage({ params }: CityPageProps) {
                   For over 25 years, Zwolinski Quality Construction has been the
                   trusted choice for homeowners in {city.name} and throughout{" "}
                   {city.county}. Our team provides complete remodeling solutions
-                  — from initial design through finished project — with personal
+                  from initial design through finished project with personal
                   attention to every detail.
                 </p>
                 <p>

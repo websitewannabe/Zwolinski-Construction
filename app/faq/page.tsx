@@ -5,7 +5,7 @@ import QuoteButton from "@/components/QuoteButton";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
-  title: "Remodeling FAQs — Costs, Timelines, Permits & What to Expect",
+  title: "Remodeling FAQs | Costs, Timelines, Permits & What to Expect",
   description:
     "How much does a kitchen remodel cost? How long does a basement take? Get straight answers to the questions homeowners ask most.",
   keywords: [
@@ -98,7 +98,7 @@ const faqSections = [
       {
         question: "How much does a bathroom remodel cost?",
         answer:
-          "The cost of a bathroom remodel varies depending on the size of the space, materials selected, and the scope of work involved. We provide detailed, transparent estimates after an in-home consultation so you know exactly what to expect — no hidden fees or surprises.",
+          "The cost of a bathroom remodel varies depending on the size of the space, materials selected, and the scope of work involved. We provide detailed, transparent estimates after an in-home consultation so you know exactly what to expect with no hidden fees or surprises.",
       },
       {
         question: "How much does a kitchen remodel cost?",
