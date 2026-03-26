@@ -129,11 +129,11 @@ export default function HomePage() {
                 },
                 aggregateRating: {
                   "@type": "AggregateRating",
-                  ratingValue: "5",
+                  ratingValue: "4.8",
                   bestRating: "5",
                   worstRating: "1",
-                  ratingCount: "150",
-                  reviewCount: "150",
+                  ratingCount: "45",
+                  reviewCount: "45",
                 },
                 review: testimonials
                   .filter((t) => t.name)
@@ -316,7 +316,7 @@ export default function HomePage() {
             Trusted by Homeowners
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">
-            Over 150 Five-Star Reviews
+            Over 45 Five-Star Reviews
           </h2>
           <div className="flex justify-center gap-1 mt-4 mb-6">
             {[...Array(5)].map((_, i) => (

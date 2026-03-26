@@ -49,9 +49,9 @@ export default function ReviewsPage() {
     },
     aggregateRating: {
       "@type": "AggregateRating",
-      ratingValue: "5",
+      ratingValue: "4.8",
       bestRating: "5",
-      ratingCount: "150",
+      ratingCount: "45",
     },
   };
 
