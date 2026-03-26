@@ -195,9 +195,14 @@ export default function Footer() {
             >
               Site Credits
             </Link>
-            <span className="text-zinc-400">
+            <a
+              href="https://aiwannabe.co"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              className="text-zinc-400 hover:text-primary-light transition-colors"
+            >
               Powered by AI Wannabe
-            </span>
+            </a>
           </div>
         </div>
       </div>
