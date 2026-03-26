@@ -1,4 +1,5 @@
 import { ArrowRight, Code, Palette, Rocket, Globe } from "lucide-react";
+import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
@@ -18,9 +19,20 @@ export default function SiteCreditsPage() {
             <p className="text-primary text-sm uppercase tracking-[0.3em] mb-3">
               Built By
             </p>
-            <h2 className="heading-lg text-white mb-8">
-              Website <span className="text-accent">Wannabe</span>
-            </h2>
+            <a
+              href="https://websitewannabe.co"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block mb-8"
+            >
+              <Image
+                src="/websitewannabe/website-wannabe-logo.png"
+                alt="Website Wannabe"
+                width={400}
+                height={100}
+                className="h-auto w-[300px] md:w-[400px] mx-auto"
+              />
+            </a>
             <p className="text-zinc-400 text-lg leading-relaxed mb-6">
               This website was designed and built by{" "}
               <a
@@ -30,7 +42,7 @@ export default function SiteCreditsPage() {
                 className="text-accent hover:text-accent-light transition-colors underline underline-offset-4"
               >
                 Website Wannabe
-              </a>{" "}
+              </a>
               , a modern web design and development agency specializing in
               high-performance websites for businesses that want to stand out
               online.
