@@ -80,10 +80,10 @@ export default function TestimonialCarousel() {
                     {testimonial.name}
                   </p>
                 )}
-                <div className="flex items-center gap-2 text-zinc-500 text-xs">
+                <div className="flex items-center gap-2 text-zinc-400 text-xs">
                   <MapPin className="h-3 w-3" />
                   {testimonial.location}
-                  <span className="text-zinc-700">|</span>
+                  <span className="text-zinc-600">|</span>
                   {testimonial.projectType}
                 </div>
               </div>

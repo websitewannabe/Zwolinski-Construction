@@ -29,7 +29,7 @@ export default function Navbar() {
   const [isMobileServicesOpen, setIsMobileServicesOpen] = useState(false);
 
   return (
-    <nav className="bg-black/95 backdrop-blur-md sticky top-0 z-50 border-b border-zinc-800/50">
+    <nav aria-label="Main navigation" className="bg-black/95 backdrop-blur-md sticky top-0 z-50 border-b border-zinc-800/50">
       <div className="container-wide">
         <div className="flex items-center justify-between h-20">
           <Link href="/" className="flex items-center">
@@ -68,20 +68,34 @@ export default function Navbar() {
               <Link
                 href="/services"
                 className="flex items-center gap-1 px-4 py-2 text-zinc-300 hover:text-primary nav-underline transition-colors text-sm tracking-wide uppercase"
+                aria-expanded={isServicesOpen}
+                aria-haspopup="true"
+                onFocus={() => setIsServicesOpen(true)}
+                onBlur={(e) => {
+                  if (!e.currentTarget.parentElement?.contains(e.relatedTarget)) {
+                    setIsServicesOpen(false);
+                  }
+                }}
               >
                 Services
-                <ChevronDown className="h-3.5 w-3.5" />
+                <ChevronDown className={`h-3.5 w-3.5 transition-transform ${isServicesOpen ? "rotate-180" : ""}`} />
               </Link>
 
               {isServicesOpen && (
-                <div className="absolute top-full left-1/2 -translate-x-1/2 w-60 pt-2">
+                <div className="absolute top-full left-1/2 -translate-x-1/2 w-60 pt-2" role="menu">
                   <div className="bg-zinc-900 border border-zinc-800 rounded-lg shadow-2xl shadow-black/50 overflow-hidden">
                     {serviceItems.map((service) => (
                       <Link
                         key={service.name}
                         href={service.path}
+                        role="menuitem"
                         className="block px-5 py-3.5 text-zinc-300 hover:text-primary hover:bg-zinc-800/50 transition-all text-sm border-b border-zinc-800/50 last:border-0"
                         onClick={() => setIsServicesOpen(false)}
+                        onBlur={(e) => {
+                          if (!e.currentTarget.parentElement?.parentElement?.parentElement?.contains(e.relatedTarget)) {
+                            setIsServicesOpen(false);
+                          }
+                        }}
                       >
                         {service.name}
                       </Link>
@@ -117,6 +131,8 @@ export default function Navbar() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
+            aria-label={isOpen ? "Close menu" : "Open menu"}
+            aria-expanded={isOpen}
             className="lg:hidden p-2 text-zinc-300 hover:text-primary transition-colors"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -141,6 +157,7 @@ export default function Navbar() {
               <div className="pt-2 pb-1">
                 <button
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
+                  aria-expanded={isMobileServicesOpen}
                   className="flex items-center justify-between w-full px-4 py-3 text-zinc-300 hover:text-white rounded transition-all text-sm tracking-wide uppercase hover-gradient"
                 >
                   Services

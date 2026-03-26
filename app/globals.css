@@ -51,7 +51,7 @@
            tracking-wide uppercase text-sm;
     background: linear-gradient(135deg, #A3A3A3, #147FBB, #A3A3A3);
     background-size: 200% 200%;
-    animation: gradient-shift 3s ease infinite;
+    background-position: 50% 50%;
   }
   .btn-primary:hover {
     background: linear-gradient(135deg, #C0C0C0, #4BA5CF, #C0C0C0);
@@ -108,18 +108,16 @@
 .hover-gradient:hover {
   background: linear-gradient(135deg, #A3A3A3, #147FBB);
   background-size: 200% 200%;
-  animation: gradient-shift 3s ease infinite;
 }
 
 /* Nav call button — gradient by default, outline on hover */
 .nav-call-btn {
   background: linear-gradient(135deg, #A3A3A3, #147FBB, #A3A3A3);
   background-size: 200% 200%;
-  animation: gradient-shift 3s ease infinite;
+  background-position: 50% 50%;
 }
 .nav-call-btn:hover {
   background: transparent;
-  animation: none;
 }
 
 /* Nav underline animation — expands from center */
@@ -156,9 +154,22 @@
   background: linear-gradient(135deg, #A3A3A3, #147FBB);
 }
 
-/* Smooth scrolling */
-html {
-  scroll-behavior: smooth;
+/* Smooth scrolling (only when user hasn't requested reduced motion) */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Disable all animations for users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 
 /* Custom scrollbar */

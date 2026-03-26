@@ -1,6 +1,6 @@
 "use client";
 
-import { createContext, useContext, useState, useCallback } from "react";
+import { createContext, useContext, useState, useCallback, useEffect, useRef } from "react";
 import { X, Send, Phone, CheckCircle } from "lucide-react";
 
 // Context for opening the modal from anywhere
@@ -27,6 +27,35 @@ export function QuoteModalProvider({ children }: { children: React.ReactNode }) 
 }
 
 function QuoteModalContent({ onClose }: { onClose: () => void }) {
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  // Focus trap: keep focus inside modal
+  useEffect(() => {
+    const modal = modalRef.current;
+    if (!modal) return;
+
+    const focusable = modal.querySelectorAll<HTMLElement>(
+      'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])'
+    );
+    const first = focusable[0];
+    const last = focusable[focusable.length - 1];
+
+    first?.focus();
+
+    const handleTab = (e: KeyboardEvent) => {
+      if (e.key === "Escape") { onClose(); return; }
+      if (e.key !== "Tab") return;
+      if (e.shiftKey) {
+        if (document.activeElement === first) { e.preventDefault(); last?.focus(); }
+      } else {
+        if (document.activeElement === last) { e.preventDefault(); first?.focus(); }
+      }
+    };
+
+    modal.addEventListener("keydown", handleTab);
+    return () => modal.removeEventListener("keydown", handleTab);
+  }, [onClose]);
+
   const [formData, setFormData] = useState({
     name: "",
     phone: "",
@@ -87,10 +116,17 @@ function QuoteModalContent({ onClose }: { onClose: () => void }) {
       <div className="absolute inset-0 bg-black/80 backdrop-blur-sm animate-fadeIn" />
 
       {/* Modal */}
-      <div className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-zinc-900 border border-zinc-700 rounded-xl shadow-2xl shadow-black/50 animate-slideUp">
+      <div
+        ref={modalRef}
+        role="dialog"
+        aria-modal="true"
+        aria-label="Request a free quote"
+        className="relative w-full max-w-2xl max-h-[90vh] overflow-y-auto bg-zinc-900 border border-zinc-700 rounded-xl shadow-2xl shadow-black/50 animate-slideUp"
+      >
         {/* Close Button */}
         <button
           onClick={onClose}
+          aria-label="Close quote form"
           className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-all"
         >
           <X className="h-4 w-4" />
@@ -105,7 +141,7 @@ function QuoteModalContent({ onClose }: { onClose: () => void }) {
             <p className="text-zinc-400 mb-2 max-w-md mx-auto">
               Thank you for your interest. We&apos;ll review your project details and get back to you within 24 hours with a personalized quote.
             </p>
-            <div className="flex items-center justify-center gap-2 text-zinc-500 text-sm mt-6">
+            <div className="flex items-center justify-center gap-2 text-zinc-400 text-sm mt-6">
               <Phone className="h-4 w-4" />
               Need immediate assistance? Call{" "}
               <a href="tel:+12674716120" className="text-accent hover:text-accent-light transition-colors">
@@ -285,7 +321,7 @@ function QuoteModalContent({ onClose }: { onClose: () => void }) {
               </div>
 
               {error && (
-                <div className="mb-5 p-4 bg-red-950/30 border border-red-900/50 rounded text-red-400 text-sm">
+                <div role="alert" className="mb-5 p-4 bg-red-950/30 border border-red-900/50 rounded text-red-400 text-sm">
                   {error}
                 </div>
               )}
@@ -308,7 +344,7 @@ function QuoteModalContent({ onClose }: { onClose: () => void }) {
                 )}
               </button>
 
-              <p className="text-zinc-500 text-xs text-center mt-4">
+              <p className="text-zinc-400 text-xs text-center mt-4">
                 No obligation. We typically respond within 24 hours.
               </p>
             </form>

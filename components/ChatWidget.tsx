@@ -128,12 +128,13 @@ export default function ChatWidget() {
                 <a
                   href="tel:+12674716120"
                   className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-800 text-zinc-400 hover:text-accent hover:bg-zinc-700 transition-all"
-                  title="Call us"
+                  aria-label="Call us at (267) 471-6120"
                 >
                   <Phone className="h-3.5 w-3.5" />
                 </a>
                 <button
                   onClick={() => setIsOpen(false)}
+                  aria-label="Close chat"
                   className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-all"
                 >
                   <X className="h-4 w-4" />
@@ -183,6 +184,7 @@ export default function ChatWidget() {
                   onChange={(e) => setInput(e.target.value)}
                   onKeyDown={handleKeyDown}
                   placeholder="Ask about our services..."
+                  aria-label="Type your message"
                   maxLength={500}
                   disabled={isLoading}
                   className="flex-1 px-3.5 py-2.5 bg-zinc-800/50 border border-zinc-700 rounded-lg text-sm text-white placeholder-zinc-500 focus:outline-none focus:border-accent/50 focus:ring-1 focus:ring-accent/20 transition-all disabled:opacity-50"
@@ -190,16 +192,17 @@ export default function ChatWidget() {
                 <button
                   onClick={sendMessage}
                   disabled={!input.trim() || isLoading}
+                  aria-label="Send message"
                   className="px-3.5 py-2.5 bg-gradient-to-r from-zinc-400 via-accent to-zinc-400 bg-[length:200%_100%] bg-left hover:bg-right text-white rounded-lg transition-all duration-500 disabled:opacity-30 disabled:cursor-not-allowed"
                 >
                   <Send className="h-4 w-4" />
                 </button>
               </div>
-              <p className="text-zinc-600 text-[10px] text-center mt-1.5">
+              <p className="text-zinc-400 text-[10px] text-center mt-1.5">
                 AI assistant &middot; For urgent needs call{" "}
                 <a
                   href="tel:+12674716120"
-                  className="text-zinc-500 hover:text-accent transition-colors"
+                  className="text-zinc-300 hover:text-accent transition-colors"
                 >
                   (267) 471-6120
                 </a>
