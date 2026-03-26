@@ -135,7 +135,7 @@ export default function ChatWidget() {
                 <button
                   onClick={() => setIsOpen(false)}
                   aria-label="Close chat"
-                  className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-all"
+                  className="w-8 h-8 flex items-center justify-center rounded-full bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-all cursor-pointer"
                 >
                   <X className="h-4 w-4" />
                 </button>
@@ -193,7 +193,7 @@ export default function ChatWidget() {
                   onClick={sendMessage}
                   disabled={!input.trim() || isLoading}
                   aria-label="Send message"
-                  className="px-3.5 py-2.5 bg-gradient-to-r from-zinc-400 via-accent to-zinc-400 bg-[length:200%_100%] bg-left hover:bg-right text-white rounded-lg transition-all duration-500 disabled:opacity-30 disabled:cursor-not-allowed"
+                  className="px-3.5 py-2.5 bg-gradient-to-r from-zinc-400 via-accent to-zinc-400 bg-[length:200%_100%] bg-left hover:bg-right text-white rounded-lg transition-all duration-500 cursor-pointer disabled:opacity-30 disabled:cursor-not-allowed"
                 >
                   <Send className="h-4 w-4" />
                 </button>
@@ -213,21 +213,28 @@ export default function ChatWidget() {
       )}
 
       {/* Floating Toggle Button */}
-      <button
-        onClick={() => setIsOpen(!isOpen)}
-        className={`fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[89] w-14 h-14 rounded-full shadow-lg shadow-black/40 flex items-center justify-center transition-all duration-300 hover:scale-105 ${
-          isOpen
-            ? "bg-zinc-800 border border-zinc-700 text-zinc-400 hover:text-white"
-            : "bg-gradient-to-r from-zinc-400 via-accent to-zinc-400 bg-[length:200%_100%] bg-left hover:bg-right text-white"
-        }`}
-        aria-label={isOpen ? "Close chat" : "Open chat"}
-      >
+      <div className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-[89]">
+        {!isOpen && (
+          <div className="absolute inset-0 rounded-full bg-gradient-to-br from-[#A3A3A3] to-[#147FBB] p-[2px]">
+            <div className="w-full h-full rounded-full bg-white" />
+          </div>
+        )}
+        <button
+          onClick={() => setIsOpen(!isOpen)}
+          className={`relative w-14 h-14 rounded-full shadow-lg shadow-black/40 flex items-center justify-center transition-all duration-300 hover:scale-105 cursor-pointer ${
+            isOpen
+              ? "bg-zinc-800 border border-zinc-700 text-zinc-400 hover:text-white"
+              : "bg-transparent text-[#147FBB]"
+          }`}
+          aria-label={isOpen ? "Close chat" : "Open chat"}
+        >
         {isOpen ? (
           <X className="h-5 w-5" />
         ) : (
           <MessageCircle className="h-5 w-5" />
         )}
-      </button>
+        </button>
+      </div>
     </>
   );
 }

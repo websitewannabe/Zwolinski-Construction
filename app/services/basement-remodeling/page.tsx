@@ -237,6 +237,35 @@ export default function BasementRemodelingPage() {
         </div>
       </section>
 
+      {/* Related Content */}
+      <section className="py-16 bg-black border-t border-zinc-800/50">
+        <div className="container-wide max-w-4xl">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href="/blog/basement-finishing-guide" className="card-luxury p-6 group">
+              <h3 className="font-serif text-lg text-white mb-2">Basement Finishing Guide</h3>
+              <p className="text-zinc-400 text-sm mb-3">Everything you need to know about finishing your basement in PA.</p>
+              <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                Read Guide <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link href="/blog/basement-waterproofing-tips" className="card-luxury p-6 group">
+              <h3 className="font-serif text-lg text-white mb-2">Waterproofing Tips</h3>
+              <p className="text-zinc-400 text-sm mb-3">Protect your investment with proper moisture control.</p>
+              <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                Read Guide <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link href="/reviews" className="card-luxury p-6 group">
+              <h3 className="font-serif text-lg text-white mb-2">Client Reviews</h3>
+              <p className="text-zinc-400 text-sm mb-3">See what homeowners say about our basement work.</p>
+              <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                Read Reviews <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="relative py-24 overflow-hidden">
         <Image

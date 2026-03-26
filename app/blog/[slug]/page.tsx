@@ -179,6 +179,38 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </div>
       </section>
 
+      {/* Related Service */}
+      {post.category === "Bathrooms" && (
+        <section className="py-10 bg-zinc-950 border-t border-zinc-800/50">
+          <div className="container-wide max-w-3xl text-center">
+            <p className="text-zinc-400 text-sm mb-3">Interested in a bathroom remodel?</p>
+            <Link href="/services/bathroom-remodeling" className="text-primary text-sm uppercase tracking-wide hover:text-primary-light transition-colors inline-flex items-center gap-2">
+              Explore Our Bathroom Remodeling Services <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </section>
+      )}
+      {post.category === "Kitchens" && (
+        <section className="py-10 bg-zinc-950 border-t border-zinc-800/50">
+          <div className="container-wide max-w-3xl text-center">
+            <p className="text-zinc-400 text-sm mb-3">Planning a kitchen renovation?</p>
+            <Link href="/services/kitchen-remodeling" className="text-primary text-sm uppercase tracking-wide hover:text-primary-light transition-colors inline-flex items-center gap-2">
+              Explore Our Kitchen Remodeling Services <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </section>
+      )}
+      {post.category === "Basements" && (
+        <section className="py-10 bg-zinc-950 border-t border-zinc-800/50">
+          <div className="container-wide max-w-3xl text-center">
+            <p className="text-zinc-400 text-sm mb-3">Ready to finish your basement?</p>
+            <Link href="/services/basement-remodeling" className="text-primary text-sm uppercase tracking-wide hover:text-primary-light transition-colors inline-flex items-center gap-2">
+              Explore Our Basement Finishing Services <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </section>
+      )}
+
       {/* Related Posts */}
       <section className="section-padding bg-black">
         <div className="container-wide">

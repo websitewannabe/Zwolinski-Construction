@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { ChevronDown } from "lucide-react";
+import Link from "next/link";
+import { ChevronDown, ArrowRight } from "lucide-react";
 import HeroSection from "@/components/HeroSection";
 import QuoteButton from "@/components/QuoteButton";
 import { generatePageMetadata } from "@/lib/metadata";
@@ -196,6 +197,39 @@ export default function FAQPage() {
               </div>
             </div>
           ))}
+        </div>
+      </section>
+
+      {/* Related Pages */}
+      <section className="py-16 bg-black border-t border-zinc-800/50">
+        <div className="container-wide max-w-4xl">
+          <p className="text-primary text-sm uppercase tracking-[0.3em] mb-3 text-center">
+            Explore More
+          </p>
+          <h2 className="heading-md text-white mb-8 text-center">Related Pages</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <Link href="/services" className="card-luxury p-6 group text-center">
+              <h3 className="font-serif text-lg text-white mb-2">Our Services</h3>
+              <p className="text-zinc-400 text-sm mb-3">Kitchens, bathrooms, basements, and more.</p>
+              <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all justify-center">
+                View Services <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link href="/blog" className="card-luxury p-6 group text-center">
+              <h3 className="font-serif text-lg text-white mb-2">Remodeling Blog</h3>
+              <p className="text-zinc-400 text-sm mb-3">Cost guides, tips, and design ideas.</p>
+              <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all justify-center">
+                Read Articles <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link href="/reviews" className="card-luxury p-6 group text-center">
+              <h3 className="font-serif text-lg text-white mb-2">Client Reviews</h3>
+              <p className="text-zinc-400 text-sm mb-3">See what homeowners say about our work.</p>
+              <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all justify-center">
+                Read Reviews <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
 

@@ -66,7 +66,7 @@ export default function TestimonialCarousel() {
                 {isLong && (
                   <button
                     onClick={() => toggleReview(globalIndex)}
-                    className="text-primary text-xs mt-2 hover:text-primary-light transition-colors uppercase tracking-wide"
+                    className="text-primary text-xs mt-2 hover:text-primary-light transition-colors uppercase tracking-wide cursor-pointer"
                   >
                     {isExpanded ? "Read Less" : "Read More"}
                   </button>
@@ -98,7 +98,7 @@ export default function TestimonialCarousel() {
           onClick={() =>
             setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages)
           }
-          className="w-10 h-10 flex items-center justify-center rounded border border-zinc-800 text-zinc-400 hover:text-primary hover:border-primary/30 transition-all"
+          className="w-10 h-10 flex items-center justify-center rounded border border-zinc-800 text-zinc-400 hover:text-primary hover:border-primary/30 transition-all cursor-pointer"
         >
           <ChevronLeft className="h-5 w-5" />
         </button>
@@ -108,7 +108,7 @@ export default function TestimonialCarousel() {
             <button
               key={i}
               onClick={() => setCurrentPage(i)}
-              className={`h-1.5 rounded-full transition-all duration-300 ${
+              className={`h-1.5 rounded-full transition-all duration-300 cursor-pointer ${
                 i === currentPage
                   ? "bg-primary w-6"
                   : "bg-zinc-700 w-1.5 hover:bg-zinc-500"
@@ -121,7 +121,7 @@ export default function TestimonialCarousel() {
           onClick={() =>
             setCurrentPage((prev) => (prev + 1) % totalPages)
           }
-          className="w-10 h-10 flex items-center justify-center rounded border border-zinc-800 text-zinc-400 hover:text-primary hover:border-primary/30 transition-all"
+          className="w-10 h-10 flex items-center justify-center rounded border border-zinc-800 text-zinc-400 hover:text-primary hover:border-primary/30 transition-all cursor-pointer"
         >
           <ChevronRight className="h-5 w-5" />
         </button>

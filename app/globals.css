@@ -48,7 +48,7 @@
   .btn-primary {
     @apply inline-flex items-center px-8 py-4 text-white font-semibold
            rounded transition-all duration-300
-           tracking-wide uppercase text-sm;
+           tracking-wide uppercase text-sm cursor-pointer;
     background: linear-gradient(135deg, #A3A3A3, #147FBB, #A3A3A3);
     background-size: 200% 200%;
     background-position: 50% 50%;
@@ -68,7 +68,7 @@
   .btn-outline {
     @apply inline-flex items-center px-8 py-4 border border-primary/40 text-primary
            font-semibold rounded transition-all duration-300
-           tracking-wide uppercase text-sm;
+           tracking-wide uppercase text-sm cursor-pointer;
   }
   .btn-outline:hover {
     background: linear-gradient(135deg, #A3A3A3, #147FBB, #A3A3A3);

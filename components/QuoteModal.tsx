@@ -127,7 +127,7 @@ function QuoteModalContent({ onClose }: { onClose: () => void }) {
         <button
           onClick={onClose}
           aria-label="Close quote form"
-          className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-all"
+          className="absolute top-4 right-4 z-10 w-8 h-8 flex items-center justify-center rounded-full bg-zinc-800 text-zinc-400 hover:text-white hover:bg-zinc-700 transition-all cursor-pointer"
         >
           <X className="h-4 w-4" />
         </button>

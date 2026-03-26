@@ -133,7 +133,7 @@ export default function Navbar() {
             onClick={() => setIsOpen(!isOpen)}
             aria-label={isOpen ? "Close menu" : "Open menu"}
             aria-expanded={isOpen}
-            className="lg:hidden p-2 text-zinc-300 hover:text-primary transition-colors"
+            className="lg:hidden p-2 text-zinc-300 hover:text-primary transition-colors cursor-pointer"
           >
             {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
           </button>
@@ -158,7 +158,7 @@ export default function Navbar() {
                 <button
                   onClick={() => setIsMobileServicesOpen(!isMobileServicesOpen)}
                   aria-expanded={isMobileServicesOpen}
-                  className="flex items-center justify-between w-full px-4 py-3 text-zinc-300 hover:text-white rounded transition-all text-sm tracking-wide uppercase hover-gradient"
+                  className="flex items-center justify-between w-full px-4 py-3 text-zinc-300 hover:text-white rounded transition-all text-sm tracking-wide uppercase hover-gradient cursor-pointer"
                 >
                   Services
                   <ChevronDown className={`h-4 w-4 transition-transform ${isMobileServicesOpen ? "rotate-180" : ""}`} />

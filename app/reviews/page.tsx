@@ -1,5 +1,6 @@
 import Image from "next/image";
-import { MessageSquare } from "lucide-react";
+import Link from "next/link";
+import { MessageSquare, ArrowRight } from "lucide-react";
 import { generatePageMetadata } from "@/lib/metadata";
 
 export const metadata = generatePageMetadata({
@@ -126,6 +127,35 @@ export default function ReviewsPage() {
               </span>
             </a>
           ))}
+        </div>
+      </div>
+    </section>
+
+    {/* Related Pages */}
+    <section className="py-16 bg-black border-t border-zinc-800/50">
+      <div className="container-wide">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <Link href="/gallery" className="card-luxury p-6 group text-center">
+            <h3 className="font-serif text-lg text-white mb-2">See Our Work</h3>
+            <p className="text-zinc-400 text-sm mb-3">Browse real before and after project photos.</p>
+            <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all justify-center">
+              View Gallery <ArrowRight className="h-4 w-4" />
+            </span>
+          </Link>
+          <Link href="/services" className="card-luxury p-6 group text-center">
+            <h3 className="font-serif text-lg text-white mb-2">Our Services</h3>
+            <p className="text-zinc-400 text-sm mb-3">Kitchens, bathrooms, basements, and more.</p>
+            <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all justify-center">
+              Explore Services <ArrowRight className="h-4 w-4" />
+            </span>
+          </Link>
+          <Link href="/contact" className="card-luxury p-6 group text-center">
+            <h3 className="font-serif text-lg text-white mb-2">Start Your Project</h3>
+            <p className="text-zinc-400 text-sm mb-3">Get a free estimate for your remodel.</p>
+            <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all justify-center">
+              Contact Us <ArrowRight className="h-4 w-4" />
+            </span>
+          </Link>
         </div>
       </div>
     </section>

@@ -84,7 +84,7 @@ export default function Footer() {
             </div>
             <button
               onClick={loadEqualWebScript}
-              className="flex items-center gap-2 text-white/70 hover:text-primary-light transition-colors text-sm"
+              className="flex items-center gap-2 text-white/70 hover:text-primary-light transition-colors text-sm cursor-pointer"
             >
               <Accessibility className="h-4 w-4" />
               Accessibility Tools

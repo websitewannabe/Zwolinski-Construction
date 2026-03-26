@@ -318,13 +318,16 @@ export default function HomePage() {
           <h2 className="font-serif text-3xl md:text-4xl text-white mb-4">
             Over 150 Five-Star Reviews
           </h2>
-          <div className="flex justify-center gap-1 mt-4">
+          <div className="flex justify-center gap-1 mt-4 mb-6">
             {[...Array(5)].map((_, i) => (
               <span key={i} className="text-accent text-3xl">
                 &#9733;
               </span>
             ))}
           </div>
+          <Link href="/reviews" className="text-primary text-sm uppercase tracking-wide hover:text-primary-light transition-colors inline-flex items-center gap-2">
+            Read Our Reviews <ArrowRight className="h-4 w-4" />
+          </Link>
         </div>
       </section>
 
@@ -382,6 +385,40 @@ export default function HomePage() {
             <h2 className="heading-lg text-white">What Our Clients Say</h2>
           </div>
           <TestimonialCarousel />
+          <div className="text-center mt-10">
+            <Link href="/reviews" className="text-primary text-sm uppercase tracking-wide hover:text-primary-light transition-colors inline-flex items-center gap-2">
+              View All Reviews <ArrowRight className="h-4 w-4" />
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Quick Links */}
+      <section className="py-16 bg-zinc-950 border-t border-zinc-800/50">
+        <div className="container-wide">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto text-center">
+            <Link href="/blog" className="card-luxury p-6 group">
+              <h3 className="font-serif text-lg text-white mb-2">Remodeling Tips</h3>
+              <p className="text-zinc-400 text-sm mb-3">Cost guides, timelines, and design ideas for your next project.</p>
+              <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                Read Our Blog <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link href="/faq" className="card-luxury p-6 group">
+              <h3 className="font-serif text-lg text-white mb-2">Common Questions</h3>
+              <p className="text-zinc-400 text-sm mb-3">Get answers about costs, timelines, permits, and what to expect.</p>
+              <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                View FAQs <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+            <Link href="/cities" className="card-luxury p-6 group">
+              <h3 className="font-serif text-lg text-white mb-2">Service Areas</h3>
+              <p className="text-zinc-400 text-sm mb-3">We serve 46 communities across Bucks, Montgomery, and Lehigh Counties.</p>
+              <span className="text-primary text-sm uppercase tracking-wide inline-flex items-center gap-2 group-hover:gap-3 transition-all">
+                Find Your City <ArrowRight className="h-4 w-4" />
+              </span>
+            </Link>
+          </div>
         </div>
       </section>
 
