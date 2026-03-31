@@ -78,7 +78,7 @@ export default function RootLayout({
         {/* Accessibility Widget — defines handler, widget JS only fetches on click */}
         <script
           dangerouslySetInnerHTML={{
-            __html: `window.openAccessibilityTools=function(){var h=document.querySelector('div[data-brain-a11y="true"]');if(h){var p=h.shadowRoot&&h.shadowRoot.querySelector('.a11y-panel');if(p)return;h.remove()}var o=document.querySelector('script[data-brain-a11y-src]');if(o)o.remove();var s=document.createElement('script');s.src='https://brain.websitewannabe.co/api/ww/a11y-widget';s.setAttribute('data-brain-a11y-src','true');document.body.appendChild(s)};`,
+            __html: `window.openAccessibilityTools=function(){var h=document.querySelector('div[data-brain-a11y="true"]');if(h){var sr=h.shadowRoot;if(sr){var p=sr.querySelector('.a11y-panel');if(p)return;var t=sr.querySelector('.a11y-trigger');if(t){t.click();return}}return}var s=document.createElement('script');s.src='https://brain.websitewannabe.co/api/ww/a11y-widget';s.setAttribute('data-brain-a11y-src','true');document.body.appendChild(s)};`,
           }}
         />
       </body>
