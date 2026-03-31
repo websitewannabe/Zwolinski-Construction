@@ -42,6 +42,10 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
+      <head>
+        {/* Brain Cookie Consent (synchronous — sets GA4 consent defaults) */}
+        <script src="https://brain.websitewannabe.co/api/ww/cookie-consent" />
+      </head>
       <body className={`${inter.className} bg-black text-white`}>
         <Script
           id="gtm"
@@ -81,6 +85,9 @@ export default function RootLayout({
             __html: `window.openAccessibilityTools=function(){var h=document.querySelector('div[data-brain-a11y="true"]');if(h){var sr=h.shadowRoot;if(sr){var p=sr.querySelector('.a11y-panel');if(p)return;var t=sr.querySelector('.a11y-trigger');if(t){t.click();return}}return}var s=document.createElement('script');s.src='https://brain.websitewannabe.co/api/ww/a11y-widget';s.setAttribute('data-brain-a11y-src','true');document.body.appendChild(s)};`,
           }}
         />
+
+        {/* Brain Analytics (first-party tracking, respects cookie consent) */}
+        <Script src="https://brain.websitewannabe.co/api/ww/analytics" strategy="afterInteractive" />
       </body>
     </html>
   );
