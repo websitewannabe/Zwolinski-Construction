@@ -69,6 +69,18 @@ export default function RootLayout({
           <Footer />
           <ChatWidgetLoader />
         </QuoteModalProvider>
+        {/* Website Wannabe Feedback Widget */}
+        <Script
+          src="https://brain.websitewannabe.co/api/ww/feedback/widget?key=430d22c52546bbc5a79f6adfc44f457febc42f27436b705666ec6366565a0a7d"
+          strategy="lazyOnload"
+        />
+
+        {/* Accessibility Widget — defines handler, widget JS only fetches on click */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.openAccessibilityTools=function(){var h=document.querySelector('div[data-brain-a11y="true"]');if(h){var p=h.shadowRoot&&h.shadowRoot.querySelector('.a11y-panel');if(p)return;h.remove()}var o=document.querySelector('script[data-brain-a11y-src]');if(o)o.remove();var s=document.createElement('script');s.src='https://brain.websitewannabe.co/api/ww/a11y-widget';s.setAttribute('data-brain-a11y-src','true');document.body.appendChild(s)};`,
+          }}
+        />
       </body>
     </html>
   );

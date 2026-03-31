@@ -7,38 +7,8 @@ import EmailLink from "@/components/EmailLink";
 
 declare global {
   interface Window {
-    interdeal: Record<string, unknown>;
+    openAccessibilityTools: () => void;
   }
-}
-
-function loadEqualWebScript() {
-  if (typeof window === "undefined") return;
-  if (document.querySelector('script[src*="accessibility.js"]')) return;
-
-  window.interdeal = {
-    sitekey: "0b5ee2eb111e583d15929d50a9707d6b",
-    Position: "left",
-    domains: {
-      js: "https://cdn.equalweb.com/",
-      acc: "https://access.equalweb.com/",
-    },
-    Menulang: "EN",
-    btnStyle: {
-      vPosition: ["80%", "20%"],
-      scale: ["0.5", "0.5"],
-      color: { main: "#147FBB", second: "#000000" },
-      icon: { outline: false, type: 7, shape: "semicircle" },
-    },
-  };
-
-  const coreCall = document.createElement("script");
-  coreCall.src =
-    "https://cdn.equalweb.com/core/5.1.13/accessibility.js";
-  coreCall.defer = true;
-  coreCall.integrity =
-    "sha512-70/AbMe6C9H3r5hjsQleJEY4y5l9ykt4WYSgyZj/WjpY/ord/26LWfva163b9W+GwWkfwbP0iLT+h6KRl+LoXA==";
-  coreCall.crossOrigin = "anonymous";
-  document.body.appendChild(coreCall);
 }
 
 export default function Footer() {
@@ -92,7 +62,7 @@ export default function Footer() {
               </a>
             </div>
             <button
-              onClick={loadEqualWebScript}
+              onClick={() => window.openAccessibilityTools()}
               className="flex items-center gap-2 text-white/70 hover:text-primary-light transition-colors text-sm cursor-pointer"
             >
               <Accessibility className="h-4 w-4" />
