@@ -73,12 +73,6 @@ export default function RootLayout({
           <Footer />
           <ChatWidgetLoader />
         </QuoteModalProvider>
-        {/* Website Wannabe Feedback Widget */}
-        <Script
-          src="https://brain.websitewannabe.co/api/ww/feedback/widget?key=430d22c52546bbc5a79f6adfc44f457febc42f27436b705666ec6366565a0a7d"
-          strategy="lazyOnload"
-        />
-
         {/* Accessibility Widget — defines handler, widget JS only fetches on click */}
         <script
           dangerouslySetInnerHTML={{
