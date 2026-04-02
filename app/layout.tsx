@@ -43,8 +43,14 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${inter.variable} ${playfair.variable}`}>
       <head>
-        {/* Brain Cookie Consent (synchronous — sets GA4 consent defaults) */}
-        <script src="https://brain.websitewannabe.co/api/ww/cookie-consent" />
+        {/* Inline consent bootstrap: sets GA4 defaults from cookie, non-render-blocking */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `(function(){var d='denied',g='granted',a={analytics_storage:d,ad_storage:d,ad_user_data:d,ad_personalization:d,functionality_storage:d,security_storage:g};try{var m=document.cookie.match(/(?:^|; )brain_cookie_consent=([^;]*)/);if(m){var c=JSON.parse(decodeURIComponent(m[1])).categories;if(c){if(c.analytics)a.analytics_storage=g;if(c.marketing){a.ad_storage=g;a.ad_user_data=g;a.ad_personalization=g}if(c.preferences)a.functionality_storage=g}}}catch(e){}window.dataLayer=window.dataLayer||[];function t(){dataLayer.push(arguments)}window.gtag=window.gtag||t;gtag('consent','default',a);window.__brainConsentReady=true})()`,
+          }}
+        />
+        {/* Full cookie consent widget — deferred so it doesn't block rendering */}
+        <Script src="https://brain.websitewannabe.co/api/ww/cookie-consent" strategy="afterInteractive" />
       </head>
       <body className={`${inter.className} bg-black text-white`}>
         <Script
